@@ -4,7 +4,7 @@
   import { Button } from '@/components/base/button'
   import { Input } from '@/components/base/input'
   import getFriendlyErrorMessage from '@/firebase/utils/auth/getFriendlyErrorMessage'
-  import { app } from '../firebase/client'
+  import { app } from '@/firebase/client'
 
   export let oobCode // This will hold the oobCode from the URL.
   let newPassword = ''

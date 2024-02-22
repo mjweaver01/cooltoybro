@@ -2,8 +2,8 @@
   import { onMount } from 'svelte'
   import GoogleIcon from '@/components/icons/GoogleIcon.svelte'
   import handleGoogleSignIn from '@/firebase/utils/auth/handleGoogleSignIn'
-  import Spinner from '../icons/Spinner.svelte'
-  import { Button } from '../base/button'
+  import Spinner from '@/icons/Spinner.svelte'
+  import { Button } from '@/base/button'
 
   let loading = false
 

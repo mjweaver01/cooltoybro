@@ -1,6 +1,6 @@
 <script>
   import { getAuth, inMemoryPersistence, signInWithEmailAndPassword } from 'firebase/auth'
-  import { app } from '../firebase/client'
+  import { app } from '@/firebase/client'
   import getFriendlyErrorMessage from '@/firebase/utils/auth/getFriendlyErrorMessage'
   import { Button } from '@/components/base/button'
   import GoogleSignInButton from './social/GoogleSignInButton.svelte'

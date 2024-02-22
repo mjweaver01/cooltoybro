@@ -1,20 +1,18 @@
 ---
-import { siteName, products } from '@/lib/constants'
+import { siteName } from '@/lib/constants'
 import type { UserRecord } from 'firebase-admin/auth'
 import Layout from '@/layouts/Layout.astro'
-import Subscribe from '@/components/Subscribe.svelte'
+import Join from '@/components/Join.svelte'
 import Navbar from '@/components/Navbar.svelte'
-import Products from '@/components/Products.svelte'
 import getUserData from '@/firebase/utils/auth/getUserData'
 
-const title = `${siteName}`
-const description =
-  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+const title = `Join - ${siteName}`
+const description = 'Join the toy bro squad to gain access to exclusive deals and offers.'
 const sessionCookie = Astro.cookies.get('session')?.value ?? null
 const user: UserRecord | null = await getUserData(sessionCookie)
 ---
 
 <Layout title={title} description={description}>
   <Navbar {user} client:load />
-  <Products products={products} />
+  <Join {user} client:load />
 </Layout>
