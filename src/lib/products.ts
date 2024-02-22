@@ -130,7 +130,7 @@ export const products: ProductRecord[] = [
       quality: 5,
       vibes: 5,
       description:
-        "Truly one of the biggest bangs for your buck. A QUAD CORE COMPUTER that is HALF THE SIZE OF A CREDIT CARD. I mean, cmon. This thing can run a minecraft server. And it's under $30. Are you not impressed???? A true CQV dinger 🔔🔔🔔🔔🔔",
+        "Truly one of the biggest bangs for your buck. A QUAD CORE COMPUTER that is HALF THE SIZE OF A CREDIT CARD. <br><br>I mean, cmon. This thing can run a minecraft server. And it's under $30. Are you not impressed???? <br><br>A true CQV dinger <br><br> 🔔🔔🔔🔔🔔",
     },
   },
 ]
