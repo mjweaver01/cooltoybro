@@ -53,4 +53,5 @@ body {
   /* mix-blend-mode: plus-lighter; */
   filter: brightness(0.9) contrast(0.7) saturate(2);
   opacity: var(--o);
+  white-space: nowrap;
 }

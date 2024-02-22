@@ -48,13 +48,13 @@ const survey = [
     options: [
       {
         id: 'expensive',
-        title: "HOT 🔥",
-      }
+        title: 'HOT 🔥',
+      },
       {
-        title: "NOT 📦", 
+        title: 'NOT 📦',
         value: 'cheap',
-      }
-    ]
+      },
+    ],
   },
   {
     id: 'step-2',
@@ -62,26 +62,26 @@ const survey = [
     options: [
       {
         id: 'tech',
-        title: "TECH 🤓",
-      }
+        title: 'TECH 🤓',
+      },
       {
-        title: "SPORTS ⚾🏀🏈", 
+        title: 'SPORTS ⚾🏀🏈',
         value: 'sport',
-      }
-    ]
+      },
+    ],
   },
   {
     id: 'step-3',
-    title: "How smart is your bro?",
+    title: 'How smart is your bro?',
     options: [
       {
         id: 'smart',
-        title: "ROCK 🪨",
-      }
+        title: 'ROCK 🪨',
+      },
       {
-        title: "ASTRONAUT 🚀", 
+        title: 'ASTRONAUT 🚀',
         value: 'dumb',
-      }
-    ]
+      },
+    ],
   },
 ]
