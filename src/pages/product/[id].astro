@@ -1,31 +1,27 @@
 ---
-import { siteName, products } from '@/lib/constants'
-import type { UserRecord } from 'firebase-admin/auth'
+import { siteName, products as p } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
-import Subscribe from '@/components/Subscribe.svelte'
 import Navbar from '@/components/Navbar.svelte'
 import Product from '@/components/Product.svelte'
-import getUserData from '@/firebase/utils/auth/getUserData'
 
 export const prerender = true
 
 export function getStaticPaths() {
-  return products.map((product, i) => {
+  return p.map((product) => {
     return {
       params: { id: product.slug },
-      props: { product, products },
+      props: { product },
     }
   })
 }
 
-const { product, products } = Astro.props
+const { product } = Astro.props
 const title = `${product.title} - ${siteName}`
 const description = product.description
-const sessionCookie = Astro.cookies.get('session')?.value ?? null
-const user: UserRecord | null = await getUserData(sessionCookie)
+// const sessionCookie = Astro.cookies.get('session')?.value ?? null
 ---
 
 <Layout title={title} description={description}>
-  <Navbar {user} client:load />
+  <Navbar client:load />
   <Product product={product} />
 </Layout>

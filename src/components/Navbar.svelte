@@ -1,10 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { collections } from '@/lib/constants'
-  import UserDropdown from '@/components/UserDropdown.svelte'
-  import { Button } from '@/components/base/button'
-  import type { UserRecord } from 'firebase-admin/auth'
-  export let user: UserRecord | null
   let scrolled = false
 
   onMount(() => {
@@ -30,11 +26,6 @@
       {#each collections as collection, i}
         <a href={collection.link}>{collection.title}</a>
       {/each}
-      <!-- {#if user}
-        <UserDropdown {user} />
-      {:else}
-        <Button href="/signin" variant="rounded">Sign In</Button>
-      {/if} -->
     </div>
   </div>
 </div>

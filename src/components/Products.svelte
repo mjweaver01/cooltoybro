@@ -1,6 +1,7 @@
 <script lang="ts">
+  import { emptyProduct, type ProductRecord } from '@/lib/constants'
   import { Button } from '@/components/base/button'
-  import { products } from '@/lib/constants'
+  export let products = [emptyProduct] as ProductRecord[]
 </script>
 
 {#if products.length > 0}

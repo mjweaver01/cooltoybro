@@ -3,22 +3,15 @@ import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.svelte'
 import TipMe from '@/components/TipMe.astro'
-import getUserData from '@/firebase/utils/auth/getUserData'
 
 /* Check current session */
-const sessionCookie = Astro.cookies.get('session')?.value ?? null
-
-const user = await getUserData(sessionCookie)
-
-if (!user) {
-  return Astro.redirect('/signin')
-}
+// const sessionCookie = Astro.cookies.get('session')?.value ?? null
 
 const title = `Tip - ${siteName}`
 const description = 'Dashboard page to view and manage firebase data'
 ---
 
 <Layout {description} {title}>
-  <Navbar {user} client:load />
+  <Navbar client:load />
   <TipMe />
 </Layout>
