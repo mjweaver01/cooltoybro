@@ -14,6 +14,12 @@ export const collections = [
     link: '/products/expensive',
     products: products.filter((p) => p.collections.includes('expensive')),
   },
+  {
+    slug: 'best',
+    title: 'Best',
+    link: '/products/best',
+    products: products.filter((p) => p.collections.includes('best')),
+  },
 ]
 
 export const navItems = [

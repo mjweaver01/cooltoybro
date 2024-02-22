@@ -1,6 +1,7 @@
 <script lang="ts">
   import { emptyProduct, type ProductRecord } from '@/lib/products'
   import { Button } from '@/components/base/button'
+  import ProductFlair from '@/components/ProductFlair.svelte'
   export let product = emptyProduct as ProductRecord
 </script>
 
@@ -27,10 +28,15 @@
           .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
           .replace('.00', '')}
       </p>
+      <ProductFlair {product} />
       <p class="text-lg mb-4">{@html product.description}</p>
-      <a target="_blank" href={product.link} class="w-full"
-        ><Button class="w-full">Buy Now</Button></a
-      >
+      <div class="flex gap-4">
+        {#each product.links as link}
+          <a target="_blank" href={link.link} class="w-full"
+            ><Button class="w-full">Buy Now from {link.title}</Button></a
+          >
+        {/each}
+      </div>
     </div>
   </div>
   <div

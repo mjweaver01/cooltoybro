@@ -8,7 +8,7 @@ export const emptyProduct = {
   tags: [''],
   description: '',
   additionalInformation: '',
-  link: '',
+  links: [{ title: '', link: '' }],
   price: 0,
   rank: {
     price: 0,
@@ -26,7 +26,7 @@ export const products: ProductRecord[] = [
     slug: 'nvidia-rtx-4090',
     title: 'NVIDIA RTX 4090',
     images: ['https://m.media-amazon.com/images/I/51c1zFDNVmL._AC_SX679_.jpg'],
-    collections: ['expensive'],
+    collections: ['expensive', 'best'],
     tags: ['nvidia', 'rtx', '4090', 'graphics', 'card'],
     flair: ['Best Graphics Card'],
     description:
@@ -45,7 +45,7 @@ export const products: ProductRecord[] = [
         <li class="list-disc">8K HDR Gaming</li>
       </ul>
     `,
-    link: 'https://amzn.to/3T6Kmoc',
+    links: [{ title: 'Amazon', link: 'https://amzn.to/3T6Kmoc' }],
     price: 2359.99,
     rank: {
       price: 5,
@@ -70,9 +70,14 @@ export const products: ProductRecord[] = [
     description: `<p class="product-description_content"><strong>WELCOME TO THE ERA OF AIRLESS</strong><br><br>After the 2023 unveiling of the Wilson Airless Prototype, the next step was clear: make it possible for the world to experience the future of sport for themselves. Enter Wilson Airless Gen1, an updated iteration of the original innovative concept.<br><br>Rather than being inflated, Airless Gen1 relies on a 3D-printed polymer lattice structure. The basketball nearly fits the performance specifications of a regulation basketball, including its weight, size and rebound (bounce). The form of the ball features 8 panel-like lobes and a familiar seam structure, with hexagonal holes across the surface allowing air to pass through freely. Each Airless Gen1 comes with a case, stand, and 3-letter customizable tag.</p><br/>`,
     additionalInformation:
       '<div class="panel-pane pane-fieldable-panels-pane pane-uuid-5c4f8b30-d0c7-4d9b-8691-a844b739c33e pane-bundle-wilson-youtube-slim-banner">            <div class="pane-content">    <div class="fieldable-panels-pane">      <div class="field-collection-container clearfix"><div class="banner-hero -mt-none -w-100">    <div class="video-container text-center">        <iframe id="youtube-player-147616" width="960" height="540?>" title="240209 Wilson MAIN FILM 16x9 FV 01" src="https://www.youtube.com/embed/UNsBUBgh9zA?wmode=opaque&amp;controls=1&amp;rel=0" frameborder="0" allowfullscreen="">          Video of 240209 Wilson MAIN FILM 16x9 FV 01        </iframe>    </div></div></div></div>  </div>    </div>',
-    link: generateUTM(
-      'https://wilson.com/en-us/product/airless-gen1-bskt-brown-wz1016101idv#colorsteamname%3D114881&size%3D52577',
-    ),
+    links: [
+      {
+        title: 'Wilson',
+        link: generateUTM(
+          'https://wilson.com/en-us/product/airless-gen1-bskt-brown-wz1016101idv#colorsteamname%3D114881&size%3D52577',
+        ),
+      },
+    ],
     price: 2500,
     rank: {
       price: 5,
@@ -94,7 +99,7 @@ export const products: ProductRecord[] = [
     tags: ['flipper', 'zero', 'hacker', 'l33t'],
     description: `Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like.`,
     additionalInformation: '',
-    link: generateUTM('https://shop.flipperzero.one/'),
+    links: [{ title: 'Flipper', link: generateUTM('https://shop.flipperzero.one/') }],
     price: 169,
     rank: {
       price: 4,
@@ -110,7 +115,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/610Q+AtlC0L._AC_SX679_.jpg',
       'https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp',
     ],
-    collections: ['cheap'],
+    collections: ['cheap', 'best'],
     tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie'],
     flair: ['Best Mini PC'],
     description: `At the heart of Raspberry Pi Zero 2 W is RP3A0, a custom-built system-in-package designed by Raspberry Pi in the UK. With a quad-core 64-bit ARM Cortex-A53 processor clocked at 1GHz and 512MB of SDRAM, Zero 2 is up to five times as fast as the original Raspberry Pi Zero. Wireless LAN is built in to a shielded enclosure with improved RF compliance, giving you more flexibility when designing with Raspberry Pi Zero 2 W. All in the same tiny 65mm × 30mm form factor.`,
@@ -132,7 +137,7 @@ export const products: ProductRecord[] = [
       <li class="list-disc">65mm x 30mm</li>
       </ul>
     `,
-    link: 'https://amzn.to/49DopDn',
+    links: [{ title: 'Amazon', link: 'https://amzn.to/49DopDn' }],
     price: 25.99,
     rank: {
       price: 1,

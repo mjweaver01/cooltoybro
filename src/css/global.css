@@ -50,7 +50,7 @@ body {
   mask-image: var(--logopng);
   mask-size: 4% 4%;
   mask-repeat: repeat;
-  mix-blend-mode: plus-lighter;
+  /* mix-blend-mode: plus-lighter; */
   filter: brightness(0.9) contrast(0.7) saturate(2);
   opacity: var(--o);
 }

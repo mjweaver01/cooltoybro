@@ -1,6 +1,7 @@
 <script lang="ts">
   import { type ProductRecord } from '@/lib/products'
   import { Button } from '@/components/base/button'
+  import ProductFlair from '@/components/ProductFlair.svelte'
   let products: ProductRecord[]
   let filter: string = ''
   export { products, filter }
@@ -35,13 +36,21 @@
                 />
               </div>
               <h1 class="text-3xl font-bold mb-2 mt-4">{product.title}</h1>
-              <p class="mb-4">
+              <p class={`mb-4 ${product.salePrice ? 'strikethrough' : ''}`}>
                 {product.price
                   .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
                   .replace('.00', '')}
               </p>
+              {#if product.salePrice}
+                <p class="mb-4 text-[red]">
+                  {product.salePrice
+                    .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+                    .replace('.00', '')}
+                </p>
+              {/if}
             </a>
-            <a target="_blank" href={product.link} class="w-full"
+            <ProductFlair {product} />
+            <a target="_blank" href={product.links[0].link} class="w-full"
               ><Button class="w-full">Buy Now</Button></a
             >
           </div>
