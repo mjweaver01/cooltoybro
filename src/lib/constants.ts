@@ -40,3 +40,48 @@ export const navItems = [
     link: '/about',
   },
 ]
+
+const survey = [
+  {
+    id: 'step-1',
+    title: "How ballin' is your bro?",
+    options: [
+      {
+        id: 'expensive',
+        title: "HOT 🔥",
+      }
+      {
+        title: "NOT 📦", 
+        value: 'cheap',
+      }
+    ]
+  },
+  {
+    id: 'step-2',
+    title: "What's your bro into?",
+    options: [
+      {
+        id: 'tech',
+        title: "TECH 🤓",
+      }
+      {
+        title: "SPORTS ⚾🏀🏈", 
+        value: 'sport',
+      }
+    ]
+  },
+  {
+    id: 'step-3',
+    title: "How smart is your bro?",
+    options: [
+      {
+        id: 'smart',
+        title: "ROCK 🪨",
+      }
+      {
+        title: "ASTRONAUT 🚀", 
+        value: 'dumb',
+      }
+    ]
+  },
+]
