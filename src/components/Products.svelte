@@ -3,7 +3,6 @@
   import { Button } from '@/components/base/button'
   let products: ProductRecord[]
   let filter: string = ''
-  let title: string = ''
   export { products, filter }
 </script>
 
