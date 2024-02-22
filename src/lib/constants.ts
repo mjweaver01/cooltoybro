@@ -24,13 +24,13 @@ export const navItems = [
   },
   ...collections.map(({ title, link, slug }) => ({ title, link, slug })),
   {
-    slug: 'bro',
-    title: 'Bro?',
-    link: '/about',
-  },
-  {
     slug: 'survey',
     title: 'Survey',
     link: '/survey',
+  },
+  {
+    slug: 'bro',
+    title: 'Bro?',
+    link: '/about',
   },
 ]

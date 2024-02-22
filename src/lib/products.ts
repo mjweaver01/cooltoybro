@@ -5,19 +5,20 @@ export const emptyProduct = {
   title: '',
   images: [''],
   collections: [''],
+  tags: [''],
   description: '',
   additionalInformation: '',
   link: '',
-  cost: 0,
+  price: 0,
   rank: {
-    cost: 0,
+    price: 0,
     quality: 0,
     vibes: 0,
     description: '',
   },
 }
 
-export type ProductRecord = typeof emptyProduct
+export type ProductRecord = typeof emptyProduct & { salePrice?: number; flair?: string[] }
 
 // @todo generate this somehow with a scraper? gpt?
 export const products: ProductRecord[] = [
@@ -26,6 +27,8 @@ export const products: ProductRecord[] = [
     title: 'NVIDIA RTX 4090',
     images: ['https://m.media-amazon.com/images/I/51c1zFDNVmL._AC_SX679_.jpg'],
     collections: ['expensive'],
+    tags: ['nvidia', 'rtx', '4090', 'graphics', 'card'],
+    flair: ['Best Graphics Card'],
     description:
       "The NVIDIA GeForce RTX 4090 is the ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics. Experience ultra-high performance gaming, incredibly detailed virtual worlds with ray tracing, unprecedented productivity, and new ways to create. It's powered by the NVIDIA Ada Lovelace architecture and comes with 24 GB of G6X memory to deliver the ultimate experience for gamers and creators.",
     additionalInformation: `
@@ -43,9 +46,9 @@ export const products: ProductRecord[] = [
       </ul>
     `,
     link: 'https://amzn.to/3T6Kmoc',
-    cost: 2359.99,
+    price: 2359.99,
     rank: {
-      cost: 5,
+      price: 5,
       quality: 5,
       vibes: 5,
       description:
@@ -63,15 +66,16 @@ export const products: ProductRecord[] = [
       'https://www.wilson.com/sites/default/files/styles/quilt_2x1/public/24-0108_Airless_Basketball_ePDP_TechBlock3.png?',
     ],
     collections: ['expensive'],
+    tags: ['basketball', 'airless', '3d', 'print'],
     description: `<p class="product-description_content"><strong>WELCOME TO THE ERA OF AIRLESS</strong><br><br>After the 2023 unveiling of the Wilson Airless Prototype, the next step was clear: make it possible for the world to experience the future of sport for themselves. Enter Wilson Airless Gen1, an updated iteration of the original innovative concept.<br><br>Rather than being inflated, Airless Gen1 relies on a 3D-printed polymer lattice structure. The basketball nearly fits the performance specifications of a regulation basketball, including its weight, size and rebound (bounce). The form of the ball features 8 panel-like lobes and a familiar seam structure, with hexagonal holes across the surface allowing air to pass through freely. Each Airless Gen1 comes with a case, stand, and 3-letter customizable tag.</p><br/>`,
     additionalInformation:
       '<div class="panel-pane pane-fieldable-panels-pane pane-uuid-5c4f8b30-d0c7-4d9b-8691-a844b739c33e pane-bundle-wilson-youtube-slim-banner">            <div class="pane-content">    <div class="fieldable-panels-pane">      <div class="field-collection-container clearfix"><div class="banner-hero -mt-none -w-100">    <div class="video-container text-center">        <iframe id="youtube-player-147616" width="960" height="540?>" title="240209 Wilson MAIN FILM 16x9 FV 01" src="https://www.youtube.com/embed/UNsBUBgh9zA?wmode=opaque&amp;controls=1&amp;rel=0" frameborder="0" allowfullscreen="">          Video of 240209 Wilson MAIN FILM 16x9 FV 01        </iframe>    </div></div></div></div>  </div>    </div>',
     link: generateUTM(
       'https://wilson.com/en-us/product/airless-gen1-bskt-brown-wz1016101idv#colorsteamname%3D114881&size%3D52577',
     ),
-    cost: 2500,
+    price: 2500,
     rank: {
-      cost: 5,
+      price: 5,
       quality: 3,
       vibes: 3,
       description:
@@ -87,12 +91,13 @@ export const products: ProductRecord[] = [
       'https://shop.flipperzero.one/cdn/shop/products/bottom-uwu.png?v=1671722807',
     ],
     collections: ['expensive'],
+    tags: ['flipper', 'zero', 'hacker', 'l33t'],
     description: `Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like.`,
     additionalInformation: '',
     link: generateUTM('https://shop.flipperzero.one/'),
-    cost: 169,
+    price: 169,
     rank: {
-      cost: 4,
+      price: 4,
       quality: 4,
       vibes: 4,
       description: 'A pretty awesome toy for the aspiring nerd, nerd adjacent, or nerd curious.',
@@ -106,33 +111,37 @@ export const products: ProductRecord[] = [
       'https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp',
     ],
     collections: ['cheap'],
+    tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie'],
+    flair: ['Best Mini PC'],
     description: `At the heart of Raspberry Pi Zero 2 W is RP3A0, a custom-built system-in-package designed by Raspberry Pi in the UK. With a quad-core 64-bit ARM Cortex-A53 processor clocked at 1GHz and 512MB of SDRAM, Zero 2 is up to five times as fast as the original Raspberry Pi Zero. Wireless LAN is built in to a shielded enclosure with improved RF compliance, giving you more flexibility when designing with Raspberry Pi Zero 2 W. All in the same tiny 65mm × 30mm form factor.`,
     additionalInformation: `
       <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
-      <p>1GHz quad-core 64-bit Arm Cortex-A53 CPU</p>
-      <p>512MB SDRAM</p>
-      <p>2.4GHz 802.11 b/g/n wireless LAN</p>
-      <p>Bluetooth 4.2, Bluetooth Low Energy (BLE), onboard antenna</p>
-      <p>Mini HDMI® port and micro USB On-The-Go (OTG) port</p>
-      <p>microSD card slot</p>
-      <p>CSI-2 camera connector</p>
-      <p>HAT-compatible 40-pin header footprint (unpopulated)</p>
-      <p>H.264, MPEG-4 decode (1080p30); H.264 encode (1080p30)</p>
-      <p>OpenGL ES 1.1, 2.0 graphics</p>
-      <p>Micro USB power</p>
-      <p>Composite video and reset pins via solder test points</p>
-      <p>65mm x 30mm</p>
+      <ul class="pl-4">
+      <li class="list-disc">1GHz quad-core 64-bit Arm Cortex-A53 CPU</li>
+      <li class="list-disc">512MB SDRAM</li>
+      <li class="list-disc">2.4GHz 802.11 b/g/n wireless LAN</li>
+      <li class="list-disc">Bluetooth 4.2, Bluetooth Low Energy (BLE), onboard antenna</li>
+      <li class="list-disc">Mini HDMI® port and micro USB On-The-Go (OTG) port</li>
+      <li class="list-disc">microSD card slot</li>
+      <li class="list-disc">CSI-2 camera connector</li>
+      <li class="list-disc">HAT-compatible 40-pin header footprint (unpopulated)</li>
+      <li class="list-disc">H.264, MPEG-4 decode (1080p30); H.264 encode (1080p30)</li>
+      <li class="list-disc">OpenGL ES 1.1, 2.0 graphics</li>
+      <li class="list-disc">Micro USB power</li>
+      <li class="list-disc">Composite video and reset pins via solder test points</li>
+      <li class="list-disc">65mm x 30mm</li>
+      </ul>
     `,
     link: 'https://amzn.to/49DopDn',
-    cost: 25.99,
+    price: 25.99,
     rank: {
-      cost: 1,
+      price: 1,
       quality: 5,
       vibes: 5,
       description:
-        "Truly one of the biggest bangs for your buck. A QUAD CORE COMPUTER that is HALF THE SIZE OF A CREDIT CARD. <br><br>I mean, cmon. This thing can run a minecraft server. And it's under $30. Are you not impressed???? <br><br>A true CQV dinger <br><br> 🔔🔔🔔🔔🔔",
+        '<p>Truly one of the biggest bangs for your buck. <strong>a QUAD CORE computer</strong> that is  <strong>HALF the size of a CREDIT CARD</strong>.</p>' +
+        '<p class="mt-4">Create your own IoT device; make a network-wide ad blocker; have a computer in your back pocket; run your own minecraft server. The options are endless!</p>' +
+        "<p class='mt-4'>I mean, c'mon. And it's under $30. Are you not impressed???? </p><p>A true CQV dinger </p><p>🔔🔔🔔🔔🔔</p>",
     },
   },
 ]
-
-// https://m.media-amazon.com/images/I/610Q+AtlC0L._AC_SX679_.jpg

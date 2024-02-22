@@ -23,7 +23,7 @@
     <div class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
       <h1 class="text-6xl font-bold mb-2">{product.title}</h1>
       <p class="mb-4 text-2xl font-semibold">
-        {product.cost
+        {product.price
           .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
           .replace('.00', '')}
       </p>
@@ -43,7 +43,7 @@
       <div class="my-4">
         <p class="flex justify-between text-xl font-bold">
           <span>(C)OST</span>
-          {'💰'.repeat(product.rank.cost)}
+          {'💰'.repeat(product.rank.price)}
         </p>
         <p class="flex justify-between text-xl font-bold">
           <span>(Q)UALITY</span>

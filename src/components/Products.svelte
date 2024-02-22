@@ -36,7 +36,7 @@
               </div>
               <h1 class="text-3xl font-bold mb-2 mt-4">{product.title}</h1>
               <p class="mb-4">
-                {product.cost
+                {product.price
                   .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
                   .replace('.00', '')}
               </p>

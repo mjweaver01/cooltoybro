@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import { navItems } from '@/lib/constants'
   let scrolled = false
+  export let active: string
 
   onMount(() => {
     const handleScroll = () => {
@@ -15,7 +16,7 @@
 
 <div
   class={`fixed top-0 w-full flex justify-center z-30 transition-all ${
-    scrolled ? 'border-b border-gray-200 bg-white/50 backdrop-blur-xl' : 'bg-white/0'
+    scrolled ? 'bg-white/50 backdrop-blur-xl' : 'bg-white/0'
   }`}
 >
   <div class="flex h-16 max-w-screen-xl items-center justify-between w-full p-4 sm:p-8">
@@ -24,7 +25,7 @@
     </a>
     <div class="flex gap-4">
       {#each navItems as item, i}
-        <a href={item.link}>{item.title}</a>
+        <a href={item.link} class={item.link === active ? 'underline' : ''}>{item.title}</a>
       {/each}
     </div>
   </div>

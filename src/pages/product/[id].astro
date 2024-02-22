@@ -16,6 +16,7 @@ export function getStaticPaths() {
   })
 }
 
+const { id } = Astro.params
 const { product } = Astro.props
 const title = `${product.title} | ${siteName}`
 const description = product.description
@@ -23,6 +24,6 @@ const description = product.description
 ---
 
 <Layout title={title} description={description}>
-  <Navbar client:load />
+  <Navbar client:load active={`/product/${id}`} />
   <Product product={product} />
 </Layout>

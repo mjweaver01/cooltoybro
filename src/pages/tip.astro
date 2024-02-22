@@ -11,6 +11,6 @@ const description = 'Only for emergencies'
 ---
 
 <Layout {description} {title}>
-  <Navbar client:load />
+  <Navbar client:load active={'/tip'} />
   <TipMe />
 </Layout>
