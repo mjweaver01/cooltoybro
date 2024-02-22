@@ -24,7 +24,7 @@
   >
     <a href="/" class="flex items-center font-display text-2xl">
       <p class="sm:hidden font-bold">CTB🧸</p>
-      <p class="hidden sm:visible font-bold">Cool Toy, Bro! 🧸</p>
+      <p class="hidden sm:block font-bold">Cool Toy, Bro! 🧸</p>
     </a>
     <div class="flex gap-4">
       {#each navItems as item, i}
