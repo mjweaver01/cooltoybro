@@ -101,6 +101,7 @@
 />
 
 <script>
+  // @ts-ignore
   window.khaled = {
     random: 0,
     //quotes array
@@ -168,23 +169,24 @@
       self.random = random
 
       //clear key, re-add span, and re-run typed
-      key.innerHTML = '<span><br></span>'
+      if (key) key.innerHTML = '<span><br></span>'
 
-      var typed = new Typed('.key span', {
+      // @ts-ignore
+      new Typed('.key span', {
         strings: [self.keys[random]],
         typeSpeed: 0,
         showCursor: false,
       })
 
-      khaled.classList.remove('hidden')
-      another.innerHTML = '🔑 Another One'
-
+      if (khaled) khaled.classList.remove('hidden')
+      if (another) another.innerHTML = '🔑 Another One'
       if (keyWrapper) keyWrapper.classList.add('another')
     },
   }
 
   //click function to generate
   document.querySelector('.anotherOne')?.addEventListener('click', function () {
+    // @ts-ignore
     window.khaled.blessUp()
   })
 </script>

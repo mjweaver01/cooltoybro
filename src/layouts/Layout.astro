@@ -29,7 +29,7 @@ const { title, description } = Astro.props as Props
       async
       is:inline
       src="https://www.googletagmanager.com/gtag/js?id=G-L8XSFXBFVQ"></script>
-    <script type="text/partytown">
+    <script is:inline type="text/partytown">
       window.dataLayer = window.dataLayer || []
       function gtag() {
         dataLayer.push(arguments)
