@@ -2,7 +2,7 @@
   import { type ProductRecord } from '@/lib/constants'
   import { Button } from '@/components/base/button'
   let products: ProductRecord[]
-  let filter: string
+  let filter: string = ''
   export { products, filter }
 </script>
 
@@ -10,7 +10,7 @@
   <div class=" sm:gap-8 p-4 sm:p-8 max-w-screen-xl m-auto">
     <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
       <h1 class="text-3xl font-bold">
-        No products found {#if filter}under "{filter}"{/if}
+        No products found {#if filter.length > 0}under "{filter}"{/if}
       </h1>
     </div>
   </div>
