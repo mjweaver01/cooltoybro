@@ -1,18 +1,26 @@
 <script lang="ts">
-  import { emptyProduct, type ProductRecord } from '@/lib/constants'
+  import { type ProductRecord } from '@/lib/constants'
   import { Button } from '@/components/base/button'
-  export let products = [emptyProduct] as ProductRecord[]
-  export let filter: string
-  $: filter = filter || ''
-  export let filtered: ProductRecord[]
-  $: filtered = filtered ? filtered : products
+  let products: ProductRecord[]
+  let filter: string
+  export { products, filter }
 </script>
+
+{#if products.length <= 0}
+  <div class=" sm:gap-8 p-4 sm:p-8 max-w-screen-xl m-auto">
+    <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
+      <h1 class="text-3xl font-bold">
+        No products found {#if filter}under "{filter}"{/if}
+      </h1>
+    </div>
+  </div>
+{/if}
 
 {#if products.length > 0}
   <div
     class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8 p-4 sm:p-8 max-w-screen-xl m-auto"
   >
-    {#each products as product, i}
+    {#each products as product}
       <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
         <div class="flex flex-col items-center justify-center">
           <a href={`/product/${product.slug}`}>

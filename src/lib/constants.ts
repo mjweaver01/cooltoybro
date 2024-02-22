@@ -1,24 +1,5 @@
 export const siteName = 'Cool Toy, Bro! 🧸'
 
-export const collections = [
-  {
-    title: 'All',
-    link: '/',
-  },
-  {
-    title: 'Cheap',
-    link: '/?sort=cheap',
-  },
-  {
-    title: 'Expensive',
-    link: '/?sort=expensive',
-  },
-  {
-    title: 'Bro?',
-    link: '/about',
-  },
-]
-
 export const emptyProduct = {
   slug: '',
   title: '',
@@ -56,5 +37,34 @@ export const products: ProductRecord[] = [
       description:
         'As one of the most coveted graphics cards in the game, this card maxes out the CQS, bro! A small price to pay for excellence!',
     },
+  },
+]
+
+export const collections = [
+  {
+    slug: 'cheap',
+    title: 'Cheap',
+    link: '/products/cheap',
+    products: products.filter((p) => p.collections.includes('cheap')),
+  },
+  {
+    slug: 'expensive',
+    title: 'Expensive',
+    link: '/products/expensive',
+    products: products.filter((p) => p.collections.includes('expensive')),
+  },
+]
+
+export const navItems = [
+  {
+    slug: 'all',
+    title: 'All',
+    link: '/',
+  },
+  ...collections.map(({ title, link, slug }) => ({ title, link, slug })),
+  {
+    slug: 'bro',
+    title: 'Bro?',
+    link: '/about',
   },
 ]

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { collections } from '@/lib/constants'
+  import { navItems } from '@/lib/constants'
   let scrolled = false
 
   onMount(() => {
@@ -23,8 +23,8 @@
       <p class="font-bold">Cool Toy, Bro! 🧸</p>
     </a>
     <div class="flex gap-4">
-      {#each collections as collection, i}
-        <a href={collection.link}>{collection.title}</a>
+      {#each navItems as item, i}
+        <a href={item.link}>{item.title}</a>
       {/each}
     </div>
   </div>

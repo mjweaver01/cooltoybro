@@ -1,0 +1,28 @@
+---
+import { siteName, collections } from '@/lib/constants'
+import Layout from '@/layouts/Layout.astro'
+import Navbar from '@/components/Navbar.svelte'
+import Products from '@/components/Products.svelte'
+
+export const prerender = true
+
+export function getStaticPaths() {
+  return collections.map((collection) => {
+    return {
+      params: { id: collection.slug },
+      props: { products: collection.products, collectionTitle: collection.title },
+    }
+  })
+}
+
+const { products, collectionTitle } = Astro.props
+
+const title = `${collectionTitle} - ${siteName}`
+const description =
+  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+---
+
+<Layout title={title} description={description}>
+  <Navbar client:load />
+  <Products products={products} filter={collectionTitle} />
+</Layout>
