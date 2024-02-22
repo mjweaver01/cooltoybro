@@ -7,10 +7,10 @@ import Products from '@/components/Products.svelte'
 const title = `${siteName}`
 const description =
   'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
-// const sessionCookie = Astro.cookies.get('session')?.value ?? null
+const { filter } = Astro.params
 ---
 
 <Layout title={title} description={description}>
   <Navbar client:load />
-  <Products products={products} />
+  <Products products={products} filter={filter} />
 </Layout>

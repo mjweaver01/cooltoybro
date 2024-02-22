@@ -19,22 +19,9 @@
           .replace('.00', '')}
       </p>
       <p class="text-lg mb-4">{@html product.description}</p>
-      <Button class="w-full">Add To Cart</Button>
-      <!-- TODO -->
-      <form method="GET" action="https://www.amazon.com/gp/aws/cart/add.html">
-        <input type="hidden" name="AssociateTag" value="Associate Tag" /><br />
-        <p>
-          One Product<br />
-          ASIN:<input type="text" name="ASIN.1" /><br />
-          Quantity:<input type="text" name="Quantity.1" /><br />
-        </p>
-        <p>
-          Another Product<br />
-          ASIN:<input type="text" name="ASIN.2" /><br />
-          Quantity:<input type="text" name="Quantity.2" /><br />
-        </p>
-        <input type="submit" name="add" value="add" />
-      </form>
+      <a target="_blank" href={product.link} class="w-full"
+        ><Button class="w-full">Buy Now</Button></a
+      >
     </div>
   </div>
   {#if product.additionalInformation.length > 0}
@@ -48,11 +35,11 @@
     </div>
   {/if}
   <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
-    <h2 class="text-3xl font-bold mb-2 mt-4">CQS SCORE</h2>
+    <h2 class="text-3xl font-bold mb-2 mt-4">CQV SCORE</h2>
     <div class="my-4">
       <p class="text-xl font-bold">{product.rank.cost} <span>(C)OST</span></p>
       <p class="text-xl font-bold">{product.rank.quality} <span>(Q)UALITY</span></p>
-      <p class="text-xl font-bold">{product.rank.swag} <span>(S)WAG</span></p>
+      <p class="text-xl font-bold">{product.rank.vibes} <span>(V)IBES</span></p>
     </div>
     <p>{@html product.rank.description}</p>
   </div>

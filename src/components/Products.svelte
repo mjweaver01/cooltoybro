@@ -2,6 +2,10 @@
   import { emptyProduct, type ProductRecord } from '@/lib/constants'
   import { Button } from '@/components/base/button'
   export let products = [emptyProduct] as ProductRecord[]
+  export let filter: string
+  $: filter = filter || ''
+  export let filtered: ProductRecord[]
+  $: filtered = filtered ? filtered : products
 </script>
 
 {#if products.length > 0}
@@ -20,7 +24,9 @@
                 .replace('.00', '')}
             </p>
           </a>
-          <Button>Buy Now</Button>
+          <a target="_blank" href={product.link} class="w-full"
+            ><Button class="w-full">Buy Now</Button></a
+          >
         </div>
       </div>
     {/each}

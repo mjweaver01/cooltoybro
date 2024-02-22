@@ -1,0 +1,32 @@
+---
+import { siteName } from '@/lib/constants'
+import Layout from '@/layouts/Layout.astro'
+import Navbar from '@/components/Navbar.svelte'
+const title = `${siteName}`
+const description =
+  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+---
+
+<Layout title={title} description={description}>
+  <Navbar client:load />
+  <div class="p-4 sm:p-8 max-w-screen-xl m-auto">
+    <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
+      <h1 class="text-6xl font-bold mb-2">Et Tu, Bro?</h1>
+      <p class="mt-4">
+        Like most bros, we struggled finding <strong>high quality, affordable products.</strong>
+      </p>
+      <p class="mt-4">
+        Lost in a sea of mass-produced garbage and overpriced caske-defining opulence, we knew there
+        had to be a better way.
+      </p>
+      <p class="mt-4">
+        Have you ever just wanted to find the best overall product in a genre, without wading
+        through over-opinionated troll spew?
+      </p>
+      <p class="mt-4">Do you struggle finding good gifts for your significant (br)other?</p>
+      <p class="mt-4">Look no further..</p>
+      <p class="mt-4">Good shit, for good bros.</p>
+      <p class="mt-4">Welcome to <strong>Cool Toy, Bro! 🧸</strong></p>
+    </div>
+  </div>
+</Layout>
