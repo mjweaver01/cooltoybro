@@ -7,16 +7,18 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto">
   <div class="grid sm:grid-cols-2 gap-4 sm:gap-8">
     <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white max-h-[600px] overflow-scroll">
-      {#if product.images.length > 1}
-        {#each product.images as image, i}
-          <div class="relative">
-            <div class="flex flex-col items-center justify-center">
-              <img src={image} alt={`${product.title} image ${i}`} />
-            </div>
-            <div class="absolute z-9 bottom-0 left-0">{i + 1} / {product.images.length}</div>
+      {#each product.images as image, i}
+        <div class="relative">
+          <div class="relative w-full h-0 pb-[100%]">
+            <img
+              class="absolute w-full h-full object-contain"
+              src={image}
+              alt={`${product.title} image ${i}`}
+            />
           </div>
-        {/each}
-      {/if}
+          <div class="absolute z-9 bottom-0 left-0">{i + 1} / {product.images.length}</div>
+        </div>
+      {/each}
     </div>
     <div class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
       <h1 class="text-6xl font-bold mb-2">{product.title}</h1>
