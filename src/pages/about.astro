@@ -2,6 +2,7 @@
 import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.svelte'
+import Khaled from '../components/khaled.astro'
 const title = `About ${siteName}`
 const description =
   'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
@@ -10,23 +11,39 @@ const description =
 <Layout title={title} description={description}>
   <Navbar client:load active={'/about'} />
   <div class="p-4 sm:p-8 max-w-screen-xl m-auto">
-    <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
-      <h1 class="text-6xl font-bold mb-2">Et Tu, Bro?</h1>
-      <p class="mt-4">
-        Like most bros, we struggled finding <strong>high quality, affordable products.</strong>
-      </p>
-      <p class="mt-4">
-        Lost in a sea of mass-produced garbage and overpriced caske-defining opulence, we knew there
-        had to be a better way.
-      </p>
-      <p class="mt-4">
-        Have you ever just wanted to find the best overall product in a genre, without wading
-        through over-opinionated troll spew?
-      </p>
-      <p class="mt-4">Do you struggle finding good gifts for your significant (br)other?</p>
-      <p class="mt-4">Look no further..</p>
-      <p class="mt-4">Good stuff, for good bros.</p>
-      <p class="mt-4">Welcome to <strong>Cool Toy, Bro! 🧸</strong></p>
+    <div class="grid sm:grid-cols-2 gap-4 sm:gap-8">
+      <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white">
+        <h1 class="text-6xl font-bold mb-2">Et Tu, Bro?</h1>
+        <p class="mt-4">
+          Like most bros, we struggled finding <strong>high quality, affordable products.</strong>
+        </p>
+        <p class="mt-4">
+          Lost in a sea of mass-produced garbage and overpriced caske-defining opulence, we knew
+          there had to be a better way.
+        </p>
+        <p class="mt-4">
+          Have you ever just wanted to find the best overall product in a genre, without wading
+          through over-opinionated troll-spew?
+        </p>
+        <p class="mt-4">Do you struggle finding good gifts for your significant (br)other?</p>
+        <p class="mt-4">Look no further..</p>
+        <p class="mt-4">Good stuff, for good bros.</p>
+        <p class="mt-4">Welcome to <strong>Cool Toy, Bro! 🧸</strong></p>
+      </div>
+      <div class="w-full rounded-xl shadow-lg p-5 mt-16 bg-white key-wrapper">
+        <h2 class="text-5xl font-bold">How does it work?</h2>
+        <p class="mt-4">
+          For some links, we will recieve a small reward should you decide to purchase a product. If
+          you do, seriously, bless up 🙏🙌 I'm just a bro trying to break out of the matrix, and
+          every one of your clicks gets me closer to that goal.
+        </p>
+        <p>
+          In reward, we offer you this DJ Khaled random quote generator, which is actively
+          maintained. Enjoy more life, more success, more blessings, more keys.
+        </p>
+        <br />
+        <Khaled />
+      </div>
     </div>
   </div>
 </Layout>

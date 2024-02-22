@@ -149,4 +149,144 @@ export const products: ProductRecord[] = [
         "<p class='mt-4'>I mean, c'mon. And it's under $30. Are you not impressed???? </p><p>A true CQV dinger </p><p>🔔🔔🔔🔔🔔</p>",
     },
   },
+  {
+    slug: 'polymaker-polymax-pla',
+    title: 'Polymaker Polymax™ PLA',
+    images: [
+      'https://m.media-amazon.com/images/I/81sYK4P3JML._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/719dSMFJmSL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/71n9YbPS5xL._AC_SX679_.jpg',
+    ],
+    collections: ['cheap', 'best'],
+    tags: ['3d printing', 'filament', 'pla'],
+    flair: ['Best Filament'],
+    description: `PolyMax™ PLA is an incredibly easy-to-print filament with improved mechanical properties, making it an excellent alternative to ABS and PLA+.`,
+    additionalInformation: `
+      <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
+      <ul class="pl-4">
+      <li class="list-disc">😀 【Almost Unbreakable!】 - PolyMax 1.75mm PLA is an engineered PLA with enhanced toughness, ductility and durability. This 3D filament 1.75 is the perfect material for applications demanding high impact resistance. The mechanical properties can be compared to ABS. PolyMax PLA combines excellent mechanical properties with great printability. Selected color: Black PLA filament 1.75mm ( PLA Black Filament )</li>
+      <li class="list-disc">🧵 【Tangle Free & Moisture Free】 - PolyMax PLA is carefully winded to avoid any tangling issues, dried and vacuum sealed in a resealable ziplock bag with desiccant. Please make sure to NEVER let go the tip of the filament as it may create nodes. Holes on the side of the spool can be used to prevent this issue</li>
+      <li class="list-disc">🛠️ 【Excellent Toughness & Layer Adhesion 】 - No warping, no jamming, no blobs or layer delamination issues. PolyMax PLA is a worry-free 3D Printer Filament Black which has great bed adhesion, very consistent color and dimensional accuracy. It is one of the toughest compare to all competitive filaments such as PLA+ filament</li>
+      <li class="list-disc">🎁 【Best Gift for your 3D Printer】 - PolyMax PLA is a high quality 1.75 mm filament PLA and your 3D Printer will love it. Polymaker Black PLA 1.75mm filament is the ideal gift for you and your 3D Printer</li>
+      <li class="list-disc">⚙ 【Printing Settings】 - Nozzle: 215˚C; Bed: 50˚C; Speed: 60mm/s (PolyMax Black PLA 1.75mm)</li>
+      <li class="list-disc">♻️ 【Cardboard Spool】 - Comes in upgraded 3.0 version packaging with fully recycled cardboard spool and box</li>
+      <li class="list-disc">🛡️ 【Risk Free & Lifetime Technical Support】 - We offer a full refund if the product is not performing as expected. This PLA is designed for your toughest 3D Printer Prints. Let us help you get your perfect beautiful prints and contact us via Amazon anytime you needexpected. This PLA is designed for your toughest 3D Printer Prints. Let us help you get your perfect beatiful prints and contact us via Amazon anytime you need</li>
+      </ul>
+    `,
+    links: [{ title: 'Amazon', link: 'https://amzn.to/3wtzmIU' }],
+    price: 29.99,
+    rank: {
+      price: 1,
+      quality: 5,
+      vibes: 5,
+      description:
+        '<p>Simply put, if you want to 3D print anything PLA, this is the best option for any and all printers, and any and all skill types.</p>',
+    },
+  },
+  {
+    slug: 'bambu-lab-x1-carbon',
+    title: 'Bambu Lab X1 Carbon',
+    images: [
+      'https://us.store.bambulab.com/cdn/shop/products/20230113-091104_1400x.png?v=1700445923',
+      'https://cdn.shopify.com/s/files/1/0574/3116/2995/files/20230327-110841.png?v=1679888340',
+      'https://cdn.shopify.com/s/files/1/0611/4036/9460/files/Frame_1860477.png?v=1690266189',
+      'https://cdn.shopify.com/s/files/1/0611/4036/9460/files/Group_47867.png?v=1691132874',
+      'https://cdn.shopify.com/s/files/1/0611/4036/9460/files/20230725-151623.gif?v=1690269465',
+      'https://cdn.shopify.com/s/files/1/0611/4036/9460/files/Frame_1123860909.png?v=1690266556',
+      'https://cdn.shopify.com/s/files/1/0611/4036/9460/files/P1S-Studio.png?v=1689304919',
+    ],
+    collections: ['expensive', 'best'],
+    tags: ['3d printing', 'filament', 'pla'],
+    flair: ['Best 3D Printer'],
+    description: `
+    <div class="ProductMeta__Text">
+                    <div>
+    <b>Product Features</b>
+      <ul>
+        <li>Multi Color &amp; Multi Material Capability</li>
+        <li>High quality printing with 7 μm Lidar Resolution </li>
+        <li>High speed CoreXY with 20000 mm/s² Acceleration</li>
+        <li>Dual Auto Bed Leveling</li>
+      </ul>
+     </div>
+<br>
+                  </div>
+    `,
+    additionalInformation: `
+      <div class="pct pct_mc">
+      <div class="pct_st-tbc">
+      <h2 class="text-3xl font-bold mb-2 mt-4">Tech Specs</h2>
+      <div class="pct_tbc">
+      <div class="TableWrapper"><table class="pct_tb">
+      <tbody>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Build Volume (W×D×H)</b></td>
+      <td class="pct_td">256 × 256 × 256 mm³</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Nozzle</b></td>
+      <td class="pct_td">0.4 mm Hardened Steel Included</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Hotend</b></td>
+      <td class="pct_td">All-Metal</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Max Hot End Temperature</b></td>
+      <td class="pct_td">300 ℃</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Filament Diameter</b></td>
+      <td class="pct_td">1.75 mm</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Supported Filament</b></td>
+      <td class="pct_td">PLA, PETG, TPU, ABS, ASA, PVA, PET<br>Ideal for PA, PC, Carbon/ Glass Fiber Reinforced Polymer</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Build Plate Surface</b></td>
+      <td class="pct_td">Bambu Textured PEI Plate / Bambu Cool Plate (<span data-mce-fragment="1">Pre-installed, Random)</span>
+      </td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Max Build Plate Temperature</b></td>
+      <td class="pct_td">110℃@220V, 120℃@110V</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Max Speed of Tool Head</b></td>
+      <td class="pct_td">500 mm/s</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Max Acceleration of Tool Head</b></td>
+      <td class="pct_td">20 m/s²</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Physical Dimensions</b></td>
+      <td class="pct_td">389 × 389 × 457 mm, Net weight 14.13 kg, Gross weight 18 kg</td>
+      </tr>
+      <tr class="pct_tr">
+      <td class="pct_td"><b>Electrical Requirements</b></td>
+      <td class="pct_td">100-240 VAC, 50/60 Hz, 1000W@220V, 350W@110V</td>
+      </tr>
+      </tbody>
+      </table></div>
+      </div>
+      </div>
+      </div>
+    `,
+    links: [
+      {
+        title: 'Bambu Lab US',
+        link: generateUTM('https://us.store.bambulab.com/products/x1-carbon-3d-printer'),
+      },
+    ],
+    price: 1199.0,
+    rank: {
+      price: 4,
+      quality: 5,
+      vibes: 5,
+      description:
+        "<p>This printer changed my life, and changed my opinion on 3D printing. After struggling with several different brands, I finally caved and bought this. Kiss bed leveling goodbye. Go from staring at your nozzle to sending the print to your machine from your phone while you're not home and forgetting about it.</p><br><br><p>Seriously.. just buy it.</p>",
+    },
+  },
 ]
