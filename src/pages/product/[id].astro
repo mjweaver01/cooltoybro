@@ -1,5 +1,6 @@
 ---
-import { siteName, products as p } from '@/lib/constants'
+import { siteName } from '@/lib/constants'
+import { products as p } from '@/lib/products'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.svelte'
 import Product from '@/components/Product.svelte'
@@ -16,7 +17,7 @@ export function getStaticPaths() {
 }
 
 const { product } = Astro.props
-const title = `${product.title} - ${siteName}`
+const title = `${product.title} | ${siteName}`
 const description = product.description
 // const sessionCookie = Astro.cookies.get('session')?.value ?? null
 ---

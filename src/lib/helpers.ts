@@ -6,3 +6,7 @@ export function getParameterByName(name: string, url: string = '') {
   if (!results[2]) return ''
   return decodeURIComponent(results[2].replace(/\+/g, ' '))
 }
+
+export function generateUTM(url: string = 'https://cooltoybro.com') {
+  return url + '/?utm_source=cooltoybro.com&utm_medium=referral'
+}
