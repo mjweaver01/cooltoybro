@@ -42,7 +42,9 @@
     </div>
   </div>
   <div class={`${product.additionalInformation.length > 0 ? 'grid sm:grid-cols-2 sm:gap-8' : ''}`}>
-    <div class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white">
+    <div
+      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white z-9999"
+    >
       <h2 class="text-3xl font-bold mb-2 mt-4">CQV Score</h2>
       <div class="my-4">
         <p class="flex justify-between text-xl font-bold">
