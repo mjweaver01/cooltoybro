@@ -28,4 +28,9 @@ export const navItems = [
     title: 'Bro?',
     link: '/about',
   },
+  {
+    slug: 'survey',
+    title: 'Survey',
+    link: '/survey',
+  },
 ]

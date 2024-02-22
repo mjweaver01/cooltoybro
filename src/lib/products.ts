@@ -49,7 +49,7 @@ export const products: ProductRecord[] = [
       quality: 5,
       vibes: 5,
       description:
-        'As one of the most coveted graphics cards in the game, this card maxes out the CQS, bro! A small price to pay for excellence!',
+        'As one of the most coveted graphics cards in the game, this card maxes out the CQV, bro! A small price to pay for excellence; no if ands or butts.',
     },
   },
   {
@@ -72,10 +72,10 @@ export const products: ProductRecord[] = [
     cost: 2500,
     rank: {
       cost: 5,
-      quality: 4,
-      vibes: 4,
+      quality: 3,
+      vibes: 3,
       description:
-        'Honestly bro, this is dope af but I aint spending 2 and a half racks on this; ill try printing my own for that, sheit.',
+        "This is pretty cool, but I'm not spending 2 and a half racks on this; ill try printing my own for that, sheit.",
     },
   },
   {
@@ -90,12 +90,47 @@ export const products: ProductRecord[] = [
     description: `Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like.`,
     additionalInformation: '',
     link: generateUTM('https://shop.flipperzero.one/'),
-    cost: 0,
+    cost: 169,
     rank: {
       cost: 4,
       quality: 4,
       vibes: 4,
-      description: "Honestly bro, this ain't worth the money, but it is a pretty dope toy!",
+      description: 'A pretty awesome toy for the aspiring nerd, nerd adjacent, or nerd curious.',
+    },
+  },
+  {
+    slug: 'raspberry-pi-zero-2-w',
+    title: 'Raspberry Pi Zero 2 W',
+    images: [
+      'https://m.media-amazon.com/images/I/610Q+AtlC0L._AC_SX679_.jpg',
+      'https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp',
+    ],
+    collections: ['expensive'],
+    description: `At the heart of Raspberry Pi Zero 2 W is RP3A0, a custom-built system-in-package designed by Raspberry Pi in the UK. With a quad-core 64-bit ARM Cortex-A53 processor clocked at 1GHz and 512MB of SDRAM, Zero 2 is up to five times as fast as the original Raspberry Pi Zero. Wireless LAN is built in to a shielded enclosure with improved RF compliance, giving you more flexibility when designing with Raspberry Pi Zero 2 W. All in the same tiny 65mm × 30mm form factor.`,
+    additionalInformation: `
+      <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
+      <p>1GHz quad-core 64-bit Arm Cortex-A53 CPU</p>
+      <p>512MB SDRAM</p>
+      <p>2.4GHz 802.11 b/g/n wireless LAN</p>
+      <p>Bluetooth 4.2, Bluetooth Low Energy (BLE), onboard antenna</p>
+      <p>Mini HDMI® port and micro USB On-The-Go (OTG) port</p>
+      <p>microSD card slot</p>
+      <p>CSI-2 camera connector</p>
+      <p>HAT-compatible 40-pin header footprint (unpopulated)</p>
+      <p>H.264, MPEG-4 decode (1080p30); H.264 encode (1080p30)</p>
+      <p>OpenGL ES 1.1, 2.0 graphics</p>
+      <p>Micro USB power</p>
+      <p>Composite video and reset pins via solder test points</p>
+      <p>65mm x 30mm</p>
+    `,
+    link: 'https://amzn.to/49DopDn',
+    cost: 25.99,
+    rank: {
+      cost: 1,
+      quality: 5,
+      vibes: 5,
+      description:
+        "Truly one of the biggest bangs for your buck. A QUAD CORE COMPUTER that is HALF THE SIZE OF A CREDIT CARD. I mean, cmon. This thing can run a minecraft server. And it's under $30. Are you not impressed???? A true CQV dinger 🔔🔔🔔🔔🔔",
     },
   },
 ]
