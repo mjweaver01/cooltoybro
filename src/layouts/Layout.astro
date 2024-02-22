@@ -23,6 +23,17 @@ const { title, description } = Astro.props as Props
     <meta name="description" content={description} />
     <!-- Enable SPA mode -->
     <ViewTransitions />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8XSFXBFVQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-L8XSFXBFVQ')
+    </script>
   </head>
   <body>
     <slot />
