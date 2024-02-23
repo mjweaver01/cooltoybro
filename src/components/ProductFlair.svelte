@@ -7,7 +7,7 @@
   <div class="flex wrap gap-4 w-full mb-4">
     {#each product.flair as flair}
       <div class="relative">
-        <div class="relative overflow-hidden">
+        <div class="relative overflow-hidden text-white">
           <div class="holo" style={`--h: ${Math.round(product.title.length * 3.5)}%`} />
           {flair}
         </div>
