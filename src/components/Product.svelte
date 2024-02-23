@@ -8,7 +8,7 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16 mb-16 sm-mb-0">
   <div class="grid sm:grid-cols-2 sm:gap-8">
     <div
-      class="w-full rounded-xl shadow-lg p-5 bg-white max-h-[50vh] sm:max-h-[600px] overflow-scroll"
+      class="w-full rounded-xl shadow-lg p-5 bg-white max-h-[50vh] sm:max-h-[600px] overflow-scroll card"
     >
       {#each product.images as image, i}
         <div class="relative">
@@ -24,7 +24,9 @@
         </div>
       {/each}
     </div>
-    <div class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-0 bg-white">
+    <div
+      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-0 bg-white card"
+    >
       <h1 class="text-6xl font-bold mb-2">{product.title}</h1>
       <p class="mb-4 text-2xl font-semibold">
         {product.price
@@ -51,19 +53,19 @@
   </div>
   <div class={`${product.additionalInformation.length > 0 ? 'grid sm:grid-cols-2 sm:gap-8' : ''}`}>
     <div
-      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white z-9999"
+      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white z-9999 card"
     >
       <h2 class="text-3xl font-bold mb-2 mt-4">CQV Score</h2>
       <div class="my-4">
-        <p class="flex justify-between text-xl font-bold">
+        <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           <span>(C)OST</span>
           {'💰'.repeat(product.rank.price)}
         </p>
-        <p class="flex justify-between text-xl font-bold">
+        <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           <span>(Q)UALITY</span>
           {'⭐'.repeat(product.rank.quality)}
         </p>
-        <p class="flex justify-between text-xl font-bold">
+        <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           <span>(V)IBES</span>
           {'🧸'.repeat(product.rank.vibes)}
         </p>
@@ -72,7 +74,7 @@
     </div>
     {#if product.additionalInformation.length > 0}
       <div
-        class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white"
+        class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white card"
       >
         {@html product.additionalInformation}
       </div>

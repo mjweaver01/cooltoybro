@@ -1,14 +1,17 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.svelte'
 
 const title = `Find your bros perfect toy!`
-const description =
-  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+const description = 'UNDER CONSTRUCTION'
 ---
 
 <Layout title={title} description={description}>
   <Navbar client:load active={'/survey'} />
+  <Marquee>
+    <p class="text-3xl">{description}</p>
+  </Marquee>
   <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
     <div class="w-full rounded-xl">
       <h1 class="text-3xl font-bold mb-12">Find your bro's perfect gift!</h1>

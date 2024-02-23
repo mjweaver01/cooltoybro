@@ -1,0 +1,15 @@
+<div
+  class="overflow-hidden bg-[var(--dark-base)] text-[var(--yellow)] uppercase py-1 mt-16 -mb-16 whitespace-nowrap"
+>
+  <div id="marquee">
+    <slot />
+  </div>
+</div>
+<script type="module">
+  import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js'
+  new marquee(document.getElementById('marquee'), {
+    duplicated: true,
+    loop: 'infinite',
+    speed: 100,
+  })
+</script>

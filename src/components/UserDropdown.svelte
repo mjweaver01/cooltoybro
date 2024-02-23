@@ -10,7 +10,7 @@
     use:bindTrigger
     class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-gray-300 transition-all duration-75 focus:outline-none focus:ring-0 active:scale-95 sm:h-9 sm:w-9"
   >
-    <img alt="Icon" width="15" height="15" src="/astro.svg" />
+    <img alt="Icon" width="15" height="15" src="/favicon.svg" />
   </button>
   <div slot="content">
     <div class="p-2">

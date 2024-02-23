@@ -1,6 +1,6 @@
 import { products } from './products'
 
-export const siteName = 'Cool Toy, Bro! 🧸'
+export const siteName = 'Cool Toy, Bro!'
 export const collections = [
   {
     slug: 'cheap',

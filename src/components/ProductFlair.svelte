@@ -8,7 +8,7 @@
     {#each product.flair as flair}
       <div class="relative">
         <div class="relative overflow-hidden">
-          <div class="holo" style={`--h: ${Math.round(Math.random() * (100 - 0) + 0)}%`} />
+          <div class="holo" style={`--h: ${Math.round(product.title.length * 3.5)}%`} />
           {flair}
         </div>
         <div class="absolute top-0 left-0 text-white scale-90">{flair}</div>

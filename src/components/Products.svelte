@@ -25,10 +25,10 @@
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8">
       {#each products as product, i}
-        <div class="w-full rounded-xl shadow-lg p-5 bg-white">
-          <div class="flex flex-col items-center justify-center h-full">
+        <div class="w-full rounded-xl shadow-lg p-5 bg-white card">
+          <div class="flex flex-col items-center justify-between h-full">
             <a href={`/product/${product.slug}`} class="w-full">
-              <div class="relative w-full h-0 pb-[100%]">
+              <div class="relative w-full h-0 pb-[100%] bg-white">
                 <img
                   class="absolute w-full h-full object-contain"
                   src={product.images[0]}
@@ -36,24 +36,28 @@
                   loading={i > 3 ? 'lazy' : 'eager'}
                 />
               </div>
-              <h1 class="text-3xl font-bold mb-2 mt-4">{product.title}</h1>
-              <p class={`mb-4 ${product.salePrice ? 'strikethrough' : ''}`}>
-                {product.price
-                  .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
-                  .replace('.00', '')}
-              </p>
-              {#if product.salePrice}
-                <p class="mb-4 text-[red]">
-                  {product.salePrice
+            </a>
+            <div class="p-6 w-full h-full flex flex-col justify-between">
+              <a href={`/product/${product.slug}`} class="w-full">
+                <h1 class="text-3xl font-bold mb-2">{product.title}</h1>
+                <p class={`mb-4 ${product.salePrice ? 'strikethrough' : ''}`}>
+                  {product.price
                     .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
                     .replace('.00', '')}
                 </p>
-              {/if}
-            </a>
-            <ProductFlair {product} />
-            <a target="_blank" href={product.links[0].link} class="w-full"
-              ><Button class="w-full">Buy Now</Button></a
-            >
+                {#if product.salePrice}
+                  <p class="mb-4 text-[red]">
+                    {product.salePrice
+                      .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+                      .replace('.00', '')}
+                  </p>
+                {/if}
+              </a>
+              <ProductFlair {product} />
+              <a target="_blank" href={product.links[0].link} class="w-full"
+                ><Button class="w-full" variant="blue">Buy Now</Button></a
+              >
+            </div>
           </div>
         </div>
       {/each}

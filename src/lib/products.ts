@@ -82,7 +82,7 @@ export const products: ProductRecord[] = [
     rank: {
       price: 5,
       quality: 3,
-      vibes: 3,
+      vibes: 2,
       description:
         "This is pretty cool, but I'm not spending 2 and a half racks on this; ill try printing my own for that, sheit.",
     },
