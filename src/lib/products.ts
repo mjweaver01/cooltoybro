@@ -323,8 +323,8 @@ export const products: ProductRecord[] = [
     },
   },
   {
-    slug: '2023-apple-macbook-pro-m3',
-    title: '2023 Apple MacBook Pro Laptop M3',
+    slug: '2023-m3-apple-macbook-pro',
+    title: '2023 M3 Apple MacBook Pro Laptop',
     images: [
       'https://m.media-amazon.com/images/I/61lsexTCOhL._AC_SX679_.jpg',
       'https://m.media-amazon.com/images/I/61RdWPq8UfL._AC_SX679_.jpg',
