@@ -6,9 +6,10 @@
   export { className as class, href }
   export let type: 'button' | 'submit' | 'reset' = 'button'
   // Ensure that variant is of type ButtonVariant
-  export let variant: ButtonVariant = 'default'
+  let variant: ButtonVariant | any = 'default'
 
-  const buttonVariants = {
+  const buttonVariants: any = {
+    amazon: 'color-red',
     google:
       'disabled:opacity-50 disabled:pointer-events-none group relative w-full flex justify-center items-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
     outlined:
@@ -22,6 +23,11 @@
     default:
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-black hover:bg-black/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
   }
+
+  $: variant = variant.toLowerCase()
+  const classes = buttonVariants[variant] || buttonVariants.default
+
+  console.log(variant, classes)
 
   // This function returns true if 'href' is a non-empty string
   const isLink = (): boolean => typeof href === 'string' && href.length > 0
@@ -39,7 +45,7 @@
   <a
     {...$$restProps}
     {href}
-    class="text-center {buttonVariants[variant]} {className}"
+    class="text-center {classes} {className}"
     on:click
     {type}
     role="button"
