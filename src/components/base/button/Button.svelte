@@ -26,6 +26,8 @@
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-black hover:bg-black/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
   }
 
+  const variantClass = buttonVariants[variant] || buttonVariants.default
+
   // This function returns true if 'href' is a non-empty string
   const isLink = (): boolean => typeof href === 'string' && href.length > 0
 </script>
@@ -42,7 +44,7 @@
   <a
     {...$$restProps}
     {href}
-    class="text-center {buttonVariants[variant]} {className}"
+    class="text-center {variantClass} {className}"
     on:click
     {type}
     role="button"
@@ -51,7 +53,7 @@
     <slot />
   </a>
 {:else}
-  <button on:click {...$$restProps} {type} class="{buttonVariants[variant]} {className}">
+  <button on:click {...$$restProps} {type} class="{variantClass} {className}">
     <slot />
   </button>
 {/if}
