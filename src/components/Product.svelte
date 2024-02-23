@@ -49,7 +49,7 @@
           >
         {/each}
       </div>
-      <p class="text-lg mb-4">{@html product.description}</p>
+      <p class="text-lg mt-4">{@html product.description}</p>
     </div>
   </div>
   <div
