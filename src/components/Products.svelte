@@ -76,8 +76,8 @@
                       .replace('.00', '')}
                   </p>
                 {/if}
+                <ProductFlair {product} />
               </a>
-              <ProductFlair {product} />
               <a target="_blank" href={product.links[0].link} class="w-full"
                 ><Button class="w-full" variant="blue">Buy Now</Button></a
               >
