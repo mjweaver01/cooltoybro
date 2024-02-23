@@ -1,20 +1,25 @@
 ---
+import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.svelte'
 
-const title = `Find your bros perfect toy!`
+const title = `Gift Finder | ${siteName}`
 const description = 'UNDER CONSTRUCTION'
 ---
 
 <Layout title={title} description={description}>
   <Navbar client:load active={'/survey'} />
   <Marquee>
-    <p class="text-3xl">{description}</p>
+    <p class="text-3xl">
+      {description}&nbsp;{description}&nbsp;{description}&nbsp;{description}&nbsp;{
+        description
+      }&nbsp;{description}
+    </p>
   </Marquee>
   <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
     <div class="w-full rounded-xl">
-      <h1 class="text-3xl font-bold mb-12">Find your bro's perfect gift!</h1>
+      <h1 class="text-3xl font-bold mb-12">Find the perfect gift!</h1>
       <p>UNDER CONSTRUCTION</p>
       <p>coming soon!</p>
       <p>🚧</p>

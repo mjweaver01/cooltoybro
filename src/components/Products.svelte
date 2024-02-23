@@ -37,7 +37,7 @@
                 />
               </div>
             </a>
-            <div class="p-6 w-full h-full flex flex-col justify-between">
+            <div class="pt-6 w-full h-full flex flex-col justify-between">
               <a href={`/product/${product.slug}`} class="w-full">
                 <h1 class="text-3xl font-bold mb-2">{product.title}</h1>
                 <p class={`mb-4 ${product.salePrice ? 'strikethrough' : ''}`}>

@@ -67,7 +67,7 @@
         </p>
         <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           <span>(V)IBES</span>
-          {'🧸'.repeat(product.rank.vibes)}
+          {'😎'.repeat(product.rank.vibes)}
         </p>
       </div>
       <p>{@html product.rank.description}</p>

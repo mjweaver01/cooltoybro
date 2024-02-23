@@ -289,4 +289,44 @@ export const products: ProductRecord[] = [
         "<p>This printer changed my life, and changed my opinion on 3D printing. After struggling with several different brands, I finally caved and bought this. Kiss bed leveling goodbye. Go from staring at your nozzle to sending the print to your machine from your phone while you're not home and forgetting about it.</p><br><br><p>Seriously.. just buy it.</p>",
     },
   },
+  {
+    slug: 'haworth-fern-office-chair',
+    title: 'Haworth Fern Office Chair',
+    images: [
+      'https://m.media-amazon.com/images/I/61fdNJdB1YL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/61foTSLz2RL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media-library-service-media/a8451e49-13ec-4cdd-882e-d31de87db39e.__CR0,0,970,600_PT0_SX970_V1___.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media-library-service-media/eefdbb24-4a0b-4009-a0e0-a7837cb8206d.__CR0,0,970,600_PT0_SX970_V1___.jpg',
+    ],
+    collections: ['expensive'],
+    flair: ['Best Desk Chair'],
+    tags: ['chair', 'deskchair', 'desk chair'],
+    description: '',
+    additionalInformation: `
+    RESPONSIVE COMFORT: Inspired by the natural flexibility of a leaf, the Fern chair is designed to naturally distribute weight as you move. At its core is our patented Wave Suspension system, which mimics the human body and cradles your spine. The three-part back responds to your every move — it’s a total innovation in comfort and support.
+    FEATURES Included pneumatic seat height adjustment, padded 4-dimensional arms, optional lumbar adjustment, back stop, seat depth adjustment, soft casters, tilt tension, control, plastic swivel base. Accommodates a range of body shapes with a weight capacity of up to 325 lb.
+    NO ASSEMBLY REQUIRED: Ready for use directly from the packaging, so you can focus on the things that are most important.
+    QUALITY GUARANTEE: A 12-year warranty promises craftsmanship and quality for years of use.
+    GLOBAL COMMITMENT: Fern is BIFMA Level 3 Certified, which means it satisfies the highest level of environmental standards from the Business and Institutional Furniture Manufacturers Association. The BIFMA certification includes inspection of not only the product, but the manufacturing facility and brand that makes it.
+    `,
+    links: [{ title: 'Amazon', link: 'https://amzn.to/49KreSx' }],
+    price: 1249,
+    rank: {
+      price: 5,
+      quality: 5,
+      vibes: 5,
+      description:
+        'Best desk chair; period. There are many different configurations, do your research on the specific model depending on your likings.',
+    },
+  },
 ]
+
+// airpods pro https://amzn.to/48zXUgM
+// airpods max https://amzn.to/42M1S4x
+// mbp 13" m3 max https://amzn.to/3SStMqK
+// magic trackpad https://amzn.to/42OKOL3
+// magic keyboard https://amzn.to/49LFKta
+
+// adobe affiliate program submitted
+// alibaba affiliate program submitted
+// rakuten affiliate program submitted

@@ -1,4 +1,5 @@
 ---
+import { siteName } from '@/lib/constants'
 import { collections } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.svelte'
@@ -18,7 +19,7 @@ export function getStaticPaths() {
 const { id } = Astro.params
 const { products, collectionTitle } = Astro.props
 
-const title = `${collectionTitle} toys, bro`
+const title = `${collectionTitle} | ${siteName}`
 const description =
   'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
 ---

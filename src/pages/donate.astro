@@ -1,4 +1,5 @@
 ---
+import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.svelte'
@@ -7,7 +8,7 @@ import TipMe from '@/components/TipMe.astro'
 /* Check current session */
 // const sessionCookie = Astro.cookies.get('session')?.value ?? null
 
-const title = `Tip a bro`
+const title = `Donate | ${siteName}`
 const description = 'Only for emergencies'
 ---
 

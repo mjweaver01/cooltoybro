@@ -1,4 +1,4 @@
-# Cool Toy, Bro! 🧸
+# Cool Toy, Bro! 😎
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/409b9046-9dd4-4dc8-b067-e01f19d5f7e6/deploy-status)](https://app.netlify.com/sites/cool-toy-bro/deploys)
 
