@@ -303,11 +303,14 @@ export const products: ProductRecord[] = [
     tags: ['chair', 'deskchair', 'desk chair'],
     description: '',
     additionalInformation: `
-    RESPONSIVE COMFORT: Inspired by the natural flexibility of a leaf, the Fern chair is designed to naturally distribute weight as you move. At its core is our patented Wave Suspension system, which mimics the human body and cradles your spine. The three-part back responds to your every move — it’s a total innovation in comfort and support.
-    FEATURES Included pneumatic seat height adjustment, padded 4-dimensional arms, optional lumbar adjustment, back stop, seat depth adjustment, soft casters, tilt tension, control, plastic swivel base. Accommodates a range of body shapes with a weight capacity of up to 325 lb.
-    NO ASSEMBLY REQUIRED: Ready for use directly from the packaging, so you can focus on the things that are most important.
-    QUALITY GUARANTEE: A 12-year warranty promises craftsmanship and quality for years of use.
-    GLOBAL COMMITMENT: Fern is BIFMA Level 3 Certified, which means it satisfies the highest level of environmental standards from the Business and Institutional Furniture Manufacturers Association. The BIFMA certification includes inspection of not only the product, but the manufacturing facility and brand that makes it.
+    <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
+    <ul class="pl-4">
+      <li class="list-disc">RESPONSIVE COMFORT: Inspired by the natural flexibility of a leaf, the Fern chair is designed to naturally distribute weight as you move. At its core is our patented Wave Suspension system, which mimics the human body and cradles your spine. The three-part back responds to your every move — it’s a total innovation in comfort and support.</li>
+      <li class="list-disc">FEATURES Included pneumatic seat height adjustment, padded 4-dimensional arms, optional lumbar adjustment, back stop, seat depth adjustment, soft casters, tilt tension, control, plastic swivel base. Accommodates a range of body shapes with a weight capacity of up to 325 lb.</li>
+      <li class="list-disc">NO ASSEMBLY REQUIRED: Ready for use directly from the packaging, so you can focus on the things that are most important.</li>
+      <li class="list-disc">QUALITY GUARANTEE: A 12-year warranty promises craftsmanship and quality for years of use.</li>
+      <li class="list-disc">GLOBAL COMMITMENT: Fern is BIFMA Level 3 Certified, which means it satisfies the highest level of environmental standards from the Business and Institutional Furniture Manufacturers Association. The BIFMA certification includes inspection of not only the product, but the manufacturing facility and brand that makes it.</li>
+    </ul>
     `,
     links: [{ title: 'Amazon', link: 'https://amzn.to/49KreSx' }],
     price: 1249,
@@ -316,7 +319,52 @@ export const products: ProductRecord[] = [
       quality: 5,
       vibes: 5,
       description:
-        'Best desk chair; period. There are many different configurations, do your research on the specific model depending on your likings.',
+        "Best desk chair; period. I've sat in a lot of chairs in my day, and none are better. There are many different configurations, do your research on the specific model depending on your likings.",
+    },
+  },
+  {
+    slug: '2023-apple-macbook-pro-m3',
+    title: '2023 Apple MacBook Pro Laptop M3',
+    images: [
+      'https://m.media-amazon.com/images/I/61lsexTCOhL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/61RdWPq8UfL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/G/01/apple/MacBook_Pro_M3_Product_Page_L__en-US_01._CB573757570_.jpg',
+      'https://m.media-amazon.com/images/G/01/apple/MacBook_Pro_M3_Product_Page_L__en-US_04._CB573757570_.jpg',
+      'https://m.media-amazon.com/images/G/01/apple/MacBook_Pro_M3_Product_Page_L__en-US_05._CB573757570_.jpg',
+      'https://m.media-amazon.com/images/G/01/apple/MacBook_Pro_M3_Product_Page_L__en-US_05._CB573757570_.jpg',
+    ],
+    collections: ['expensive'],
+    tags: ['mac', 'apple', 'macbook', 'laptop', 'm3'],
+    flair: ['Best Laptop'],
+    description: `
+    <ul class="pl-4">
+    <li class="list-disc">SUPERCHARGED BY M3 — With an 8-core CPU and 10-core GPU, the Apple M3 chip can help you blaze through everyday multitasking and take on pro projects like editing thousands of photos or 4K video.</li>
+    <li class="list-disc">UP TO 22 HOURS OF BATTERY LIFE — Go all day thanks to the power-efficient design of Apple silicon. The MacBook Pro laptop delivers the same exceptional performance whether it’s running on battery or plugged in. (Battery life varies by use and configuration. See apple.com/batteries for more information.)</li>
+    <li class="list-disc">BRILLIANT PRO DISPLAY — The 14.2-inch Liquid Retina XDR display features Extreme Dynamic Range, over 1000 nits of brightness for stunning HDR content, up to 600 nits of brightness for SDR content, and pro reference modes for doing your best work on the go. (The display has rounded corners at the top. When measured diagonally, the screen is 14.2 inches. Actual viewable area is less.)</li>
+    <li class="list-disc">FULLY COMPATIBLE — All your pro apps run lightning fast — including Adobe Creative Cloud, Apple Xcode, Microsoft 365, Medivis SurgicalAR, and many of your favorite iPhone and iPad apps. And with macOS, work and play on your Mac are even more powerful. Elevate your presence on video calls. Access information in all-new ways. And discover even more ways to personalize your Mac. (Apps are available on the App Store.)</li>
+    <li class="list-disc">ADVANCED CAMERA AND AUDIO — Look sharp and sound great with a 1080p FaceTime HD camera, a studio-quality three-mic array, and a six-speaker sound system with Spatial Audio.</li>
+    <li class="list-disc">CONNECT IT ALL — This MacBook Pro features a MagSafe charging port, two Thunderbolt / USB 4 ports, an SDXC card slot, an HDMI port, and a headphone jack. Enjoy fast wireless connectivity with Wi-Fi 6E and Bluetooth 5.3. Supports one external display. (Wi‑Fi 6E available in countries and regions where supported.)</li>
+    <li class="list-disc">MAGIC KEYBOARD WITH TOUCH ID — The backlit Magic Keyboard has a full-height function key row and Touch ID, which gives you a fast, easy, secure way to unlock your laptop and sign in to apps and sites.</li>
+    <li class="list-disc">ADVANCED SECURITY — Every Mac comes with encryption, robust virus protections, and a powerful firewall system. And free security updates help keep your Mac protected.</li>
+    <li class="list-disc">WORKS WITH ALL YOUR APPLE DEVICES — You can do amazing things when you use your Apple devices together. Copy something on iPhone and paste it on MacBook Pro. Use your MacBook Pro to answer FaceTime calls or send texts with Messages. And that’s just the beginning.</li>
+    <li class="list-disc">BUILT TO LAST — The all-aluminum unibody enclosure is exceptionally durable. Free software updates keep things running smoothly for years to come.</li>
+    `,
+    additionalInformation: `
+    <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
+    <table class=a-bordered><tr><td style=width:120px><p><strong>Display</strong><td><p>14.2-inch (diagonal) mini-LED backlit Liquid Retina XDR display, 3024 by 1964 pixels with ProMotion technology for adaptive refresh rates up to 120Hz, and up to 1000 nits sustained (full-screen) brightness, 1600 nits peak brightness, True Tone technology, ProMotion technology for adaptive refresh rates up to 120Hz<tr><td style=width:120px><p><strong>Processor</strong><td><p>Apple M3 chip, 8-core CPU with 4 performance cores and 4 efficiency cores, 10-core GPU, Hardware-accelerated ray tracing, 16-core Neural Engine, 100GB/s memory bandwidth<tr><td style=width:120px><p><strong>Graphics and Video Support</strong><td><p>Apple 10-core GPU<tr><td style=width:120px><p><strong>Charging and Expansion</strong><td><p>SDXC card slot, HDMI port, 3.5 mm headphone jack, MagSafe 3 port, Three Thunderbolt 4 (USB-C) ports with support for: Charging, DisplayPort, Thunderbolt 4 (up to 40Gb/s), USB 4 (up to 40Gb/s)<tr><td style=width:120px><p><strong>Wireless</strong><td><p>Wi-Fi 6E (802.11ax), Bluetooth 5.3<tr><td style=width:120px><p><strong>In the Box</strong><td><p>14-inch MacBook Pro, 70W USB-C Power Adapter, USB-C to MagSafe 3 Cable (2m)</table>
+    `,
+    links: [{ title: 'Amazon', link: 'https://amzn.to/3T8OgwZ' }],
+    price: 0,
+    rank: {
+      price: 3,
+      quality: 5,
+      vibes: 5,
+      description: `I\'ve used many laptops, all the *nix-es, brands, etc. and this specific macbook is the best of them all. It plays minecraft; it\'s retina; it\'s portable, but with an almost 15in screen. I made this website with one.
+      <br><br>
+      I've researched a lot of versions, and this is the best bang-for-your-buck in terms of ram, processor, and storage.
+      <br><br>
+      If you need a good laptop, this is the one bro.
+      `,
     },
   },
 ]

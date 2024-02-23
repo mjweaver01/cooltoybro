@@ -8,7 +8,10 @@
     {#each product.flair as flair}
       <div class="relative">
         <div class="relative overflow-hidden text-white">
-          <div class="holo" style={`--h: ${Math.round(product.title.length * 3.5)}%`} />
+          <div
+            class="holo"
+            style={`--h: ${Math.max(0, Math.min(Math.round(product.title.length * 3.5), 100))}%`}
+          />
           {flair}
         </div>
         <div class="absolute top-0 left-0 text-white scale-90">{flair}</div>
