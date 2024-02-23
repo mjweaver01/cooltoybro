@@ -49,17 +49,19 @@
       {#each filteredProducts as product, i}
         <div class="w-full rounded-xl shadow-lg bg-white card overflow-hidden">
           <div class="flex flex-col items-center justify-between h-full">
-            <a href={`/product/${product.slug}`} class="w-full">
-              <div class="relative w-full h-0 pb-[100%] bg-white">
-                <img
-                  class="absolute w-full h-full object-contain"
-                  src={product.images[0]}
-                  alt={product.title}
-                  loading={i > 3 ? 'lazy' : 'eager'}
-                />
+            <a href={`/product/${product.slug}`} class="w-full bg-white">
+              <div class="p-4 w-full">
+                <div class="relative w-full h-0 pb-[100%]">
+                  <img
+                    class="absolute w-full h-full object-contain"
+                    src={product.images[0]}
+                    alt={product.title}
+                    loading={i > 3 ? 'lazy' : 'eager'}
+                  />
+                </div>
               </div>
             </a>
-            <div class="p-5 w-full h-full flex flex-col justify-between">
+            <div class="p-4 w-full h-full flex flex-col justify-between">
               <a href={`/product/${product.slug}`} class="w-full">
                 <h1 class="text-3xl font-bold mb-2">{product.title}</h1>
                 <p class={`mb-4 ${product.salePrice ? 'strikethrough' : ''}`}>
