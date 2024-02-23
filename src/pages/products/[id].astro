@@ -26,5 +26,5 @@ const description =
 
 <Layout title={title} description={description}>
   <Navbar client:load active={`/products/${id}`} />
-  <Products products={products} filter={collectionTitle} />
+  <Products client:load products={products} filter={collectionTitle} />
 </Layout>

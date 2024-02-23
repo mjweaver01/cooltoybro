@@ -12,5 +12,5 @@ const description =
 
 <Layout title={title} description={description}>
   <Navbar client:load active={'/'} />
-  <Products products={products} />
+  <Products client:load products={products} />
 </Layout>
