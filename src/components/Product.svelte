@@ -8,10 +8,10 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16 mb-16 sm-mb-0">
   <div class="grid sm:grid-cols-2 sm:gap-8">
     <div
-      class="w-full rounded-xl shadow-lg p-5 bg-white max-h-[50vh] sm:max-h-[600px] overflow-scroll card"
+      class="w-full rounded-xl shadow-lg bg-white max-h-[50vh] sm:max-h-[600px] overflow-scroll card"
     >
       {#each product.images as image, i}
-        <div class="relative">
+        <div class="relative bg-white">
           <div class="relative w-full h-0 pb-[100%]">
             <img
               class="absolute w-full h-full object-contain"
