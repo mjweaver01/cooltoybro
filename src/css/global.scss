@@ -122,3 +122,13 @@ body {
 // .text-shadow {
 //   text-shadow: var(--dark-base) 0 0 10px;
 // }
+
+table, th, td {
+  border: 1px solid #e4e4e4;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+  padding: 0.25em 0.5em;
+}
