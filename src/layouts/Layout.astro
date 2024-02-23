@@ -6,10 +6,11 @@ import '@/css/global.scss'
 interface Props {
   title: string
   description: string
+  image?: string
 }
 
 // Extract props from Astro.props
-const { title, description } = Astro.props as Props
+const { title, description, image } = Astro.props as Props
 ---
 
 <html lang="en" transition:animate="none">
@@ -19,11 +20,20 @@ const { title, description } = Astro.props as Props
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😎</text></svg>"
     />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
+
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image || '/cooltoybro_lg.png'} />
+    <meta property="og:url" content={Astro.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <!-- Add the meta description tag below -->
     <meta name="description" content={description} />
+
     <!-- Enable SPA mode -->
     <ViewTransitions />
     <!-- Google tag (gtag.js) -->

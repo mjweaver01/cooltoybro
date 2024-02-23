@@ -23,7 +23,7 @@ const description = product.description
 // const sessionCookie = Astro.cookies.get('session')?.value ?? null
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} image={product.images[0]}>
   <Navbar client:load active={`/product/${id}`} />
   <Product product={product} />
 </Layout>
