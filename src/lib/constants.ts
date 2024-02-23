@@ -1,6 +1,9 @@
 import { products } from './products'
 
 export const siteName = 'Cool Toy, Bro!'
+export const siteDescription =
+  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+
 export const collections = [
   {
     slug: 'cheap',

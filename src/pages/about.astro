@@ -1,11 +1,10 @@
 ---
-import { siteName } from '@/lib/constants'
+import { siteName, siteDescription } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.svelte'
 import Khaled from '../components/khaled.astro'
 const title = `About ${siteName}`
-const description =
-  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+const description = siteDescription
 ---
 
 <Layout title={title} description={description}>
