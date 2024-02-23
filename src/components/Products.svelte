@@ -24,7 +24,7 @@
     </h1>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8">
-      {#each products as product}
+      {#each products as product, i}
         <div class="w-full rounded-xl shadow-lg p-5 bg-white">
           <div class="flex flex-col items-center justify-center h-full">
             <a href={`/product/${product.slug}`} class="w-full">
@@ -33,6 +33,7 @@
                   class="absolute w-full h-full object-contain"
                   src={product.images[0]}
                   alt={product.title}
+                  loading={i > 3 ? 'lazy' : 'eager'}
                 />
               </div>
               <h1 class="text-3xl font-bold mb-2 mt-4">{product.title}</h1>

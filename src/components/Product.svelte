@@ -17,6 +17,7 @@
               class="absolute w-full h-full object-contain"
               src={image}
               alt={`${product.title} image ${i}`}
+              loading={i > 0 ? 'lazy' : 'eager'}
             />
           </div>
           <div class="absolute z-9 bottom-0 left-0">{i + 1} / {product.images.length}</div>
