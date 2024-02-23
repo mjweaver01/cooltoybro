@@ -39,7 +39,7 @@
       </p>
       <ProductFlair {product} />
       <p class="text-lg mb-4">{@html product.description}</p>
-      <div class="flex gap-4 sm:hidden w-full">
+      <div class="flex gap-4 w-full">
         {#each product.links as link}
           <a target="_blank" href={link.link} class="w-full"
             ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
