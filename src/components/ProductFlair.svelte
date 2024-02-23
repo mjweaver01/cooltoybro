@@ -4,10 +4,10 @@
 </script>
 
 {#if product.flair && product.flair?.length > 0}
-  <div class="flex wrap gap-4 w-full mb-4">
+  <div class="flex wrap gap-4 mb-4">
     {#each product.flair as flair}
       <div class="relative">
-        <div class="relative overflow-hidden text-white">
+        <div class="relative overflow-hidden text-white whitespace-nowrap">
           <div
             class="holo"
             style={`--h: ${Math.max(0, Math.min(Math.round(product.title.length * 3.5), 100))}%`}

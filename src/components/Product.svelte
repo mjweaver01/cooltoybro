@@ -32,13 +32,16 @@
       class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-0 bg-white card"
     >
       <h1 class="text-6xl font-bold mb-2">{product.title}</h1>
-      <p class="mb-4 text-2xl font-semibold">
-        {product.price
-          .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
-          .replace('.00', '')}
-      </p>
-      <ProductFlair {product} />
-      <p class="text-lg mb-4">{@html product.description}</p>
+      <div class="flex items-center justify-between w-full">
+        <p class="mb-4 text-2xl font-semibold">
+          {product.price
+            .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+            .replace('.00', '')}
+        </p>
+        <p class="flex justify-end w-full">
+          <ProductFlair {product} />
+        </p>
+      </div>
       <div class="flex gap-4 w-full">
         {#each product.links as link}
           <a target="_blank" href={link.link} class="w-full"
@@ -46,6 +49,7 @@
           >
         {/each}
       </div>
+      <p class="text-lg mb-4">{@html product.description}</p>
     </div>
   </div>
   <div

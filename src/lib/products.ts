@@ -354,7 +354,7 @@ export const products: ProductRecord[] = [
     <table class=a-bordered><tr><td style=width:120px><p><strong>Display</strong><td><p>14.2-inch (diagonal) mini-LED backlit Liquid Retina XDR display, 3024 by 1964 pixels with ProMotion technology for adaptive refresh rates up to 120Hz, and up to 1000 nits sustained (full-screen) brightness, 1600 nits peak brightness, True Tone technology, ProMotion technology for adaptive refresh rates up to 120Hz<tr><td style=width:120px><p><strong>Processor</strong><td><p>Apple M3 chip, 8-core CPU with 4 performance cores and 4 efficiency cores, 10-core GPU, Hardware-accelerated ray tracing, 16-core Neural Engine, 100GB/s memory bandwidth<tr><td style=width:120px><p><strong>Graphics and Video Support</strong><td><p>Apple 10-core GPU<tr><td style=width:120px><p><strong>Charging and Expansion</strong><td><p>SDXC card slot, HDMI port, 3.5 mm headphone jack, MagSafe 3 port, Three Thunderbolt 4 (USB-C) ports with support for: Charging, DisplayPort, Thunderbolt 4 (up to 40Gb/s), USB 4 (up to 40Gb/s)<tr><td style=width:120px><p><strong>Wireless</strong><td><p>Wi-Fi 6E (802.11ax), Bluetooth 5.3<tr><td style=width:120px><p><strong>In the Box</strong><td><p>14-inch MacBook Pro, 70W USB-C Power Adapter, USB-C to MagSafe 3 Cable (2m)</table>
     `,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3T8OgwZ' }],
-    price: 0,
+    price: 1599.99,
     rank: {
       price: 3,
       quality: 5,
