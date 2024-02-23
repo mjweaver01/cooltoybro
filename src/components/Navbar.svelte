@@ -3,7 +3,7 @@
   export let active: string
 </script>
 
-<nav class={`fixed top-0 w-full flex justify-center z-30 transition-all backdrop-blur-xl`}>
+<nav class={`fixed top-0 w-full flex justify-center z-30 transition-all backdrop-blur-xl shadow`}>
   <div
     class="flex h-16 max-w-screen-xl items-center justify-between w-full p-4 px-2 sm:p-8 overflow-y-auto whitespace-nowrap gap-4"
   >

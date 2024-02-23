@@ -58,15 +58,21 @@
     >
       <h2 class="text-3xl font-bold mx-2">CQV Score</h2>
       <div class="my-4">
-        <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+        <p
+          class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+        >
           <span>(C)OST</span>
           {'💰'.repeat(product.rank.price)}
         </p>
-        <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+        <p
+          class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+        >
           <span>(Q)UALITY</span>
           {'⭐'.repeat(product.rank.quality)}
         </p>
-        <p class="flex justify-between text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+        <p
+          class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+        >
           <span>(V)IBES</span>
           {'😎'.repeat(product.rank.vibes)}
         </p>
