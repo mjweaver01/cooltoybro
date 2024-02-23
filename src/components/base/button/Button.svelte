@@ -27,8 +27,6 @@
   $: variant = variant.toLowerCase()
   const classes = buttonVariants[variant] || buttonVariants.default
 
-  console.log(variant, classes)
-
   // This function returns true if 'href' is a non-empty string
   const isLink = (): boolean => typeof href === 'string' && href.length > 0
 </script>
