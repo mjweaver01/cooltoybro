@@ -374,7 +374,10 @@ export const products: ProductRecord[] = [
 // mbp 13" m3 max https://amzn.to/3SStMqK
 // magic trackpad https://amzn.to/42OKOL3
 // magic keyboard https://amzn.to/49LFKta
+// tech deck https://amzn.to/3uHV0sl
+// string winder https://amzn.to/3wtibXT
+// standard strat kit https://amzn.to/49sQFYX
 
 // adobe affiliate program submitted
 // alibaba affiliate program submitted
-// rakuten affiliate program submitted
+// rakuten affiliate program submitted - DENIED
