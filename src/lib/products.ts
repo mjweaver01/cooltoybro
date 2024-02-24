@@ -18,7 +18,11 @@ export const emptyProduct = {
   },
 }
 
-export type ProductRecord = typeof emptyProduct & { salePrice?: number; flair?: string[] }
+export type ProductRecord = typeof emptyProduct & {
+  salePrice?: number
+  flair?: string[]
+  relatedProducts?: ProductRecord[]
+}
 
 // @todo generate this somehow with a scraper? gpt?
 export const products: ProductRecord[] = [
@@ -373,11 +377,21 @@ export const products: ProductRecord[] = [
 // airpods max https://amzn.to/42M1S4x
 // mbp 13" m3 max https://amzn.to/3SStMqK
 // magic trackpad https://amzn.to/42OKOL3
+// mechanical keyboard https://amzn.to/3SPBTVd
 // magic keyboard https://amzn.to/49LFKta
 // tech deck https://amzn.to/3uHV0sl
 // string winder https://amzn.to/3wtibXT
 // standard strat kit https://amzn.to/49sQFYX
-
+// keyboard wrist rest
+// mouse wrist rest https://amzn.to/3Tata16
+// minecraft crocs https://amzn.to/49Kas67
+// coleman minibike https://amzn.to/3OR4jx2
+// litter robot https://amzn.to/3SQ0068
+// xbox series x 1tb https://amzn.to/3wrzbxE
+// nintendo switch OLED https://cooltoybro.com
+// akatsuke mousepad https://amzn.to/49uVhOy
+//
+//
 // adobe affiliate program submitted
 // alibaba affiliate program submitted
 // rakuten affiliate program submitted - DENIED
