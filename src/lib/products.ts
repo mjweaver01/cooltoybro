@@ -390,6 +390,10 @@ export const products: ProductRecord[] = [
 // xbox series x 1tb https://amzn.to/3wrzbxE
 // nintendo switch OLED https://cooltoybro.com
 // akatsuke mousepad https://amzn.to/49uVhOy
+// liquidIV https://amzn.to/3uBzbuB
+// zum lavender https://amzn.to/3UTjMAm
+// R8 radar detector https://amzn.to/4bT7Wwj
+
 //
 //
 // adobe affiliate program submitted
