@@ -24,5 +24,11 @@ export default defineConfig({
   preview: {
     port: 3000
   },
-  adapter: netlify()
+  adapter: netlify(),
+  redirects: {
+    '/home': '/',
+    '/survey': '/quiz',
+    '/mike': 'https://mjweaver01.com',
+    '/abe': 'https://efukt.com/436_21049_It_s_Only_Smellz.html'
+  }
 });

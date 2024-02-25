@@ -4,11 +4,11 @@
   import { products } from '@/lib/products'
   import { Button } from '@/components/base/button'
   import Product from '@/components/Product.svelte'
-  import { survey } from '@/lib/constants'
+  import { quiz } from '@/lib/constants'
 
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
-  $: questionsLeft = survey.length - Object.keys(stepChoices).length
+  $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
 
   const setActiveStep = (stepId: string, stepOptionValue: string) => {
@@ -56,7 +56,7 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto text-center w-full mt-20">
   <h1 class="text-6xl font-bold">Gift your bro</h1>
   <div class="flex flex-col md:flex-row wrap gap-6 m-auto text-center w-full justify-center mt-16">
-    {#each survey as step}
+    {#each quiz as step}
       <div class="text-center card rounded-xl shadow-lg p-4">
         <h1 class="text-3xl font-bold mb-2">{step.title}</h1>
         <div class="rounded-xl bg-white">
