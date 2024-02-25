@@ -1,14 +1,15 @@
 ---
+import { Image } from 'astro:assets'
 import { siteName, siteDescription } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
-import Navbar from '@/components/Navbar.svelte'
+import Navbar from '@/components/Navbar.astro'
 import Khaled from '../components/khaled.astro'
 const title = `About ${siteName}`
 const description = siteDescription
 ---
 
 <Layout title={title} description={description}>
-  <Navbar client:load active={'/about'} />
+  <Navbar active={'/about'} />
   <div class="p-4 sm:p-8 max-w-screen-xl m-auto">
     <div class="grid sm:grid-cols-2 gap-4 sm:gap-8">
       <div class="w-full rounded-xl shadow-lg p-5 mt-16 card">
@@ -28,7 +29,13 @@ const description = siteDescription
         <p class="mt-4">Look no further..</p>
         <p class="mt-4">Good stuff, for good bros.</p>
         <p class="mt-4">Welcome to <strong>Cool Toy, Bro! 😎</strong></p>
-        <img alt="Cool Toy Bro Logo" class="block w-full h-auto" src="/cooltoybro_lg.png" />
+        <Image
+          alt="Cool Toy Bro Logo"
+          class="block w-full h-auto"
+          src="/cooltoybro_lg.png"
+          width="550"
+          height="550"
+        />
       </div>
       <div class="w-full rounded-xl shadow-lg p-5 sm:mt-16 card">
         <h2 class="text-5xl font-bold">How does it work?</h2>

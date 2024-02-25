@@ -2,7 +2,7 @@
 import { siteName } from '@/lib/constants'
 import { products as p } from '@/lib/products'
 import Layout from '@/layouts/Layout.astro'
-import Navbar from '@/components/Navbar.svelte'
+import Navbar from '@/components/Navbar.astro'
 import Product from '@/components/Product.svelte'
 
 export const prerender = true
@@ -24,6 +24,6 @@ const description = product.description
 ---
 
 <Layout title={title} description={description} image={product.images[0]}>
-  <Navbar client:load active={`/product/${id}`} />
+  <Navbar active={`/product/${id}`} />
   <Product product={product} />
 </Layout>

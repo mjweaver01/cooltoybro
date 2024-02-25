@@ -1,6 +1,5 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
-import VideoBG from '@/components/VideoBG.svelte'
 import Footer from '@/components/Footer.astro'
 import '@/css/global.scss'
 
@@ -54,7 +53,6 @@ const { title, description, image } = Astro.props as Props
   </head>
   <body>
     <slot />
-    <VideoBG />
     <Footer />
   </body>
 </html>

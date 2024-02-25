@@ -2,7 +2,7 @@
 import { siteName } from '@/lib/constants'
 import { collections } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
-import Navbar from '@/components/Navbar.svelte'
+import Navbar from '@/components/Navbar.astro'
 import Products from '@/components/Products.svelte'
 
 export const prerender = true
@@ -24,6 +24,6 @@ const description = 'We find all the coolest toys for you and your significan (b
 ---
 
 <Layout title={title} description={description}>
-  <Navbar client:load active={`/products/${id}`} />
+  <Navbar active={`/products/${id}`} />
   <Products client:load products={products} filter={collectionTitle} />
 </Layout>

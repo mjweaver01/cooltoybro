@@ -2,7 +2,7 @@
 import { siteName, siteDescription } from '@/lib/constants'
 import { products } from '@/lib/products'
 import Layout from '@/layouts/Layout.astro'
-import Navbar from '@/components/Navbar.svelte'
+import Navbar from '@/components/Navbar.astro'
 import Products from '@/components/Products.svelte'
 
 const title = `${siteName}`
@@ -10,6 +10,6 @@ const description = siteDescription
 ---
 
 <Layout title={title} description={description}>
-  <Navbar client:load active={'/'} />
+  <Navbar active={'/'} />
   <Products client:load products={products} />
 </Layout>

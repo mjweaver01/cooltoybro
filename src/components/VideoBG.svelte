@@ -22,17 +22,17 @@
   ]
 
   let selected = (isBrowser && localStorage.getItem('bg')) || 'clouds'
-  let pop: any
 
   const setVideo = (video: string) => {
     isBrowser && localStorage.setItem('bg', video)
     selected = video
     pop.closePopover()
   }
-  export { pop }
+
+  let pop: any
 </script>
 
-<div class="max-w-xs flex items-center justify-center m-auto mt-16">
+<div class="max-w-xs flex items-center justify-center m-auto mt-4">
   <Popover bind:this={pop} position={'top'}>
     <button
       class="flex gap-4 justify-between items-center bg-gray-50 border text-sm border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
