@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tick } from 'svelte'
   import { type ProductRecord } from '@/lib/products'
   import { products } from '@/lib/products'
   import { Button } from '@/components/base/button'
@@ -15,7 +16,7 @@
     stepChoices[stepId] = stepOptionValue
   }
 
-  const rollProduct = () => {
+  const rollProduct = async () => {
     const filteredProducts = products.filter((p) => {
       return Object.keys(stepChoices).map((c) => JSON.stringify(p).includes(stepChoices[c]))
     })
@@ -28,7 +29,7 @@
     )
 
     chosenProduct = filteredProducts[randomNumber]
-
+    await tick()
     document.getElementById('product-wrapper')?.scrollIntoView()
   }
 </script>
