@@ -472,6 +472,7 @@ export const products: ProductRecord[] = [
     images: ['https://m.media-amazon.com/images/I/61BRxtp9qtL._SY522_.jpg'],
     collections: ['cheap'],
     tags: ['smart', 'dumb'],
+    flair: ['prime'],
     description: `<span class="a-text-bold">#1 NATIONAL BESTSELLER&nbsp;<br></span><span class="a-text-bold"><br>#1 INTERNATIONAL BESTSELLER<br><br>What does everyone in the modern world need to know? <br><br>Renowned psychologist Jordan B. Peterson's answer to this most difficult of questions uniquely combines the hard-won truths of ancient tradition with the stunning revelations of cutting-edge scientific research.</span><span><br><br>Humorous, surprising and informative, Dr. Peterson tells us why skateboarding boys and girls must be left alone, what terrible fate awaits those who criticize too easily, and why you should always pet a cat when you meet one on the street.<br><br>What does the nervous system of the lowly lobster have to tell us about standing up straight (with our shoulders back) and about success in life? Why did ancient Egyptians worship the capacity to pay careful attention as the highest of gods? What dreadful paths do people tread when they become resentful, arrogant and vengeful? <br><br>Dr. Peterson journeys broadly, discussing discipline, freedom, adventure and responsibility, distilling the world's wisdom into 12 practical and profound rules for life. </span><span class="a-text-italic">12 Rules for Life</span><span>&nbsp;shatters the modern commonplaces of science, faith and human nature, while transforming and ennobling the mind and spirit of its readers.</span>`,
     additionalInformation: `<div class="a-section bucket detail-bullets-wrapper feature"data-cel-widget=detailBulletsWrapper_feature_div data-feature-name=detailBullets data-template-name=detailBullets id=detailBulletsWrapper_feature_div><hr aria-hidden=true class="a-divider-normal bucketDivider"><h2>Product details</h2><div id=detailBullets_feature_div><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li><span class=a-list-item><span class=a-text-bold>Publisher ‏ : ‎ </span><span>Random House Canada; Later prt. edition (January 23, 2018)</span></span><li><span class=a-list-item><span class=a-text-bold>Language ‏ : ‎ </span><span>English</span></span><li><span class=a-list-item><span class=a-text-bold>Hardcover ‏ : ‎ </span><span>409 pages</span></span><li><span class=a-list-item><span class=a-text-bold>ISBN-10 ‏ : ‎ </span><span>0345816021</span></span><li><span class=a-list-item><span class=a-text-bold>ISBN-13 ‏ : ‎ </span><span>978-0345816023</span></span><li><span class=a-list-item><span class=a-text-bold>Item Weight ‏ : ‎ </span><span>1.45 pounds</span></span><li><span class=a-list-item><span class=a-text-bold>Dimensions ‏ : ‎ </span><span>6.6 x 1.4 x 9.3 inches</span></span></ul></div><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li><span class=a-list-item><span class=a-text-bold>Best Sellers Rank: </span>#240 in Books (<a href="/gp/bestsellers/books/ref=pd_zg_ts_books">See Top 100 in Books</a>)<ul class="a-nostyle a-unordered-list a-vertical zg_hrsr"><li><span class=a-list-item>#1 in <a href="/gp/bestsellers/books/11130/ref=pd_zg_hrsr_books">Popular Applied Psychology</a></span><li><span class=a-list-item>#17 in <a href="/gp/bestsellers/books/4745/ref=pd_zg_hrsr_books">Personal Transformation Self-Help</a></span><li><span class=a-list-item>#18 in <a href="/gp/bestsellers/books/4749/ref=pd_zg_hrsr_books">Success Self-Help</a></span></ul></span></ul><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li><span class=a-list-item><span class=a-text-bold>Customer Reviews:</span><style>.noUnderline a:hover{text-decoration:none}.cm-cr-review-stars-spacing-big{margin-top:1px}</style><div id=detailBullets_averageCustomerReviews data-asin=0345816021 data-ref=dpx_acr_pop_><span class=a-declarative data-action=acrStarsLink-click-metrics data-csa-c-func-deps=aui-da-acrStarsLink-click-metrics data-csa-c-id=fppeus-mb7tws-d4cygg-8zeatf data-csa-c-type=widget data-acrstarslink-click-metrics={}><span class="noUnderline reviewCountTextLinkedHistogram"id=acrPopover title="4.7 out of 5 stars"><span class=a-declarative data-action=a-popover data-csa-c-func-deps=aui-da-a-popover data-csa-c-id=dxzvk4-dqbyyj-9qu48-9rxhi2 data-csa-c-type=widget data-a-popover='{"max-width":"700","closeButton":"false","position":"triggerBottom","url":"/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&asin=0345816021"}'><a href=javascript:void(0) class="a-declarative a-popover-trigger"role=button><span class="a-size-base a-color-base">4.7 </span><i class="a-icon a-icon-star a-star-4-5 cm-cr-review-stars-spacing-big"><span class=a-icon-alt>4.7 out of 5 stars</span></i> <i class="a-icon a-icon-popover"></i></a> </span><span class=a-letter-space></span> </span></span><span class=a-letter-space></span> <span class=a-declarative data-action=acrLink-click-metrics data-csa-c-func-deps=aui-da-acrLink-click-metrics data-csa-c-id=quqrnp-1rcjgt-ha3zo0-gm7dhj data-csa-c-type=widget data-acrlink-click-metrics={}><a href=#customerReviews class=a-link-normal id=acrCustomerReviewLink><span class=a-size-base id=acrCustomerReviewText>60,151 ratings</span></a></span><script>var dpAcrHasRegisteredArcLinkClickAction;P.when("A","ready").execute(function(c){!0!==dpAcrHasRegisteredArcLinkClickAction&&(dpAcrHasRegisteredArcLinkClickAction=!0,c.declarative("acrLink-click-metrics","click",{allowLinkDefault:!0},function(c){window.ue&&ue.count("acrLinkClickCount",(ue.count("acrLinkClickCount")||0)+1)}))})</script><script>P.when("A","cf").execute(function(c){c.declarative("acrStarsLink-click-metrics","click",{allowLinkDefault:!0},function(c){window.ue&&ue.count("acrStarsLinkWithPopoverClickCount",(ue.count("acrStarsLinkWithPopoverClickCount")||0)+1)})})</script></div></span></ul><div class=a-row></div><div class=a-row></div></div>`,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3OY2lei' }],
@@ -524,7 +525,14 @@ export const products: ProductRecord[] = [
   {
     slug: 'apple-airpods-max',
     title: 'Apple AirPods Max',
-    images: ['https://m.media-amazon.com/images/I/81jqUPkIVRL._AC_SX342_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/81jqUPkIVRL._AC_SX342_.jpg',
+      'https://m.media-amazon.com/images/I/81S533RgkwL._AC_SX342_.jpg',
+      'https://m.media-amazon.com/images/I/71aAV-Vhg8L._AC_SX342_.jpg',
+      'https://m.media-amazon.com/images/I/712Jl7+DA4L._AC_SX342_.jpg',
+      'https://m.media-amazon.com/images/I/91lPKrrfwYS._AC_SX342_.jpg',
+      'https://m.media-amazon.com/images/I/71urS8imiUL._AC_SX342_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/6d6dd680-d893-4dc2-9883-f6874ba65d99/default.jobtemplate.mp4.480.mp4',
@@ -579,31 +587,6 @@ export const products: ProductRecord[] = [
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/63dd1acb-f6b0-450c-af23-d94007154f8d/default.jobtemplate.mp4.480.mp4',
         poster: 'https://m.media-amazon.com/images/I/91fspNg6TDL.SX522_.png',
       },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/a17df1aa-d60d-476d-8ff6-0d51ccce7fda.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/9efd4730-a735-465f-9544-f45555f02bb8.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1W327OATOYFUY/1617609195655/7dafb2e4-02e3-4a47-a860-d0f26e8a4919/1617609326917sbv.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/6cf9b561-2539-4b3f-8232-d4cb81dd7898.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/30c54ae2-d61e-457d-b6c2-f62401130587.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
     ],
     price: 60,
     description:
@@ -628,7 +611,15 @@ export const products: ProductRecord[] = [
   {
     slug: 'fender-player-stratocaster-black-bundle',
     title: 'Fender Player Stratocaster®',
-    images: ['https://m.media-amazon.com/images/I/811bQoNd7LL._AC_SY550_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/811bQoNd7LL._AC_SY606_.jpg',
+      'https://m.media-amazon.com/images/I/61ZnYD870eL._AC_SY879_.jpg',
+      'https://m.media-amazon.com/images/I/61HY14KvSzL._AC_SY879_.jpg',
+      'https://m.media-amazon.com/images/I/71tZSAWAoqL._AC_SX450_.jpg',
+      'https://m.media-amazon.com/images/I/81hwSlTc6LL._AC_SX450_.jpg',
+      'https://m.media-amazon.com/images/I/71+TCejiKzL._AC_SX450_.jpg',
+      'https://m.media-amazon.com/images/I/71+rNK0Hy7L._AC_SX450_.jpg',
+    ],
     videos: [
       {
         link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1455M4GZBYJ66/6b6a22d0-66cb-43f4-8689-f355dc2da3ae-SBV_291884-T1/b8d67515-1fde-4153-8388-9b4e69da4494/1603906339496sbv.mp4',
@@ -682,7 +673,12 @@ export const products: ProductRecord[] = [
   {
     slug: 'xbox-series-x-1tb',
     title: 'Xbox Series X 1TB',
-    images: ['https://m.media-amazon.com/images/I/51ojzJk77qL._SX342_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/51ojzJk77qL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/61c937dHIvL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/71ut3JnAiUL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/51b72fFNWRL._SX342_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/4e508e43-40ec-4ba8-9499-5d8d5ee771c6/default.jobtemplate.mp4.480.mp4',
@@ -738,36 +734,17 @@ export const products: ProductRecord[] = [
   {
     slug: 'litter-robot-4',
     title: 'Litter Robot 4',
-    images: ['https://m.media-amazon.com/images/I/816HD3JHl1L._AC_SY450_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/816HD3JHl1L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71PPQppaY7L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81lp8K65a0L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81zZmRf-VdL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81M3N4plO-L._AC_SX522_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8a43aff9-1923-46a1-b26d-1b3c3070c3bf/default.jobtemplate.mp4.480.mp4',
         poster: 'https://m.media-amazon.com/images/I/61ykLqmuNgL.SX522_.jpg',
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/af724f75-1955-435c-91c3-7752d34f6076.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/e67223b2-3c36-48aa-935c-a65183668a46.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/258224e5-4981-4789-b19b-61a2544e4803.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/5d1e2d79-bda6-4dcc-987f-4bb214403ed3.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/f123945f-97af-40ee-8930-5fd7eba5f3ae.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
       },
     ],
     price: 899,
@@ -805,31 +782,6 @@ export const products: ProductRecord[] = [
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5143c1ae-1c64-43ad-8fcd-1b70fb9b1b29/default.jobtemplate.mp4.480.mp4',
         poster: 'https://m.media-amazon.com/images/I/61BDg+lqCUL.SX522_.jpg',
       },
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/122e6304-afe7-4c16-8a78-d8d61aca82ac.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A24GILMCOPBAO1/1644517779836/00877b8c-d06b-4640-a67f-6cf167daa0ba/1644517839253sbv.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A16FXJBXHZ7USK/5d776a1b-2c7c-4798-8ce7-e05622f2cc69-SBV_291884-T1/93e7dc3c-5aeb-46d8-b676-16ae16108140/1605307909152sbv.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1X5XQZRRJMTB6/1656462076395/66e0320d-59ad-4044-a17f-11b153781576/1656462112005sbv.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-      {
-        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A3KTHAZDDKDB9O/1655803134099/088f39a2-8195-44a4-a4d9-9b988c88ceb9/1655803362521sbv.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
     ],
     price: 17.55,
     description: '',
@@ -854,7 +806,14 @@ export const products: ProductRecord[] = [
   {
     slug: 'nectar-copper-14-queen-mattress',
     title: '14" Queen Mattress',
-    images: ['https://m.media-amazon.com/images/I/81WBGPBD0pL._AC_SY450_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/81WBGPBD0pL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/717yWUytXZL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81c7gFBPKcL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81nQXSkl6dL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81WPrVPd1IL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/81WWlXmayBL._AC_SX522_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/d0664908-6000-42a0-b570-00f12aae3d43/default.jobtemplate.mp4.480.mp4',
@@ -887,13 +846,6 @@ export const products: ProductRecord[] = [
     slug: 'akatsuke-mousepad',
     title: 'Akatuske Mousepad',
     images: ['https://m.media-amazon.com/images/I/41AuOAwvyAL._AC_SY355_.jpg'],
-    videos: [
-      {
-        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/496abee2-2489-4b71-9049-ec0272f5d2a7.mp4/productVideoOptimized.mp4',
-        poster:
-          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
-      },
-    ],
     price: 21.99,
     description:
       '<!-- show up to 2 reviews by default -->                       <p> <span>Extended Mouse Pad:31.5x11.8x0.16 Inch provides perfect movement space. High-quality Material:100%Polyester cloth, and 4mm thickness Rubber pad. Package Includes:1 x Extended Gaming Mousepad with Stitched Edges (4mm thickness). Non-Slip Rubber Base:The soft and dense non-skid nature rubber base keeps the pad firmly in surface. Durable Design:The durable stitched edges and the high-density premium texture ensure long-term use. Ultra Smooth Surface:Smooth surface and accurate mouse movement improve gaming and working experience.</span>  </p>',
@@ -919,7 +871,13 @@ export const products: ProductRecord[] = [
   {
     slug: 'yogasleep-dohm-uno-white-noise-sound-machine',
     title: 'White Noise Sound Machine',
-    images: ['https://m.media-amazon.com/images/I/61T+QOLlemL._AC_SX425_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/61T+QOLlemL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/71aasvEp5PL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81K-fhhfDuL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81q8MJvcJpL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/811sez7qOXL._AC_SY450_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/8c13a149-23e9-5519-8836-e781dc7e0f34/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4',
@@ -983,8 +941,11 @@ export const products: ProductRecord[] = [
     title: 'Quest 3 128GB',
     images: [
       'https://m.media-amazon.com/images/I/81whTB488bL._SX342_.jpg',
-      'https://m.media-amazon.com/images/I/81yHEZvUyJL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/8135wwgyceL._SX342_.jpg',
       'https://m.media-amazon.com/images/I/61KC7rKQFpL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/7198k6pwLML._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/61iW8kY+yXL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/81yHEZvUyJL._SX342_.jpg',
     ],
     videos: [
       {
@@ -1042,7 +1003,12 @@ export const products: ProductRecord[] = [
   {
     slug: 'coleman-65cc-mini-bike',
     title: 'Coleman 65hp Mini Bike',
-    images: ['https://m.media-amazon.com/images/I/81+ofcJCkjS._AC_SY355_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/81+ofcJCkjS._AC_SY355_.jpg',
+      'https://m.media-amazon.com/images/I/71TPKn2cOwL._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/71LBeHIlH0L._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/71aIAkrqpgL._AC_SX355_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/268843bb-488c-447d-a450-baa083d275d7/default.jobtemplate.mp4.480.mp4',
@@ -1074,7 +1040,14 @@ export const products: ProductRecord[] = [
   {
     slug: 'mechanical-keyboard-brown-switches',
     title: 'RGB Mechanical Keyboard',
-    images: ['https://m.media-amazon.com/images/I/61MJkcGKg0L._AC_SY450_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/61MJkcGKg0L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71URl23rwOL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71i+jXm0u3L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71LQ7vncebL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71r0PeP9P4L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71zTHhRdnrL._AC_SX522_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/6722b3b0-c829-4094-b0a4-11292b145aea/default.jobtemplate.mp4.480.mp4',
@@ -1105,7 +1078,14 @@ export const products: ProductRecord[] = [
   {
     slug: 'osprey-daylite-plus-commuter-backpack',
     title: 'Osprey Backpack',
-    images: ['https://m.media-amazon.com/images/I/81VSFgVff1L._AC_SY450_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/81VSFgVff1L._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81cIjxhsreL._AC_SY550_.jpg',
+      'https://m.media-amazon.com/images/I/91mXV7lcLeL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81LJ+EBQZFL._AC_SY606_.jpg',
+      'https://m.media-amazon.com/images/I/71wMj-gdsiL._AC_SY879_.jpg',
+      'https://m.media-amazon.com/images/I/71ylSL9BG7L._AC_SY741_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/f93a841c-696f-4fea-9fd6-d3e530fab306/default.jobtemplate.mp4.480.mp4',
@@ -1202,7 +1182,14 @@ export const products: ProductRecord[] = [
   {
     slug: 'hydro-flask-stainless-steel-wide-mouth-water-bottle',
     title: 'Hydro Flask',
-    images: ['https://m.media-amazon.com/images/I/61Ur5t1fRCL._AC_SY741_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/61Ur5t1fRCL._AC_SY879_.jpg',
+      'https://m.media-amazon.com/images/I/61e8VtTZCYL._AC_SY879_.jpg',
+      'https://m.media-amazon.com/images/I/51I0xRyTc8L._AC_SX466_.jpg',
+      'https://m.media-amazon.com/images/I/51zyX1YbaXL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/71JA-wCrc8L._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/71XSFpSXXaL._AC_SY450_.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/58da2237-70f7-4977-8882-c14b1063df1d/default.jobtemplate.mp4.480.mp4',

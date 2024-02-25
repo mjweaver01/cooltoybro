@@ -27,7 +27,7 @@ import { input as sourceLinks } from './input.js'
       const thumbs = await page.$$('.imageThumbnail')
       if(thumbs.length > 0) {
         for (let image of thumbs) {
-          image.hover()
+          await image.hover()
         }
       }
 
@@ -111,6 +111,8 @@ import { input as sourceLinks } from './input.js'
       console.log('saved ' + link)
     } catch (err) {
       console.error(err)
+    } finally {
+      await page.close()
     }
   }
   
@@ -120,5 +122,5 @@ import { input as sourceLinks } from './input.js'
   }
 
 
-  Promise.allSettled(tasks).then(async() => { await page.close(); await browser.close() })
+  Promise.allSettled(tasks).then(async() => { await browser.close() })
 })()
