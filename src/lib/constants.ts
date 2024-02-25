@@ -103,15 +103,19 @@ export const sortOptions = [
     value: 'newest',
   },
   {
-    title: 'Oldest',
-    value: 'oldest',
-  },
-  {
     title: 'A to Z',
     value: 'atoz',
   },
   {
     title: 'Z to A',
     value: 'ztoa',
+  },
+  {
+    title: 'Price: Low to High',
+    value: 'low',
+  },
+  {
+    title: 'Price: High to Low',
+    value: 'high',
   },
 ]

@@ -820,7 +820,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/51QrA+sdr1L.SX522_.jpg',
       },
     ],
-    price: 1,
+    price: 1249,
     description:
       "<!-- show up to 2 reviews by default -->                       <p> <span>JOIN MORE THAN 5.5 MILLION HAPPY SLEEPERS. Recognized as the fastest-growing e-commerce retailer by Internet Retailer, Nectar is part of the Resident family of brands. Our award-winning memory foam and hybrid mattresses have premium layers with a cooling cover to ensure you'll be ready to seize the day, night, and everything in between. We offer a 365-night trial to make sure Nectar is right for you–sleep on it in all four seasons. Nectar is built to the highest standards with innovative, quality materials. We stand behind our construction and craftsmanship for as long as you own your mattress with our Forever Warranty™–the longest in the industry.</span>  </p>",
     additionalInformation:
@@ -839,7 +839,7 @@ export const products: ProductRecord[] = [
       quality: 5,
       vibes: 5,
       description:
-        'I waded through many show room floors and shitty alternatives to land upon this matress. The reviews speak for themselves. I have the king, but yanno, do your thing, king.',
+        'I waded through many show room floors and shitty alternatives to land upon this mattress. The reviews speak for themselves. I have the king, but yanno, do your thing, king.',
     },
   },
   {

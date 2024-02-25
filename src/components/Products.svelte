@@ -31,6 +31,10 @@
           return b.title.localeCompare(a.title)
         } else if (sort === 'atoz') {
           return a.title.localeCompare(b.title)
+        } else if (sort === 'low') {
+          return a.price > b.price ? 1 : -1
+        } else if (sort === 'high') {
+          return b.price > a.price ? 1 : -1
         } else {
           return 0
         }
