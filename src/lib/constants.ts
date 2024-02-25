@@ -44,15 +44,14 @@ export const navItems = [
   },
 ]
 
-// @todo survey
-const survey = [
+export const survey = [
   {
     id: 'step-1',
     title: "How ballin' is your bro?",
     options: [
       {
-        id: 'expensive',
         title: 'HOT 🔥',
+        value: 'expensive',
       },
       {
         title: 'NOT 📦',
@@ -65,8 +64,8 @@ const survey = [
     title: "What's your bro into?",
     options: [
       {
-        id: 'tech',
         title: 'TECH 🤓',
+        value: 'tech',
       },
       {
         title: 'SPORTS ⚾🏀🏈',
@@ -79,8 +78,8 @@ const survey = [
     title: 'How smart is your bro?',
     options: [
       {
-        id: 'smart',
         title: 'ROCK 🪨',
+        value: 'smart',
       },
       {
         title: 'ASTRONAUT 🚀',

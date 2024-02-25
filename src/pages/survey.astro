@@ -3,9 +3,11 @@ import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.svelte'
+import Survey from '@/components/Survey.svelte'
 
 const title = `Gift Finder | ${siteName}`
-const description = 'UNDER CONSTRUCTION'
+const description =
+  'Find the perfect gift for yourself or your fellow brother by answering a few simple questions.'
 ---
 
 <Layout title={title} description={description}>
@@ -17,15 +19,5 @@ const description = 'UNDER CONSTRUCTION'
       }&nbsp;{description}
     </p>
   </Marquee>
-  <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
-    <div class="w-full rounded-xl">
-      <h1 class="text-3xl font-bold mb-12">Find the perfect gift!</h1>
-      <p>UNDER CONSTRUCTION</p>
-      <p>coming soon!</p>
-      <p>🚧</p>
-      <br />
-      <br />
-      <img src="https://media.tenor.com/BbfKJfP43RwAAAAM/jackhanmer-construction-worker.gif" />
-    </div>
-  </div>
+  <Survey client:load />
 </Layout>
