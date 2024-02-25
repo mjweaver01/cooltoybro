@@ -111,11 +111,11 @@ export const sortOptions = [
     value: 'ztoa',
   },
   {
-    title: 'Price: Low to High',
+    title: 'Price: Low',
     value: 'low',
   },
   {
-    title: 'Price: High to Low',
+    title: 'Price: High',
     value: 'high',
   },
 ]
