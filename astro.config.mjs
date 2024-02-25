@@ -27,7 +27,9 @@ export default defineConfig({
   adapter: netlify(),
   redirects: {
     '/home': '/',
-    '/survey': '/quiz',
+    '/survey': '/gift-finder',
+    '/quiz': '/gift-finder',
+    '/gift': '/gift-finder',
     '/mike': 'https://mjweaver01.com',
     '/abe': 'https://efukt.com/436_21049_It_s_Only_Smellz.html'
   }

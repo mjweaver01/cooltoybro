@@ -3,7 +3,7 @@ import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.astro'
-import SurveyComponent from '@/components/Quiz.svelte'
+import Quiz from '@/components/Quiz.svelte'
 
 const title = `Gift Finder | ${siteName}`
 const description =
@@ -20,6 +20,6 @@ const description =
         }&nbsp;{description}
       </p>
     </Marquee>
-    <SurveyComponent client:load />
+    <Quiz client:load />
   </div>
 </Layout>

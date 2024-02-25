@@ -33,9 +33,9 @@ export const navItems = [
   },
   ...collections.map(({ title, link, slug }) => ({ title, link, slug })),
   {
-    slug: 'quiz',
-    title: 'Gift Quiz',
-    link: '/quiz',
+    slug: 'gift-finder',
+    title: 'Gift Finder',
+    link: '/gift-finder',
   },
   {
     slug: 'bro',

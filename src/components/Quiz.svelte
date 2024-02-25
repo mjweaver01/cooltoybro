@@ -54,19 +54,22 @@
 </script>
 
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto text-center w-full mt-20">
-  <h1 class="text-6xl font-bold">Gift your bro</h1>
+  <h1 class="text-6xl font-bold">Gift Finder</h1>
+  <p class="text-xl mt-4">
+    Just answer {quiz.length} simple questions, and we'll generate an amazing gift for you, or your bro!
+  </p>
   <div class="flex flex-col md:flex-row wrap gap-6 m-auto text-center w-full justify-center mt-16">
     {#each quiz as step}
-      <div class="text-center card rounded-xl shadow-lg p-4">
-        <h1 class="text-3xl font-bold mb-2">{step.title}</h1>
-        <div class="rounded-xl bg-white">
+      <div class="text-center card rounded-xl shadow-lg p-4 sm:p-6">
+        <h1 class="text-3xl font-bold mb-2 sm:mb-4">{step.title}</h1>
+        <div class="flex flex-col rounded-xl bg-white">
           {#each step.options as stepOption}
             <div
               role="button"
               tabindex="0"
-              class={`rounded-xl text-center p-4 sm:p-8 hover:z-10 hover:shadow-md ${
+              class={`rounded-xl text-center p-4 sm:p-8 sm:text-xl font-semibold hover:z-10 hover:shadow-md ${
                 stepChoices[step.id] === stepOption.value
-                  ? 'bg-black text-white shadow-2xl relative z-10'
+                  ? 'bg-black text-white shadow-2xl relative z-10 hover:shadow-2xl'
                   : 'bg-white text-black hover:bg-gray-200'
               }`}
               on:click={() => {
