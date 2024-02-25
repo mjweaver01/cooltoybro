@@ -48,7 +48,7 @@
           <ProductFlair {product} {isPdp} />
         </p>
       </div>
-      <div class="flex flex-col gap-4 w-full">
+      <div class="flex flex-col gap-2 w-full">
         {#each product.links as link}
           <a target="_blank" href={link.link} class="w-full"
             ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
@@ -100,7 +100,7 @@
       </div>
     {/if}
   </div>
-  <div class="flex gap-4 fixed sm:hidden bottom-0 left-0 w-full p-4 sm:p-0 z-9">
+  <div class="flex gap-2 fixed sm:hidden bottom-0 left-0 w-full p-4 sm:p-0 z-9">
     {#each product.links as link}
       <a target="_blank" href={link.link} class="w-full"
         ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
