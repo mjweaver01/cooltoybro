@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { emptyProduct, type ProductRecord } from '@/lib/products'
+  import { emptyProduct } from '@/lib/emptyProduct.js'
+  import { type ProductRecord } from '@/lib/products'
   export let product = emptyProduct as ProductRecord
   export let isPdp = false
 </script>
