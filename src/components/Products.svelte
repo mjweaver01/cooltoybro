@@ -162,7 +162,7 @@
                 <ProductFlair {product} />
               </a>
               <a target="_blank" href={product.links[0].link} class="w-full"
-                ><Button class="w-full" variant="blue">Buy Now</Button></a
+                ><Button class="w-full" variant={product.links[0].title}>Buy Now</Button></a
               >
             </div>
           </div>
