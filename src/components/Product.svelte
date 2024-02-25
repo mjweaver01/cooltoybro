@@ -1,9 +1,14 @@
 <script lang="ts">
-  import { emptyProduct, type ProductRecord } from '@/lib/products'
+  import { emptyProduct, type ProductRecord, products } from '@/lib/products'
   import { Button } from '@/components/base/button'
   import Products from '@/components/Products.svelte'
   import ProductFlair from '@/components/ProductFlair.svelte'
   export let product = emptyProduct as ProductRecord
+  const isPdp = true
+
+  const relatedProducts = products.filter((p) =>
+    product.relatedProducts?.find((rp) => JSON.stringify(p).includes(rp)),
+  )
 </script>
 
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16 mb-16 sm-mb-0">
@@ -40,10 +45,10 @@
             .replace('.00', '')}
         </p>
         <p class="flex justify-end w-full">
-          <ProductFlair {product} isPdp={true} />
+          <ProductFlair {product} {isPdp} />
         </p>
       </div>
-      <div class="flex gap-4 w-full">
+      <div class="flex flex-col gap-4 w-full">
         {#each product.links as link}
           <a target="_blank" href={link.link} class="w-full"
             ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
@@ -53,8 +58,8 @@
       <p class="text-lg mt-4">{@html product.description}</p>
     </div>
   </div>
-  {#if product.relatedProducts}
-    <Products products={product.relatedProducts} />
+  {#if relatedProducts.length > 0}
+    <Products products={relatedProducts} showHeaderSort={false} />
   {/if}
   <div
     class={`${

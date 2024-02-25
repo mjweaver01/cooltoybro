@@ -141,7 +141,13 @@ export const products: ProductRecord[] = [
       <li class="list-disc">65mm x 30mm</li>
       </ul>
     `,
-    links: [{ title: 'Amazon', link: 'https://amzn.to/49DopDn' }],
+    links: [
+      { title: 'Amazon', link: 'https://amzn.to/49DopDn' },
+      {
+        title: 'Raspberry Pi',
+        link: generateUTM('https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/'),
+      },
+    ],
     price: 25.99,
     rank: {
       price: 1,
@@ -434,9 +440,7 @@ export const products: ProductRecord[] = [
 // magic trackpad https://amzn.to/42OKOL3
 // mechanical keyboard https://amzn.to/3SPBTVd
 // magic keyboard https://amzn.to/49LFKta
-
 // string winder https://amzn.to/3wtibXT
-
 // standard strat kit https://amzn.to/49sQFYX
 // keyboard wrist rest
 // mouse wrist rest https://amzn.to/3Tata16

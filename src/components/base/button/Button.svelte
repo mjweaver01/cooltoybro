@@ -7,13 +7,17 @@
   export let type: 'button' | 'submit' | 'reset' = 'button'
   // Ensure that variant is of type ButtonVariant
   export let variant: ButtonVariant | any = 'default'
-  variant = variant.toLowerCase()
+  variant = variant.toLowerCase().replace(/ /g, '_')
+
+  console.log(variant)
 
   const buttonVariants: any = {
     amazon:
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-orange-600 hover:bg-orange-500/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
     flipper:
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-orange-600 hover:bg-orange-500/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
+    raspberry_pi:
+      'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-rose-600 hover:bg-rose-500/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
     google:
       'disabled:opacity-50 disabled:pointer-events-none group relative w-full flex justify-center items-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
     outlined:

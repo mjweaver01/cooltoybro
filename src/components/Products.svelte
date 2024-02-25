@@ -13,7 +13,7 @@
   let sort: string = 'featured'
   let filteredProducts: ProductRecord[] = products
   let searchTerm = ''
-  let showHeaderSort = true
+  export let showHeaderSort = true
 
   const searchProducts = () => {
     filteredProducts = products

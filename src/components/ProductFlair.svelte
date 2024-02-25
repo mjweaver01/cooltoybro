@@ -1,14 +1,14 @@
 <script lang="ts">
   import { emptyProduct, type ProductRecord } from '@/lib/products'
   export let product = emptyProduct as ProductRecord
-  let isPdp = false
+  export let isPdp = false
 </script>
 
 {#if product.flair && product.flair?.length > 0}
-  <div class={`flex ${isPdp ? 'items-end' : 'items-start'} wrap gap-2 mb-4`}>
+  <div class={`flex ${isPdp ? 'items-end flex-shrink-0' : 'items-start'} wrap gap-2 mb-4`}>
     {#each product.flair as flair}
       {#if flair.toLowerCase() === 'prime'}
-        <img src="/prime.png" width="72" alt="Is Amazon Prime" />
+        <img class="bg-white rounded-xl p-1" src="/prime.png" width="63" alt="Is Amazon Prime" />
       {:else}
         <div class="relative">
           <div class="relative overflow-hidden text-white whitespace-nowrap">
