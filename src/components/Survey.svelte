@@ -7,10 +7,7 @@
   import { survey } from '@/lib/constants'
 
   let chosenProduct = {} as ProductRecord
-  $: chosenProduct
-
-  const stepChoices = {} as any
-  $: stepChoices
+  let stepChoices = {} as any
 
   const setActiveStep = (stepId: string, stepOptionValue: string) => {
     stepChoices[stepId] = stepOptionValue

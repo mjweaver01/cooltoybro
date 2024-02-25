@@ -88,3 +88,26 @@ export const survey = [
     ],
   },
 ]
+
+export const sortOptions = [
+  {
+    title: 'Featured',
+    value: 'featured',
+  },
+  {
+    title: 'Newest',
+    value: 'newest',
+  },
+  {
+    title: 'Oldest',
+    value: 'oldest',
+  },
+  {
+    title: 'A to Z',
+    value: 'atoz',
+  },
+  {
+    title: 'Z to A',
+    value: 'ztoa',
+  },
+]

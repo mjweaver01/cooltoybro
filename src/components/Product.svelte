@@ -30,7 +30,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-0 bg-white card"
+      class="flex flex-col items-center justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-0 bg-white card"
     >
       <h1 class="text-6xl font-bold mb-2">{product.title}</h1>
       <div class="flex items-center justify-between w-full">
@@ -40,7 +40,7 @@
             .replace('.00', '')}
         </p>
         <p class="flex justify-end w-full">
-          <ProductFlair {product} />
+          <ProductFlair {product} isPdp={true} />
         </p>
       </div>
       <div class="flex gap-4 w-full">

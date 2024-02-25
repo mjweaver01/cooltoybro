@@ -1,9 +1,8 @@
 ---
 import { siteName } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
-import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.svelte'
-import TipMe from '@/components/TipMe.astro'
+import DonateComponent from '@/components/Donate.astro'
 
 /* Check current session */
 // const sessionCookie = Astro.cookies.get('session')?.value ?? null
@@ -14,5 +13,5 @@ const description = 'Only for emergencies'
 
 <Layout {description} {title}>
   <Navbar client:load active={'/tip'} />
-  <TipMe />
+  <DonateComponent />
 </Layout>

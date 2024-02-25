@@ -21,7 +21,7 @@ export const emptyProduct = {
 export type ProductRecord = typeof emptyProduct & {
   salePrice?: number
   flair?: string[]
-  relatedProducts?: ProductRecord[]
+  relatedProducts?: string[]
 }
 
 // @todo generate this somehow with a scraper? gpt?
@@ -121,7 +121,7 @@ export const products: ProductRecord[] = [
     ],
     collections: ['cheap', 'best'],
     tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie'],
-    flair: ['Best Mini PC'],
+    flair: ['Best Mini PC', 'prime'],
     description: `At the heart of Raspberry Pi Zero 2 W is RP3A0, a custom-built system-in-package designed by Raspberry Pi in the UK. With a quad-core 64-bit ARM Cortex-A53 processor clocked at 1GHz and 512MB of SDRAM, Zero 2 is up to five times as fast as the original Raspberry Pi Zero. Wireless LAN is built in to a shielded enclosure with improved RF compliance, giving you more flexibility when designing with Raspberry Pi Zero 2 W. All in the same tiny 65mm × 30mm form factor.`,
     additionalInformation: `
       <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
@@ -163,7 +163,7 @@ export const products: ProductRecord[] = [
     ],
     collections: ['cheap', 'best'],
     tags: ['3d printing', 'filament', 'pla'],
-    flair: ['Best Filament'],
+    flair: ['Best Filament', 'prime'],
     description: `PolyMax™ PLA is an incredibly easy-to-print filament with improved mechanical properties, making it an excellent alternative to ABS and PLA+.`,
     additionalInformation: `
       <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
@@ -327,8 +327,8 @@ export const products: ProductRecord[] = [
     },
   },
   {
-    slug: '2023-m3-apple-macbook-pro',
-    title: '2023 M3 Apple MacBook Pro Laptop',
+    slug: 'apple-macbook-pro-m3-2023',
+    title: 'Apple M3 MacBook Pro Laptop (2023 Model)',
     images: [
       'https://m.media-amazon.com/images/I/61lsexTCOhL._AC_SX679_.jpg',
       'https://m.media-amazon.com/images/I/61RdWPq8UfL._AC_SX679_.jpg',
@@ -339,7 +339,7 @@ export const products: ProductRecord[] = [
     ],
     collections: ['expensive'],
     tags: ['mac', 'apple', 'macbook', 'laptop', 'm3'],
-    flair: ['Best Laptop'],
+    flair: ['Best Laptop', 'prime'],
     description: `
     <ul class="pl-4">
     <li class="list-disc">SUPERCHARGED BY M3 — With an 8-core CPU and 10-core GPU, the Apple M3 chip can help you blaze through everyday multitasking and take on pro projects like editing thousands of photos or 4K video.</li>
@@ -371,16 +371,72 @@ export const products: ProductRecord[] = [
       `,
     },
   },
+  {
+    slug: 'apple-airpods-pro-2nd-gen',
+    title: 'Apple AirPods Pro (2nd Gen)',
+    images: [
+      'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/61sRKTAfrhL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/51emillNpWL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/51+vJkbGtJL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/5121OBX4JIL._AC_SX679_.jpg',
+      // @TODO image support
+      // https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/fb043d87-2a63-4e0d-a0a3-52c8b536ea0d/default.jobtemplate.mp4.480.mp4
+    ],
+    collections: ['expensive'],
+    tags: ['airpods', 'apple', 'headphones'],
+    flair: ['prime'],
+    description:
+      '<p>Active Noise Cancellation performance measured as compared to AirPods Pro (1st generation). <br>Adaptive Audio and Conversation Awareness work with AirPods Pro (2nd generation) with USB-C with the latest firmware when paired with a compatible Apple device running the latest operating system software. <br>AirPods Pro (2nd generation) with USB-C are dust resistant and sweat and water resistant for non-water sports and exercise, and they are IP54 rated. Dust, sweat, and water resistance are not permanent conditions. <br>Compatible hardware and software required for Personalized Spatial Audio with dynamic head tracking. Works with compatible content in supported apps. Not all content available in Dolby Atmos. iPhone with TrueDepth camera required to create a personal profile for Spatial Audio, which will sync across Apple devices running the latest operating system software, including iOS, iPadOS, macOS, and tvOS. <br>Mute and unmute on calls available in compatible applications with the latest firmware. <br>Battery life depends on device settings, environment, usage, and many other factors. <br>MagSafe charging requires a compatible MagSafe charger. Wireless charging requires a Qi-certified wireless charger. AirPods Pro (2nd generation) with USB-C charging case also works with the Apple Watch charger or USB-C connector. <br>Just “Siri” available in English (Australia, Canada, United Kingdom, U.S.). This feature is not available on AirPods with the H1 headphone chip and Intel-based Mac computers. Devices must support and have the latest operating system. <br>One-tap setup, Automatic Switching, and Audio Sharing require a compatible Apple device running the latest operating system software. Device compatibility varies by feature. One-tap setup and Automatic Switching also require an iCloud account.</p>',
+    additionalInformation:
+      '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> RICHER AUDIO EXPERIENCE — The Apple-designed H2 chip helps to create more intelligent noise cancellation and deeply immersive sound. The low-distortion, custom-built driver delivers crisp, clear high notes and full, rich bass in stunning definition.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> NEXT-LEVEL ACTIVE NOISE CANCELLATION — Up to 2x more Active Noise Cancellation for dramatically less noise when you want to focus. Transparency mode lets you hear the world around you, and Adaptive Audio seamlessly blends Active Noise Cancellation and Transparency mode for the best listening experience in any environment.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> CUSTOMIZABLE FIT — Includes four pairs of silicone tips (XS, S, M, L) to fit a wide range of ears and provide all-day comfort. The tips create an acoustic seal to help keep out noise and secure AirPods Pro in place.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> DUST, SWEAT, AND WATER RESISTANT — Both AirPods Pro and the MagSafe Charging Case are IP54 dust, sweat, and water resistant, so you can listen comfortably in more conditions.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> PERSONALIZED SPATIAL AUDIO — With sound that suits your unique ear shape along with dynamic head tracking, AirPods Pro deliver an immersive listening experience that places sound all around you. You can also listen to select songs, shows, and movies in Dolby Atmos.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> A HIGHER LEVEL OF CONTROL — Manage playback functions from the stem with touch control. Swipe up or down to adjust volume, press to play and pause music or mute and unmute yourself on calls, and press twice to end calls. And hold the stem to switch between listening modes.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> LONG BATTERY LIFE — Get up to 6 hours of listening time with Active Noise Cancellation enabled. And get up to 30 hours of total listening time with Active Noise Cancellation enabled, using the case.  </span></li>  </ul>' +
+      '<table class=a-bordered><tr><td style=width:120px><p><strong>Weight</strong><td><p>AirPods Pro (each): 0.19 ounce (5.3 g), MagSafe Charging Case: 1.79 ounces (50.8 g)<tr><td style=width:120px><p><strong>Dimensions</strong><td><p>AirPods (each): 0.94 by 0.86 by 1.22 inches (24.0 by 21.8 by 30.9 mm), MagSafe Charging Case: 1.78 by 0.85 by 2.39 inches (45.2 by 21.7 by 60.6 mm)<tr><td style=width:120px><p><strong>AirPods Sensors (each):</strong><td><p>Dual beamforming microphones, Inward-facing microphone, Skin-detect sensor, Motion-detecting accelerometer, Speech-detecting accelerometer, Touch control<tr><td style=width:120px><p><strong>Power and Battery</strong><td><p>Up to 6 hours of listening time on a single charge (up to 5.5 hours with Personalized Spatial Audio and Head Tracking enabled), Up to 4.5 hours of talk time with a single charge. AirPods Pro with MagSafe Charging Case: Up to 30 hours of listening time, Up to 24 hours of talk time, 5 minutes in the case provides around 1 hour of listening time or around 1 hour of talk time</table>',
+    links: [{ title: 'Amazon', link: 'https://amzn.to/48zXUgM' }],
+    price: 239,
+    rank: {
+      price: 3,
+      quality: 5,
+      vibes: 4,
+      description:
+        'I use these headphones on a daily basis. The different modes are something unline any other headphones I have used, and have to be experienced to be understood.<br><br>If you are in the market for new headphones, these are the ones for you.',
+    },
+  },
+  {
+    slug: 'element-tech-deck',
+    title: 'Element Tech Decks',
+    images: [
+      'https://m.media-amazon.com/images/I/81Ly30GBpML._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/818uJv66InL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/81S4bSbGtDL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/811PJId9AAL._AC_SX679_.jpg',
+      'https://m.media-amazon.com/images/I/81sMQyZSJGL._AC_SX679_.jpg',
+    ],
+    collections: ['cheap'],
+    tags: ['tech', 'deck', 'element', 'skateboard', 'fingerboard'],
+    flair: ['prime'],
+    description:
+      'Tech Deck brings you the real deal with authentic fingerboards from real skate companies! Each one features legit graphics from the biggest skate companies in the world, including Blind, Baker, Flip, Finesse, Santa Cruz, Plan B, Sk8mafia, Toy Machine, and more. This 4-Pack includes 4 boards you can build any way you want. Recreate your favorite lines and expand your trickionary by checking out online trick tips on techdeck.com. As you build your mini skateboard collection, compare it online with Tech Deck’s interactive collector’s tool. Ride and grind your new finger skateboards on the X-Connect series. Build out the Big Vert Wall or Flip N’ Grind ramp sets (each sold separately) for you to shred your skateboard decks. There are a ton of Decks, toy figures & playsets to collect! Ride, flip, and grind with Tech Deck fingerboards from real skate companies! Tech Deck mini skateboards for fingers and ramp sets make the perfect gift for girls toys age 6-8 who love small toys and cool toys or as an alternative to toy cars as a boys toys age 6-8 item. Start small, go big and collect them all!',
+    additionalInformation:
+      '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> REAL SKATEBOARD GRAPHICS: The Tech Deck Ultra DLX Pack includes 4 fingerboard decks with authentic graphics from the biggest brands in skateboarding.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> CUSTOMIZE: Receive 4 boards with authentic skate graphics to build and customize. Collect the whole series!  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> OFFICIAL: These decks are the real deal! Ride, flip, and grind with an official finger board from real skate companies! From grip tape to bushings, these decks have been recreated down to the smallest detail.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> BECOME A TECH DECK PRO: Grind your new boards on Tech Deck fingerboard obstacles and playsets like the expansive X-Connect World. Shred and ollie on the X-Connect Shredline and Sk8 Garage Skatepark (each sold separately) for new ways to play and progress.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> COLLECT THEM ALL: Great toys for boys or toys for girls and gifts for kids that love collectibles, toy figures &amp; playsets, or mini skateboards. Great Christmas gift, or birthday gifts ages 6 and up!  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Includes: 1 Assembled Board, 3 Boards with Grip Tape, 2 Sticker Sheets, 12 Wheels, 1 Skate Tool, 6 Skateboard Trucks, 24 Screws, 18 Nuts  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Covered by the Spin Master Care Commitment. See below for full details  </span></li>  </ul>',
+    links: [{ title: 'Amazon', link: 'https://amzn.to/3uHV0sl' }],
+    price: 26.98,
+    rank: {
+      price: 1,
+      quality: 4,
+      vibes: 5,
+      description:
+        'The best desktop fidget toy, aside from a fidget spinner I suppose, which you can print with your X1C ;)',
+    },
+  },
 ]
 
-// airpods pro https://amzn.to/48zXUgM
 // airpods max https://amzn.to/42M1S4x
-// mbp 13" m3 max https://amzn.to/3SStMqK
 // magic trackpad https://amzn.to/42OKOL3
 // mechanical keyboard https://amzn.to/3SPBTVd
 // magic keyboard https://amzn.to/49LFKta
-// tech deck https://amzn.to/3uHV0sl
+
 // string winder https://amzn.to/3wtibXT
+
 // standard strat kit https://amzn.to/49sQFYX
 // keyboard wrist rest
 // mouse wrist rest https://amzn.to/3Tata16

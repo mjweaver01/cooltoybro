@@ -16,7 +16,7 @@
 
   let open = false
   let popoverTrigger: HTMLElement
-  async function closePopover() {
+  export async function closePopover() {
     if (open) {
       open = false
     }
@@ -28,6 +28,7 @@
       popoverTrigger.setAttribute('aria-expanded', open ? 'true' : 'false')
     }
   }
+
   function togglePopover() {
     open = !open
     updateAria()
