@@ -32,7 +32,7 @@
 </script>
 
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto text-center w-full mt-20">
-  <h1 class="text-6xl font-bold">Find the best product for your bro!</h1>
+  <h1 class="text-6xl font-bold">Gift your bro</h1>
   <div class="flex flex-col md:flex-row wrap gap-6 m-auto text-center w-full justify-center mt-16">
     {#each survey as step}
       <div class="text-center card rounded-xl shadow-lg p-4">
