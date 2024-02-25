@@ -16,7 +16,10 @@
   }
 
   let rolled = 0
+  let seen: string[] = []
   const rollProduct = async () => {
+    if (seen.length >= 5) return
+
     let filteredProducts = products.filter((p) => {
       return (
         Object.keys(stepChoices).filter((c) => JSON.stringify(p).includes(stepChoices[c])).length >
@@ -38,13 +41,19 @@
     )
 
     let cachedProduct = filteredProducts[randomNumber]
-    if (!cachedProduct || (cachedProduct.slug === chosenProduct.slug && rolled <= 5)) {
+
+    if (
+      !cachedProduct ||
+      cachedProduct.slug === chosenProduct.slug ||
+      seen.includes(cachedProduct.slug)
+    ) {
       rolled += 1
       rollProduct()
       return
     }
 
-    chosenProduct = filteredProducts[randomNumber]
+    chosenProduct = cachedProduct
+    seen.push(chosenProduct.slug)
     await tick()
     document.getElementById('product-wrapper')?.scrollIntoView({
       behavior: 'smooth',
