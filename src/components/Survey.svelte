@@ -28,6 +28,8 @@
     )
 
     chosenProduct = filteredProducts[randomNumber]
+
+    document.getElementById('product-wrapper')?.scrollIntoView()
   }
 </script>
 
@@ -67,7 +69,7 @@
 </div>
 
 {#if chosenProduct.title}
-  <div class="flex items-center justify-center mt-6 w-full">
+  <div class="flex items-center justify-center mt-6 w-full" id="product-wrapper">
     <Product product={chosenProduct} />
   </div>
 {/if}
