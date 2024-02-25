@@ -6,9 +6,10 @@
   export let product = emptyProduct as ProductRecord
   const isPdp = true
 
-  const relatedProducts = products.filter((p) =>
-    product.relatedProducts?.find((rp) => JSON.stringify(p).includes(rp)),
-  )
+  const relatedProducts = products
+    .filter((p) => product.relatedProducts?.find((rp) => JSON.stringify(p).includes(rp)))
+    .filter((pr) => pr.slug !== product.slug)
+    .slice(0, 4)
 </script>
 
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
@@ -58,9 +59,6 @@
       <p class="text-lg mt-4">{@html product.description}</p>
     </div>
   </div>
-  {#if relatedProducts.length > 0}
-    <Products products={relatedProducts} showHeaderSort={false} />
-  {/if}
   <div
     class={`${
       product.additionalInformation.length > 0 ? 'grid sm:grid-cols-2 sm:gap-8' : ''
@@ -100,6 +98,10 @@
       </div>
     {/if}
   </div>
+  {#if relatedProducts.length > 0}
+    <Products products={relatedProducts} showHeaderSort={false} />
+  {/if}
+  <!-- floating mobile buy buttons -->
   <div class="flex gap-2 fixed sm:hidden bottom-0 left-0 w-full p-4 sm:p-0 z-9">
     {#each product.links as link}
       <a target="_blank" href={link.link} class="w-full"
@@ -107,5 +109,4 @@
       >
     {/each}
   </div>
-  <!-- @TODO related products -->
 </div>

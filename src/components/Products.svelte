@@ -5,6 +5,8 @@
   import { Popover } from '@/components/base/popover'
   import ProductFlair from '@/components/ProductFlair.svelte'
 
+  // @TODO grid vs list view
+
   let pop: any
   let products: ProductRecord[]
   let filter: string = ''
@@ -51,7 +53,11 @@
 </script>
 
 {#if products.length <= 0}
-  <div class="sm:gap-8 p-4 sm:p-8 pb-0 max-w-screen-xl m-auto mt-16">
+  <div
+    class={`${
+      showHeaderSort ? 'p-4 sm:p-8  mt-16' : 'mt-4 sm:mt-8'
+    } sm:gap-8 p-4 sm:p-8 pb-0 max-w-screen-xl m-auto`}
+  >
     <div class="w-full rounded-xl">
       <h1 class="text-3xl font-bold">
         No toys found {#if filter.length > 0}under "{filter}"{/if}
@@ -61,7 +67,7 @@
 {/if}
 
 {#if products.length > 0}
-  <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
+  <div class={`${showHeaderSort ? 'p-4 sm:p-8 mt-16' : 'mt-4 sm:mt-8'} max-w-screen-xl m-auto`}>
     {#if showHeaderSort}
       <h1 class="text-3xl font-bold mb-4">
         {#if filter.length > 0}{filter}{/if}{#if filter.length <= 0}All{/if} toys
@@ -122,7 +128,11 @@
         </Popover>
       </div>
     {/if}
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8">
+    <div
+      class={`${
+        !showHeaderSort ? 'flex flex-nowrap overflow-auto sm:grid' : 'grid '
+      } grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8`}
+    >
       {#if filteredProducts.length == 0}
         <h2 class="text-2xl font-500">
           No results for "{searchTerm}"
@@ -145,7 +155,7 @@
             </a>
             <div class="p-4 w-full h-full flex flex-col justify-between">
               <a href={`/product/${product.slug}`} class="w-full">
-                <h1 class="text-3xl font-bold mb-2">{product.title}</h1>
+                <h1 class="text-xl sm:text-3xl font-bold mb-2">{product.title}</h1>
                 <p class={`mb-4 ${product.salePrice ? 'strikethrough' : ''}`}>
                   {product.price
                     .toLocaleString('en-US', { style: 'currency', currency: 'USD' })

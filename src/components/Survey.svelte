@@ -8,6 +8,8 @@
 
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
+  $: questionsLeft = survey.length - Object.keys(stepChoices).length
+  $: canRoll = questionsLeft === 0
 
   const setActiveStep = (stepId: string, stepOptionValue: string) => {
     stepChoices[stepId] = stepOptionValue
@@ -19,15 +21,14 @@
     })
     const randomNumber = Math.max(
       0,
-      Math.min(
-        Math.round((Math.random() * filteredProducts.length) / filteredProducts.length),
-        filteredProducts.length,
-      ),
+      Math.min(Math.round(Math.random() * filteredProducts.length), filteredProducts.length),
     )
 
     chosenProduct = filteredProducts[randomNumber]
     await tick()
-    document.getElementById('product-wrapper')?.scrollIntoView()
+    document.getElementById('product-wrapper')?.scrollIntoView({
+      behavior: 'smooth',
+    })
   }
 </script>
 
@@ -37,15 +38,15 @@
     {#each survey as step}
       <div class="text-center card rounded-xl shadow-lg p-4">
         <h1 class="text-3xl font-bold mb-2">{step.title}</h1>
-        <div class="rounded overflow-hidden">
+        <div class="rounded-xl overflow-hidden bg-white">
           {#each step.options as stepOption}
             <div
               role="button"
               tabindex="0"
-              class={`text-center p-4 sm:p-8 ${
+              class={`rounded-xl text-center p-4 sm:p-8 ${
                 stepChoices[step.id] === stepOption.value
                   ? 'bg-black text-white'
-                  : 'bg-white text-black'
+                  : 'bg-white text-black hover:bg-gray-200'
               }`}
               on:click={() => {
                 setActiveStep(step.id, stepOption.value)
@@ -60,8 +61,12 @@
     {/each}
   </div>
   <div class="flex items-center justify-center mt-6 w-full">
-    <Button disabled={Object.keys(stepChoices).length !== survey.length} on:click={rollProduct}
-      >Roll {chosenProduct.title ? 'again' : 'for a product'}</Button
+    <Button disabled={!canRoll} on:click={rollProduct}
+      >{canRoll && chosenProduct.title
+        ? 'Roll for a new product!'
+        : canRoll
+          ? 'Roll for a product!'
+          : `Answer ${questionsLeft} questions, please`}</Button
     >
   </div>
 </div>

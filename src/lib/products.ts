@@ -184,6 +184,7 @@ export const products: ProductRecord[] = [
       </ul>
     `,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3wtzmIU' }],
+    relatedProducts: ['bambu-lab-x1-carbon'],
     price: 29.99,
     rank: {
       price: 1,
@@ -290,6 +291,7 @@ export const products: ProductRecord[] = [
         link: generateUTM('https://us.store.bambulab.com/products/x1-carbon-3d-printer'),
       },
     ],
+    relatedProducts: ['polymaker-polymax-pla'],
     price: 1199.0,
     rank: {
       price: 4,
@@ -311,6 +313,7 @@ export const products: ProductRecord[] = [
     collections: ['expensive'],
     flair: ['Best Desk Chair'],
     tags: ['chair', 'deskchair', 'desk chair'],
+    relatedProducts: ['apple-macbook-pro-m3-2023'],
     description: '',
     additionalInformation: `
     <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
@@ -335,6 +338,7 @@ export const products: ProductRecord[] = [
   {
     slug: 'apple-macbook-pro-m3-2023',
     title: 'Apple M3 MacBook Pro Laptop (2023 Model)',
+    relatedProducts: ['haworth-fern-office-chair', 'apple-airpods-pro-2nd-gen'],
     images: [
       'https://m.media-amazon.com/images/I/61lsexTCOhL._AC_SX679_.jpg',
       'https://m.media-amazon.com/images/I/61RdWPq8UfL._AC_SX679_.jpg',
@@ -434,12 +438,65 @@ export const products: ProductRecord[] = [
         'The best desktop fidget toy, aside from a fidget spinner I suppose, which you can print with your X1C ;)',
     },
   },
+  {
+    slug: 'apple-air-tags',
+    title: 'Apple Airtags (4 pack)',
+    images: [
+      'https://m.media-amazon.com/images/I/71gY9E+cTaS._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/71JJueCRWJS._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/91bsFWILPGS._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/81Lq1AfCYpS._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/71YziLCAJSS._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/71ZMyXWM9CS._AC_SL1500_.jpg',
+    ],
+    collections: ['cheap'],
+    tags: ['apple', 'air', 'tag', 'airtag'],
+    flair: ['prime'],
+    description:
+      '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Keep track of and find your items alongside friends and devices in the Find My app  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Simple one-tap setup instantly connects AirTag with your iPhone or iPad  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Play a sound on the built-in speaker to help find your things, or just ask Siri for help  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Precision Finding with Ultra Wideband technology leads you right to your nearby AirTag (on select iPhone models)  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Find items further away with the help of hundreds of millions of Apple devices in the Find My network  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Put AirTag into Lost Mode to be automatically notified when it’s detected in the Find My network  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> All communication with the Find My network is anonymous and encrypted for privacy, Location data and history are never stored on AirTag  </span></li>  </ul>',
+    additionalInformation: '',
+    links: [{ title: 'Amazon', link: 'https://amzn.to/3SPDryp' }],
+    price: 78,
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 5,
+      description:
+        'Track all your important assets with these. Make your life infinitely easier in the event of a life-changing event. Etc.',
+    },
+  },
 ]
 
 // airpods max https://amzn.to/42M1S4x
+
 // magic trackpad https://amzn.to/42OKOL3
-// mechanical keyboard https://amzn.to/3SPBTVd
+// https://m.media-amazon.com/images/I/41KZtzhlK+L._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/51qMqmaeiOL._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/41nNdemE08L._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/51WD2FUXHOL._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/610zm3d008L._AC_SX679_.jpg
+// <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> WIRELESS, RECHARGEABLE CONVENIENCE — Magic Trackpad connects wirelessly to your device via Bluetooth. And the rechargeable internal battery means no loose batteries to replace.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> MAGIC TRACKING EXPERIENCE — Sensors underneath the trackpad surface detect subtle differences in the amount of pressure you apply, bringing more functionality to your fingertips and enabling a deeper connection to your content.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> WORKS WITH MAC OR IPAD — It’s ready to go right out of the box and pairs automatically with your Mac or iPad so you can get to work right away. Requires a Bluetooth-enabled Mac with OS X 10.11 or later or an iPad with iPadOS 13.4 or later.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SWIPE AND SCROLL MORE PRODUCTIVELY — It features a large edge-to-edge glass surface area, making scrolling and swiping more efficient and comfortable than ever.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GO WEEKS WITHOUT CHARGING — The incredibly long-lasting internal battery will power your Magic Trackpad for about a month or more between charges. Comes with a woven USB-C to Lightning Cable that lets you pair and charge by connecting to a USB-C port on your Mac or iPad.  </span></li>  </ul>
+// <table id="productDetails_techSpec_section_1" class="a-keyvalue prodDetTable" role="presentation">     <tbody><tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Product Dimensions </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;6.85 x 5.04 x 0.43 inches </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item Weight </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;8.1 ounces </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Manufacturer </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;Apple </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Language </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;English </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> ASIN </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;B09BRG3MZ2 </td>  </tr>      <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Country of Origin </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;China </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item model number </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;MK2D3AM/A </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Batteries </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;1 Lithium Ion batteries required. (included) </td>  </tr>      <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Date First Available </th>   <td class="a-size-base prodDetAttrValue">
+// &lrm;August 3, 2021 </td>  </tr>    </tbody></table>
+
 // magic keyboard https://amzn.to/49LFKta
+// https://m.media-amazon.com/images/I/71cboO+0CcL._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/51Q9w5igDML._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/517siQ0wvQL._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/61x06g-wN9L._AC_SX679_.jpg
+// https://m.media-amazon.com/images/I/51mqIKEAHWL._AC_SX679_.jpg
+// <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> WIRELESS, RECHARGEABLE CONVENIENCE — Magic Keyboard connects wirelessly to your Mac, iPad, or iPhone via Bluetooth. And the rechargeable internal battery means no loose batteries to replace.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> WORKS WITH MAC, IPAD, OR IPHONE — It pairs quickly with your device so you can get to work right away.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> ENHANCED TYPING EXPERIENCE — Magic Keyboard delivers a remarkably comfortable and precise typing experience.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GO WEEKS WITHOUT CHARGING — The incredibly long-lasting internal battery will power your keyboard for about a month or more between charges. (Battery life varies by use.) Comes with a woven USB-C to Lightning Cable that lets you pair and charge by connecting to a USB-C port on your Mac or iPad.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SYSTEM REQUIREMENTS — Requires a Mac with macOS 11.3 or later, an iPad with iPadOS 14.5 or later, or an iPhone or iPod touch with iOS 14.5 or later.  </span></li>  </ul>
+//
+
+// mechanical keyboard https://amzn.to/3SPBTVd
 // string winder https://amzn.to/3wtibXT
 // standard strat kit https://amzn.to/49sQFYX
 // keyboard wrist rest
