@@ -104,11 +104,11 @@
     <Products products={relatedProducts} showHeaderSort={false} />
   {/if}
   <!-- floating mobile buy buttons -->
-  <div class="flex flex-wrap gap-2 fixed sm:hidden bottom-0 left-0 w-full p-4 sm:p-0 z-9">
+  <!-- <div class="flex flex-wrap gap-2 fixed sm:hidden bottom-0 left-0 w-full p-4 sm:p-0 z-9">
     {#each product.links as link}
       <a target="_blank" href={link.link} class="w-full"
         ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
       >
     {/each}
-  </div>
+  </div> -->
 </div>
