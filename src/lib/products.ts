@@ -474,9 +474,8 @@ export const products: ProductRecord[] = [
     },
   },
   {
-    slug: 'optimum-nutrition-gold-standard-100-whey-protein-powder-extreme-milk-chocolate-5-pound-',
-    title:
-      'Optimum Nutrition Gold Standard 100% Whey Protein Powder, Extreme Milk Chocolate, 5 Pound',
+    slug: 'optimum-nutrition-gold-standard-whey-protein-powder',
+    title: 'Optimum Nutrition Gold Standard Whey Protein Powder',
     images: [
       'https://m.media-amazon.com/images/I/71lttf6xi7L._AC_SY450_.jpg',
       'https://m.media-amazon.com/images/I/813MSxTRhbL._AC_SY450_.jpg',
