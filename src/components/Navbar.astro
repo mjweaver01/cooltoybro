@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets'
-import { navItems } from '@/lib/constants'
+import { siteName, navItems } from '@/lib/constants'
 const { active } = Astro.props
 ---
 
@@ -10,7 +10,7 @@ const { active } = Astro.props
   >
     <a href="/" class="flex items-center font-display text-2xl flex-shrink-0">
       <Image
-        alt="Cool Toy Bro Logo"
+        alt={siteName}
         class="block w-[65px]"
         src="/cooltoybro_lg.png"
         width="65"
