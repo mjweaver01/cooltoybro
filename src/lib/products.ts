@@ -70,7 +70,7 @@ export const products: ProductRecord[] = [
     rank: {
       price: 5,
       quality: 3,
-      vibes: 2,
+      vibes: 1,
       description:
         "This is pretty cool, but I'm not spending 2 and a half racks on this; ill try printing my own for that, sheit.",
     },
@@ -297,7 +297,12 @@ export const products: ProductRecord[] = [
     collections: ['expensive'],
     flair: ['Best Desk Chair'],
     tags: ['chair', 'deskchair', 'desk chair', 'easy', 'tech', 'hard'],
-    relatedProducts: ['apple-macbook-pro-m3-2023'],
+    relatedProducts: [
+      'apple-macbook-pro-m3-2023',
+      'apple-airpods-max',
+      'akatsuke-mat',
+      'mechanical-keyboard-brown-switches',
+    ],
     description: '',
     additionalInformation: `
     <h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">Specs</h2>
@@ -322,7 +327,12 @@ export const products: ProductRecord[] = [
   {
     slug: 'apple-macbook-pro-m3-2023',
     title: 'Apple M3 MacBook Pro Laptop (2023 Model)',
-    relatedProducts: ['haworth-fern-office-chair', 'apple-airpods-pro-2nd-gen'],
+    relatedProducts: [
+      'haworth-fern-office-chair',
+      'apple-airpods-pro-2nd-gen',
+      'akatsuke-mat',
+      'mechanical-keyboard-brown-switches',
+    ],
     images: [
       'https://m.media-amazon.com/images/I/61lsexTCOhL._AC_SX679_.jpg',
       'https://m.media-amazon.com/images/I/61RdWPq8UfL._AC_SX679_.jpg',
@@ -502,8 +512,8 @@ export const products: ProductRecord[] = [
         link: 'https://amzn.to/48ocB6k',
       },
     ],
-    tags: ['prime'],
-    flair: [],
+    flair: ['prime'],
+    tags: [],
     rank: {
       price: 2,
       quality: 5,
@@ -511,125 +521,712 @@ export const products: ProductRecord[] = [
       description: 'The best protein powder in the best flavor, period. All bros agree.',
     },
   },
+  {
+    slug: 'apple-airpods-max',
+    title: 'Apple AirPods Max',
+    images: ['https://m.media-amazon.com/images/I/81jqUPkIVRL._AC_SX342_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/6d6dd680-d893-4dc2-9883-f6874ba65d99/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/71j7AK0ImLL.SX522_.jpg',
+      },
+    ],
+    relatedProducts: [
+      'apple-macbook-pro-m3-2023',
+      'akatsuke-mat',
+      'mechanical-keyboard-brown-switches',
+      'haworth-fern-office-chair',
+    ],
+    price: 525,
+    description:
+      'Introducing AirPods Max — a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here.',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> BREATHTAKING AUDIO QUALITY — Apple-designed dynamic driver provides high-fidelity audio. Computational audio combines custom acoustic design with the Apple H1 chip and software for breakthrough listening experiences.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> FOCUS ON WHAT’S PLAYING — Active Noise Cancellation blocks outside noise so you can immerse yourself in music.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> HEAR THE WORLD AROUND YOU — Transparency mode lets you hear and interact with the world around you.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> PERSONALIZED SPATIAL AUDIO — With sound that suits your unique ear shape along with dynamic head tracking, AirPods Max deliver an immersive listening experience that places sound all around you. You can also listen to select songs, shows, and movies in Dolby Atmos.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> ACOUSTIC-FIRST DESIGN — Designed with a knit-mesh canopy and memory foam ear cushions for an exceptional over-ear fit that perfectly seals in sound.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> MAGICAL EXPERIENCE — Pair AirPods Max by simply placing them near your device and tapping Connect on your screen. AirPods Max pause audio when you take them off. And Automatic Switching makes listening between your iPhone, iPad, and Mac completely effortless.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> LONG BATTERY LIFE — Up to 20 hours of listening, movie watching, or talk time with Active Noise Cancellation and Personalized Spatial Audio enabled.  </span></li>  </ul>   <!-- Loading EDP related metadata -->                    <div class="a-row a-expander-container a-expander-inline-container"> <div aria-expanded="false" class="a-expander-content a-expander-extend-content" style="display:none">    <ul class="a-unordered-list a-vertical a-spacing-none">  <li class="a-spacing-mini"><span class="a-list-item">PRECISION CONTROL — Use the Digital Crown to play and pause music, to answer, end, and mute yourself on calls, and to control volume and skip between tracks.</span></li>  <li class="a-spacing-mini"><span class="a-list-item">A SMARTER CASE — Store in an ultra low-power state with the slim Smart Case.</span></li>  <li class="a-spacing-mini"><span class="a-list-item">LEGAL DISCLAIMERS — This is a summary of the main product features. See “Additional information” to learn more.</span></li>  </ul>   </div> <a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-extend-header" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Show more&quot;, &quot;collapse_prompt&quot;:&quot;Show less&quot;}"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">Show more</span></a>  </div>',
+    collections: ['expensive'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/42M1S4x',
+      },
+      {
+        title: 'Apple',
+        link: 'https://www.apple.com/airpods-max/',
+      },
+    ],
+    tags: ['apple', 'airpods', 'max', 'headphones'],
+    flair: ['prime'],
+    rank: {
+      price: 3,
+      quality: 5,
+      vibes: 3,
+      description:
+        'Simply the best over ear headphones on the market. Probably not the coolest looking headphones, but arguable also the coolest looking headphones.',
+    },
+  },
+  {
+    slug: 'crocs-unisex-adult-minecraft-clog',
+    title: 'Crocs Minecraft Clogs',
+    images: [
+      'https://m.media-amazon.com/images/I/81a-GNuHb+L._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/81LneZsGG8L._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/81srG0X7HSL._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/91oU8uXL+cL._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/71bymF2i2cL._AC_SL1500_.jpg',
+      'https://m.media-amazon.com/images/I/91-J52rd3sL._AC_SL1500_.jpg',
+    ],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/63dd1acb-f6b0-450c-af23-d94007154f8d/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/91fspNg6TDL.SX522_.png',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/a17df1aa-d60d-476d-8ff6-0d51ccce7fda.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/9efd4730-a735-465f-9544-f45555f02bb8.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1W327OATOYFUY/1617609195655/7dafb2e4-02e3-4a47-a860-d0f26e8a4919/1617609326917sbv.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/6cf9b561-2539-4b3f-8232-d4cb81dd7898.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/30c54ae2-d61e-457d-b6c2-f62401130587.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+    ],
+    price: 60,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> <span>Step into adventure mode with Minecraft x Crocs, built from the ground up and brought to life for real-world escapades. © 2023 Mojang AB. All Rights Reserved. Minecraft, the MINECRAFT logo and the MOJANG STUDIOS logo are trademarks of the Microsoft group of companies.</span>  </p>',
+    additionalInformation: '',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/49Kas67',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 5,
+      description: 'Literally cannot be any more swagged out than some minecraft Crocs.',
+    },
+  },
+  {
+    slug: 'fender-player-stratocaster-black-bundle',
+    title: 'Fender Player Stratocaster®',
+    images: ['https://m.media-amazon.com/images/I/811bQoNd7LL._AC_SY550_.jpg'],
+    videos: [
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1455M4GZBYJ66/6b6a22d0-66cb-43f4-8689-f355dc2da3ae-SBV_291884-T1/b8d67515-1fde-4153-8388-9b4e69da4494/1603906339496sbv.mp4',
+        poster:
+          'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1455M4GZBYJ66/6b6a22d0-66cb-43f4-8689-f355dc2da3ae-SBV_291884-T1/b8d67515-1fde-4153-8388-9b4e69da4494/1603906339496.0000000.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/4a71db4a-f535-416e-bce1-687715e348e4.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://d1f0esyb34c1g2.cloudfront.net/transcode/AssetLibrary/AssetLibrary/amzn1.assetlibrary.asset1.cb8ad579c6e9de2f4b323d22c3a071e3:version_v1/20438b41-f6b9-45d2-97f5-9b8e49a7e325/1663770720823.0000001.jpg',
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/ENTITY2LNEJFANNN7QS/afa5136e-05d3-403b-b1eb-ad721adce2ea/ba0172c2-ff3a-4363-82b1-dae73bf3f874/1613510558235sbv.mp4',
+        poster:
+          'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/ENTITY2LNEJFANNN7QS/afa5136e-05d3-403b-b1eb-ad721adce2ea/ba0172c2-ff3a-4363-82b1-dae73bf3f874/1613510558235.0000000.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/9e9c0426-800f-4cfe-8bbd-9a22a6972f49.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://d1f0esyb34c1g2.cloudfront.net/transcode/AssetLibrary/AssetLibrary/amzn1.assetlibrary.asset1.3953ae21beeb4c607c1e7986adc552e8:version_v1/6dcf1519-43b6-4d72-b0f4-744075a25154/1697077064523_THUMBNAIL-360P-FRAME-3-CAPTURE-2.0000001.jpg',
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1HCW54TXS7F4T/1667508622697/e9571956-26a7-4c9d-9e4e-04c8f512a0a7/1667509652500sbv.mp4',
+        poster:
+          'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1HCW54TXS7F4T/1667508622697/e9571956-26a7-4c9d-9e4e-04c8f512a0a7/1667509652500.0000000.jpg',
+      },
+    ],
+    price: 849.99,
+    description:
+      "<!-- show up to 2 reviews by default -->                       <p> <span>The inspiring sound of a Stratocaster is one of the foundations of Fender. Featuring this classic sound - bell-like high end, punchy mids and robust low end, combined with crystal-clear articulation - the Player Stratocaster is packed with authentic Fender feel and style. It's ready to serve your musical vision, it's versatile enough to handle any style of music and it's the perfect platform for creating your own sound. Respecting our heritage while maintaining our innovative spirit, the power trio of Player Series single-coil pickups are crisp and articulate - it's authentic Fender tone with a modern edge. The \"Modern C\"-shaped maple neck's comfortable contours and smooth finish are ideal for almost any playing style. By adding a 22nd medium jumbo fret to the contemporary 9.5\"-radius fingerboard we've made it easier to express yourself musically. The updated 2-point tremolo design has smoother travel for enhanced playing feel while simultaneously giving you rock-solid tuning stability since there's less friction against the posts. Other features include master volume and tone controls, a 5-way pickup switch, 3-ply pickguard, synthetic bone nut, dual-wing string tree, sealed tuning machines and four-bolt \"F\"-stamped neck plate that marks this instrument as the real deal - as Fender as it gets. Own your tone and create something new with the Player Stratocaster.FINGERBOARD RADIUS: 9.5' (241 mm)NUMBER OF FRETS: 22TRUSS ROD: StandardTRUSS ROD NUT: 3/16' Hex AdjustmentSTRING NUT: Synthetic BoneNUT WIDTH: 1.650' (42 mm)NUT MATERIAL: Synthetic BoneBRIDGE: 2-Point Synchronized Tremolo with Bent Steel SaddlesBODY FINISH: Gloss PolyesterBRIDGE PICKUP: Player Series Alnico 5 Strat Single-CoilPICKUP CONFIGURATION: SSSAdding value to your purchase, Austin Bazaar bundles your instrument with quality accessories, saving you time and money. Transport and store your guitar in style with the included Fender premium w</span>  </p>",
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> PLAYER SERIES PICKUPS: Designed for authentic Fender tone - with a bit of an edge - our Player Series pickups are crisp and articulate, a modern tweak of our classic sound.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 2-POINT TREMOLO BRIDGE: This Stratocaster features a two-point tremolo bridge for smooth, superior tremolo action.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 22-FRET NECK: Adding another fret extends the range, while the \'Modern C\'-shaped neck profile is comfortable for almost any playing style.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> COMFORTABLE: The "Modern C"-shaped maple neck\'s comfortable contours and smooth finish are ideal for almost any playing style. By adding a 22nd medium jumbo fret to the contemporary 9.5"-radius fingerboard we\'ve made it easier to express yourself musically.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> EVERYTHING YOU NEED IN ONE BOX: Adding value to your purchase, Austin Bazaar bundles your instrument with quality accessories, saving you time and money. Transport and store your guitar in style with the included Fender premium wood case. The added 10ft instrument cable, clip-on tuner, guitar strap, nickel strings and 24-pack picks are a reliable choice for your needs in the studio and on stage. Learn more about your instrument with the included Austin Bazaar Instructional DVD.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['expensive'],
+    relatedProducts: ['daddario-pro-winderoriginal-guitar-string-winder-cutter'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/49sQFYX',
+      },
+    ],
+    tags: [],
+    flair: ['prime', 'Best Guitar'],
+    rank: {
+      price: 3,
+      quality: 5,
+      vibes: 5,
+      description:
+        'The "Mexican Strat" is the best blend of affordability, sound, and playability. This kit gives you everything you need to get on your feet and go from newbie to playing shows.',
+    },
+  },
+  {
+    slug: 'xbox-series-x-1tb',
+    title: 'Xbox Series X 1TB',
+    images: ['https://m.media-amazon.com/images/I/51ojzJk77qL._SX342_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/4e508e43-40ec-4ba8-9499-5d8d5ee771c6/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/410cvzsv59L.SX522_.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/e21d94c2-f97d-4a63-a593-8b0cf006111b.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/e21d94c2-f97d-4a63-a593-8b0cf006111b.mp4/r/THUMBNAIL_1080P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A2CBHOW8LPM3Y6/1624404332005/ccf8837d-fc2d-45e4-90ea-dd1894ba385e/1624404380968sbv.mp4',
+        poster:
+          'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A2CBHOW8LPM3Y6/1624404332005/ccf8837d-fc2d-45e4-90ea-dd1894ba385e/1624404380968.0000000.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/f6f6940d-2c07-4d61-8ae6-22ee28144257.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/f6f6940d-2c07-4d61-8ae6-22ee28144257.mp4/r/THUMBNAIL_1080P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/cc96d5df-33f9-4037-9acf-bf8874a65c32.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/cc96d5df-33f9-4037-9acf-bf8874a65c32.mp4/r/THUMBNAIL_1080P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/bb42ce41-b374-465f-b782-3826834ee0ba.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/bb42ce41-b374-465f-b782-3826834ee0ba.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG',
+      },
+    ],
+    price: 449,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> <span>Xbox Series X, the fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS—all powered by Xbox Velocity Architecture. Enjoy thousands of games from four generations of Xbox, with hundreds of optimized titles that look and play better than ever. And when you add Xbox Game Pass Ultimate (membership sold separately), you get online multiplayer to play with friends and an instant library of 100+ high-quality games, including day one releases from Xbox Game Studios.*</span>  </p>',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> XBOX SERIES X: The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming.*  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> FASTER LOAD TIMES: Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS – all powered by Xbox Velocity Architecture.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> IN THE BOX: Xbox Series X console, one Xbox Wireless Controller, an ultra high-speed HDMI cable, power cable, and 2 AA batteries.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SURROUND SOUND: Enhance gameplay with both full-spectrum visuals and immersive audio with Dolby Vision and Dolby Atmos  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['expensive'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3wrzbxE',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 3,
+      quality: 5,
+      vibes: 5,
+      description: '',
+    },
+  },
+  {
+    slug: 'litter-robot-4',
+    title: 'Litter Robot 4',
+    images: ['https://m.media-amazon.com/images/I/816HD3JHl1L._AC_SY450_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8a43aff9-1923-46a1-b26d-1b3c3070c3bf/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/61ykLqmuNgL.SX522_.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/af724f75-1955-435c-91c3-7752d34f6076.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/e67223b2-3c36-48aa-935c-a65183668a46.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/258224e5-4981-4789-b19b-61a2544e4803.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/5d1e2d79-bda6-4dcc-987f-4bb214403ed3.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/f123945f-97af-40ee-8930-5fd7eba5f3ae.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+    ],
+    price: 899,
+    description:
+      'Never scoop again with Litter-Robot 4: The smartest, quietest, highest-rated WIFI-enabled, self-cleaning litter box for cats. Add a Carpet Tray to use Litter-Robot 4 on any surface.',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> LITTER-ROBOT 4 BUNDLE: Save on the Litter-Robot 4 Bundle, which comes complete with Litter-Robot 4 automatic litter box, ramp, fence, Litter-Robot LitterTrap Mat, OdorTrap Holder with 6 OdorTrap Packs &amp; 50 waste drawer liners.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SELF-CLEANING LITTER BOX: Never scoop again with Litter-Robot 4, the automatic, self-cleaning cat litter box. The patented sifting process automatically separates your cat\'s waste from the clean litter. Just empty the waste drawer when full.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> MONITOR + CONTROL VIA APP: Control the smart litter box straight from the Whisker app. Monitor waste and litter levels in real time, see litter box activity, and track kitty’s weight after each use. Compatible with any clumping litter.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> REDUCES LITTER BOX ODORS &amp; TRACKING: The automatic clean cycle and OdorTrap Packs significantly reduce odors compared to standard litter boxes. The LitterTrap Mat and fence reduce litter tracking by catching litter on the way out.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SAFETY &amp; USE: Suitable for up to 4 cats; each cat must weigh at least 3 lbs (1.4 kg) to safely use Litter-Robot in Automatic Mode. Weight scale technology is most accurate when the unit sits on a firm surface, not carpeting or uneven surfaces.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> DESIGNED &amp; ASSEMBLED IN THE USA: Litter-Robot comes with our comprehensive WhiskerCare 1-Year Warranty with an extended plan available for purchase. Whisker products may be returned within 90 days of receipt for a full refund minus shipping.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['expensive'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3SQ0068',
+      },
+      {
+        title: 'Litter Robot',
+        link: generateUTM('https://www.litter-robot.com/litter-robot-4.html'),
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 4,
+      quality: 5,
+      vibes: 5,
+      description:
+        "Listen, I f-ing hate anything to do with litter.<br><br>If you never want to scoop litter again, here you go. It's wifi connected, it supports multi-cats, and tells you when it's full. Not cheap but simply the best.",
+    },
+  },
+  {
+    slug: 'zum-goats-milk-soap-bar-3-pack',
+    title: 'Zum Bar Soap (3 Pack)',
+    images: ['https://m.media-amazon.com/images/I/71sL39GiEEL._SY355_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5143c1ae-1c64-43ad-8fcd-1b70fb9b1b29/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/61BDg+lqCUL.SX522_.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/122e6304-afe7-4c16-8a78-d8d61aca82ac.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A24GILMCOPBAO1/1644517779836/00877b8c-d06b-4640-a67f-6cf167daa0ba/1644517839253sbv.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A16FXJBXHZ7USK/5d776a1b-2c7c-4798-8ce7-e05622f2cc69-SBV_291884-T1/93e7dc3c-5aeb-46d8-b676-16ae16108140/1605307909152sbv.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1X5XQZRRJMTB6/1656462076395/66e0320d-59ad-4044-a17f-11b153781576/1656462112005sbv.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+      {
+        link: 'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A3KTHAZDDKDB9O/1655803134099/088f39a2-8195-44a4-a4d9-9b988c88ceb9/1655803362521sbv.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+    ],
+    price: 17.55,
+    description: '',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Plant-Packed Formula: Crafted with natural, food-grade oils like olive, coconut, palm and castor oils, goat milk and essential oils  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Goat Milk Soap Benefits: Zum Bars are jam-packed with nutrients and created using a cold-processed method to maintain the integrity of the goat\'s milk and other ingredients  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Lavender Soap Bundle Scent Notes: Lavender Zum features classic floral lavender paired with woodsy frankincense, earthy rosemary and energizing mint  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Natural &amp; Cruelty-Free: We use ingredients from nature and don\'t test our products on animals, making our products vegetarian and cruelty-free  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> About Zum by Indigo Wild: Zum’s natural products for body and home are handcrafted in the U.S.A. with ingredients you can say, spell and love to smell  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    tags: [],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3UTjMAm',
+      },
+    ],
+    flair: ['prime', 'Best Soap'],
+    rank: {
+      price: 1,
+      quality: 5,
+      vibes: 5,
+      description: 'The best soap for your or your bro',
+    },
+  },
+  {
+    slug: 'nectar-copper-14-queen-mattress',
+    title: '14" Queen Mattress',
+    images: ['https://m.media-amazon.com/images/I/81WBGPBD0pL._AC_SY450_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/d0664908-6000-42a0-b570-00f12aae3d43/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/51QrA+sdr1L.SX522_.jpg',
+      },
+    ],
+    price: 1,
+    description:
+      "<!-- show up to 2 reviews by default -->                       <p> <span>JOIN MORE THAN 5.5 MILLION HAPPY SLEEPERS. Recognized as the fastest-growing e-commerce retailer by Internet Retailer, Nectar is part of the Resident family of brands. Our award-winning memory foam and hybrid mattresses have premium layers with a cooling cover to ensure you'll be ready to seize the day, night, and everything in between. We offer a 365-night trial to make sure Nectar is right for you–sleep on it in all four seasons. Nectar is built to the highest standards with innovative, quality materials. We stand behind our construction and craftsmanship for as long as you own your mattress with our Forever Warranty™–the longest in the industry.</span>  </p>",
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Mesh  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 365-NIGHT HOME TRIAL - Our industry-leading year-long trial period starts the day your Nectar mattress is delivered. Sleep on it in all four seasons.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> THERAPEUTIC GEL MEMORY FOAM - Nectar is a gel memory foam bed-in-a-box mattress designed for every kind of sleeper. It helps you sleep cool and conforms to every curve. Get support where you need it, and comfort where you want it.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> TRIPLE-ACTION COOLING - Sleep easy breezy on a breathable cover with cooling technology and real copper fibers that wick heat. ActiveCool HD-infused phase change material reacts to your body temp.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> PERFECT SUPPORT FOR ANY POSITION - Whether you\'re a side sleeper, back sleeper, stomach sleeper, or just toss and turn, Nectar offers optimal level of firmness, coolness, breathability, and comfort.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> FOREVER WARRANTY - We guarantee the mattress for as long as you own it. We offer the longest warranty in the industry, and proudly stand behind our products.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3UN3Q2B',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 5,
+      quality: 5,
+      vibes: 5,
+      description:
+        'I waded through many show room floors and shitty alternatives to land upon this matress. The reviews speak for themselves. I have the king, but yanno, do your thing, king.',
+    },
+  },
+  {
+    slug: 'akatsuke-mousepad',
+    title: 'Akatuske Mousepad',
+    images: ['https://m.media-amazon.com/images/I/41AuOAwvyAL._AC_SY355_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/496abee2-2489-4b71-9049-ec0272f5d2a7.mp4/productVideoOptimized.mp4',
+        poster:
+          "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' /%3E",
+      },
+    ],
+    price: 21.99,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> <span>Extended Mouse Pad:31.5x11.8x0.16 Inch provides perfect movement space. High-quality Material:100%Polyester cloth, and 4mm thickness Rubber pad. Package Includes:1 x Extended Gaming Mousepad with Stitched Edges (4mm thickness). Non-Slip Rubber Base:The soft and dense non-skid nature rubber base keeps the pad firmly in surface. Durable Design:The durable stitched edges and the high-density premium texture ensure long-term use. Ultra Smooth Surface:Smooth surface and accurate mouse movement improve gaming and working experience.</span>  </p>',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Size: 31.5 x 11.8 x 0.16 inches  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Ultra-smooth Cover: 4mm Rubber pad at the bottom  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> ANTI-SLIP RUBBER BASE：Adopting High Elasticity Natural Rubber Material  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Waterproof &amp; Easy-Clean: Effectively prevent damage from spilled drinks or other accidents  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> DELICATE STITCHED EDGES：Our Mouse Pad Features Durable Stitched Edges To Prevent The Mouse Pad From Fraying And Degumming  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/49uVhOy',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 1,
+      quality: 4,
+      vibes: 5,
+      description:
+        'The cheapest way to flex on all your homies and let them know what a bad boy you are.',
+    },
+  },
+  {
+    slug: 'yogasleep-dohm-uno-white-noise-sound-machine',
+    title: 'White Noise Sound Machine',
+    images: ['https://m.media-amazon.com/images/I/61T+QOLlemL._AC_SX425_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/8c13a149-23e9-5519-8836-e781dc7e0f34/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4',
+        poster: 'https://m.media-amazon.com/images/I/51LrECeHzRL.SX522_.jpg',
+      },
+    ],
+    price: 36.99,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> <span>Beloved by generations since 1962, the Dohm is the original white noise machine. The Uno model features our fan based natural white noise producing our signature sound – the soothing ambient sounds of rushing air, without the disturbance of actual moving air or other irritations. With a single speed option and adjustable tone and volume, the Dohm Uno makes it simple to create a personalized sound environment, excellently masking background sounds and allowing for better sleep, office privacy, effective soothing for kids and babies, and calming for sound-sensitive dogs. Powered by a 6-foot 120V AC plug (for domestic use only), just plug in the Dohm Uno, flip the switch, then rotate the cap and collar to find the best sound for you. Let the noise-masking magic happen for a natural sleep aid, office privacy, baby soothing, tinnitus relief, respite from noisy snorers and unfamiliar hotel rooms, and a relaxing calming balm for barking dogs. The Dohm Uno features a simple and compact design that fits anywhere and blends unobtrusively into surroundings.</span>  </p>',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> THE ORIGINAL WHITE NOISE MACHINE, SIMPLIFIED: Beloved by generations since 1962, the Dohm Uno model features our fan-based natural white noise producing our signature sound – the soothing ambient sounds of rushing air, without the disturbance of actual moving air.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> CUSTOMIZED SOUND EXPERIENCE: With one-speed option for adjustable volume, the Dohm Uno makes it simple to create a personalized sound environment, excellently masking background noise and allowing for better sleep, office privacy, effective soothing for kids and babies, and calming for sound-sensitive dogs.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> UNBEATABLE QUALITY &amp; GUARANTEE: Sleeping is believing. For over 50 years, Yogasleep by Marpac has been the gold standard in white noise machines - read the reviews and you\'ll learn why. Assembled for decades in the USA and backed by a one-year limited warranty and the always exceptional Yogasleep customer service promise, we stand behind each product and offer you a 101 night trial to try it out.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SIMPLE TO USE: Powered by a 6-foot 120V AC plug, just plug in the Dohm Uno, flip the switch to on, then rotate the collar to find the best sound for you. Let the noise-masking magic happen for a natural sleep aid, office privacy, baby soothing, tinnitus relief, respite from noisy snorers and unfamiliar hotel rooms, and a relaxing calming balm for barking dogs.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> CLASSIC DESIGN: Featuring a compact and basic design that fits anywhere and blends unobtrusively into surroundings.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/42OL8tn',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 4,
+      description:
+        'The best sound machine out there. Makes real noise, not from a speaker, and you can adjust the sounds it makes.',
+    },
+  },
+  {
+    slug: 'be-here-now',
+    title: 'Be Here Now - Ram Dass',
+    images: ['https://m.media-amazon.com/images/I/81xNWm7jhXL._SY342_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/42dcbb8f-16f6-4590-b066-df32018a3e1c/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/61QvQ29TIrL.SX522_.jpg',
+      },
+    ],
+    price: 8.99,
+    description: '',
+    additionalInformation: '',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/49obkgQ',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 1,
+      quality: 5,
+      vibes: 5,
+      description:
+        'Get yourself some perspective on life n sheit, bro. Or read the Bible and FIND GOD',
+    },
+  },
+  {
+    slug: 'quest-3-128gb-',
+    title: 'Quest 3 128GB',
+    images: [
+      'https://m.media-amazon.com/images/I/81whTB488bL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/81yHEZvUyJL._SX342_.jpg',
+      'https://m.media-amazon.com/images/I/61KC7rKQFpL._SX342_.jpg',
+    ],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/0e134d83-fbf3-49e8-9bb6-1454bfe5370b/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/51ea89zXvZL.SX522_.jpg',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/9efc699d-2c51-4f75-a62a-43f62217b74a.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/9efc699d-2c51-4f75-a62a-43f62217b74a.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/8931ceb7-4b62-4154-92d2-7b5c458f730d.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/8931ceb7-4b62-4154-92d2-7b5c458f730d.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/2c073208-05b7-4912-8ca7-ef5d383ba666.mp4/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/2c073208-05b7-4912-8ca7-ef5d383ba666.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/60811430-abeb-41c5-bd68-5b44e13087f7.m4v/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/60811430-abeb-41c5-bd68-5b44e13087f7.m4v/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG',
+      },
+      {
+        link: 'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/68c3d475-53dd-4d11-b180-70e7bbbc5a2f.mov/productVideoOptimized.mp4',
+        poster:
+          'https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/68c3d475-53dd-4d11-b180-70e7bbbc5a2f.mov/r/THUMBNAIL_1080P_FRAME_3_CAPTURE_2.JPG',
+      },
+    ],
+    price: 499,
+    description:
+      "<!-- show up to 2 reviews by default -->                       <p> <span>Expand your world with Meta Quest 3, a mixed reality headset that lets you jump into full immersion or blend physical and virtual worlds to transform your home into an exciting new playground. It’s the most powerful Quest yet, reimagined from the inside out with breakthrough technology. Extraordinary experiences come to life with lightning fast performance and dazzling details. And with the world's best library of 500+ immersive apps, there’s something for everyone to discover. Unlock access to the best immersive experiences with a 6-month subscription2 to Meta Quest+ and embark on a journey to save all of reality with the marquee VR action RPG Asgard’s Wrath 21. Included with purchase for a limited time. See child safety guidance online; Accounts for 10+. Based on the graphic performance of the Snapdragon XR2 Gen 2 vs Meta Quest 2. Asgard’s Wrath 2 is intended for mature audiences. Offer ends 3/30/24; terms apply. Eligibility and auto-renewal terms apply for trial subscriptions. See full terms. Unlock access to the best immersive experiences with a 6-month subscription2 to Meta Quest+ and embark on a journey to save all of reality with the marquee VR action RPG Asgard’s Wrath 21. Included with purchase for a limited time. See child safety guidance online; Accounts for 10+. Based on the graphic performance of the Snapdragon XR2 Gen 2 vs Meta Quest 2. Asgard’s Wrath 2 is intended for mature audiences. Offer ends 3/30/24; terms apply. Eligibility and auto-renewal terms apply for trial subscriptions. See full terms.</span>  </p>",
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Get the epic new Asgard’s Wrath 2 included (a $59.99 value)* when you buy Meta Quest 3 128GB*.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Dive into extraordinary experiences with a mixed reality headset that transforms your home into an exciting new playground, where virtual elements blend into your actual surroundings.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> It’s the most powerful Quest yet*, featuring next-level performance with more than double the graphic processing power of Quest 2. (*Based on the graphic performance of the Snapdragon XR2 Gen 2 vs Meta Quest 2.)  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Experience more immersion with dazzling visuals with the 4K+ Infinite Display (a nearly 30% leap in resolution from Quest 2) and rich 3D audio with enhanced sound clarity, bass performance and a 40% louder volume range than Quest 2  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Reach out and touch virtual worlds with Touch Plus controllers that give you fine-tuned precision, realistic sensations and more intuitive interactions. You can even navigate without controllers with Direct Touch that follows your gestures, so you can use just your hands to find your way.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Explore the world’s best library of 500+ immersive apps and find your favorite content across gaming, fitness, wellness, entertainment, social experiences and more.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Get up to 2.2 hours of usage on average with the option to extend your battery life further with Battery Saver mode. Use the included 18W power adapter to fully charge your headset.* (*Battery life is dependent on various factors such as device settings, usage, age of battery, Bluetooth usage, and wireless conditions.)  </span></li>  </ul>   <!-- Loading EDP related metadata -->                    <div class="a-row a-expander-container a-expander-inline-container"> <div aria-expanded="false" class="a-expander-content a-expander-extend-content" style="display:none">    <ul class="a-unordered-list a-vertical a-spacing-none">  <li class="a-spacing-mini"><span class="a-list-item">Play what you love longer with maximum comfort. Personalize your fit with added customization and a redesigned slimmer profile compared to Quest 2.</span></li>  <li class="a-spacing-mini"><span class="a-list-item">Everyone in the family is safe to explore with privacy features and supervision tools. See child safety guidance online; Accounts for 10+.</span></li>  </ul>   </div> <a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-extend-header" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Show more&quot;, &quot;collapse_prompt&quot;:&quot;Show less&quot;}" data-csa-c-id="9zrdpg-ged0dg-cryzz1-mdc970"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">Show more</span></a>  </div>',
+    collections: ['expensive'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3uMpHfW',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 4,
+      quality: 4,
+      vibes: 2,
+      description:
+        'If this is what you\'re into, the Quest 3 is the best bang for your buck. The rare "Don\'t be an apple sucker" on this one.',
+    },
+  },
+  {
+    slug: 'coleman-65cc-mini-bike',
+    title: 'Coleman 65hp Mini Bike',
+    images: ['https://m.media-amazon.com/images/I/81+ofcJCkjS._AC_SY355_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/268843bb-488c-447d-a450-baa083d275d7/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/61J-S8X04cL.SX522_.jpg',
+      },
+    ],
+    price: 846.76,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> <span>The Coleman Trail200U (CT200U) is a nostalgic, reliable, affordable off-road trail mini bike that will take an adult back to their childhood. The Coleman mini bike will provide years of fun on the trail for the entire family. It comes with easy pull start operation, 196cc engine, low pressure tires for a soft and stable ride, rugged and proven clutch, jackshaft, and chain drive along with rear drum - handle operated braking system.</span>  </p>',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> IDEAL FOR BEGINNER &amp; EXPERIENCED RIDERS: With a load capacity of 200 pounds and clearance of 5. 5 inches, this scooter is perfect for everyone 13+  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> POWERFUL AND EFFICIENT: The 4 stroke OHV 1 cylinder engine with 196cc/6; 5hp will power you through the trails all day with plenty of muscle while still being fuel efficient  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> EASY AND SMOOTH: Easy pull start and rear drum break allows for easy operation; While the low-pressure tires provide a soft, smooth ride for stability even on rugged terrain  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> DURABLE: Built with a rugged, proven clutch and a solid, sturdy metal frame, this heavy-duty mini bike will withstand years of fun on the trail  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> ASSEMBLY: Proper product assembly is critically important to ensure the product functions correctly. Assembly instructions must be followed precisely. Professional assembly is recommended  </span></li>  </ul>   <!-- Loading EDP related metadata -->                    <span class="caretnext">›</span> <a id="seeMoreDetailsLink" class="a-link-normal" href="#productDetails"> See more product details </a>',
+    collections: ['expensive'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3OR4jx2',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 4,
+      quality: 4,
+      vibes: 5,
+      description:
+        'Literally any bro would make questionable sacrifices for one of these. The coolest toy under 1k for any real adrenaline junkie, or just someone who grew up in a trailer park and had one of these like I did.',
+    },
+  },
+  {
+    slug: 'mechanical-keyboard-brown-switches',
+    title: 'RGB Mechanical Keyboard',
+    images: ['https://m.media-amazon.com/images/I/61MJkcGKg0L._AC_SY450_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/6722b3b0-c829-4094-b0a4-11292b145aea/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/51ICEucRa+L.SX522_.jpg',
+      },
+    ],
+    price: 55.99,
+    description: '',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> 65% Mechanical Keyboard: TIETI 67 keyboard compresses powerful features into 65% of the overall size. Easy to use even in the tightest of spaces, it is suitable for on-the-go use.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Hot-swappable Switches: Wired Gaming keyboard with hot-swappable switches, full keyboard pluggable, plug-and-play. Use Gateron Pro Switches to provide a linear feel with a smoother touch and no blocking sensation at all, giving your fingertips a different kind of fun.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 18 Million RGB Backlight: 22 different RGB lighting modes and effects, FN+＞/＜adjusts the lighting effects and the breathing speed to provide you with an immersive gaming experience. Each LED is precisely calibrated to display the perfect RGB backlighting. Create your own sense of ambiance with TIETI-Synapse software.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Extensive Compatibility: TIETI mechanical keyboard uses a USB interface, making it compatible with Windows / MAC / IOS / Android, plug-and-play, no drivers or software required. Comes with a clip for easy access when you want to change the switch.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Ergonomic keyboard: B-2 Spirit Mini keyboard is ergonomically designed to relax your wrists, bringing comfort and less strain for long-term typing or gaming. Choose thick dyed keycaps with clear legends and textures, durable keycaps won\'t oil up or fade in long term use.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3SPBTVd',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 1,
+      quality: 4,
+      vibes: 4,
+      description:
+        '2.4ghz dongle, bluetooth, and hardwire. RGB, mechanical clickity clack goodness. All for a third of the price of the big brands.',
+    },
+  },
+  {
+    slug: 'osprey-daylite-plus-commuter-backpack',
+    title: 'Osprey Backpack',
+    images: ['https://m.media-amazon.com/images/I/81VSFgVff1L._AC_SY450_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/f93a841c-696f-4fea-9fd6-d3e530fab306/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/51jtEE54UGL.SX522_.jpg',
+      },
+    ],
+    price: 68,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> <span>Since Osprey was founded in 1974, every single product design has passed through the hands of owner and founder Mike Pfotenhauer, who created his first backpack at age 16. In Santa Cruz, California, the young entrepreneur opened a retail shop in the front of his rental house where backpackers and travelers came for custom-fit, made-to-order packs constructed over several days by Mike himself. As the demand for the great-fitting packs increased, Osprey found itself relocating to its current home in Southwest Colorado. Today, Osprey is a melting pot of diverse personalities, backgrounds and abilities. All share the common belief that adventure is open to everyone and found anywhere.</span>  </p>',
+    additionalInformation:
+      '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Premium efficiency and design  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Storage tuned to the each season  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Purpose designed to help mak the most of each exploration. Internal hydration sleeve  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/4bOYzxu',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 3,
+      description:
+        'Probably not che coolest backpack, but the undeniable best quality for the money backpack.',
+    },
+  },
+  {
+    slug: 'daddario-pro-winderoriginal-guitar-string-winder-cutter',
+    title: "D'Addario Pro-Winder",
+    images: ['https://m.media-amazon.com/images/I/71flky14taL._AC_SX425_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/4b2024f4-dec3-4cfd-8a08-b01ffc6e1201/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/81qzEXkbuOL.SX522_.jpg',
+      },
+    ],
+    price: 10.99,
+    description:
+      "<!-- show up to 2 reviews by default -->                       <p> </p><h4><span>Planet Waves Pro Winder String Winder and Cutter</span></h4><span> Planet Waves Pro-Winder </span><h5><span>Planet Waves Pro-Winder</span></h5><p><span>Most ordinary peg winders serve the single basic purpose of winding the tuning pegs of a guitar during string changes, but the Planet Waves Pro-Winder isn't any ordinary peg winder.</span></p><h5><span>One and Done</span></h5><p><span>The ergonomic design of the Pro-Winder makes string changes easier than ever before with it's built-in clippers, bridge pin puller, and peg winder all rolled into one product. The peg winder is also designed to fit on virtually all guitars, banjos, and mandolins, truly making it a must have for every instrument case.</span></p><h5><span>Covering All the Basses</span></h5><p><span>The patented Pro-Winder design is also available for bass guitar. With a handle designed for efficient and comfortable use and a peg winder that fits both vintage and modern basses, the Bass Pro-Winder has you covered. The hardened steel clippers are also tough enough to cut through bass strings with ease.</span></p><span> <br> Planet Waves Pro-Winder for Guitar </span><h5><span>Pro-Winder For Guitar</span></h5><p><span>Designed to work for a wide variety of fretted instruments, the Pro-Winder for guitar is a perfect all-in-one tool for every player to keep in their gig bag or case. The Pro-Winder is the Swiss Army knife of string changing.</span></p><span> Planet Waves Pro-Winder for Bass </span><h5><span>Pro-Winder For Bass</span></h5><p><span>The Bass Pro-Winder takes the user friendly and ergonomic elements of the original Pro-Winder and makes them applicable for both vintage and modern bass guitar tuning pegs.</span></p><span> The Pro-Winder String Cutter </span><h5><span>Cutting Through</span></h5><p><span>With the hardened steel clippers on the Pro-Winders string cutter you can cut through your old strings to make removing them quicker, and trim the excess off of new strings after looping them through the tuning machines.</span></p><span> The Bass Pro-Winder String Cutter </span><h5><span>Making The Cut</span></h5><p><span>When it comes to bass guitar you are dealing with some pretty heavy gauge strings. The good news is that the hardened steel clippers of the Bass Pro-Winders string cutter are specifically designed to easily cut through the thickest of strings.</span></p><span> The Pro-Winder Bridgepin Puller </span><h5><span>Pull The Pin</span></h5><p><span>Designed with acoustic guitarists in mind, the Pro-Winder also has a built in bridgepin puller. This makes removing stubborn pins simple without risking damage caused by pliers and other tools.</span></p><span> The Bass Pro-Winder In Use </span><h5><span>Wind Away</span></h5><p><span>The Bass Pro-Winder is designed to seat itself on a variety of peg winder sizes and shapes. The spinning head and comfortable handle make changing bass strings a much simpler and efficient process.</span></p>  <p></p>",
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> ALL-IN-ONE GUITAR STRING WINDER TOOL - The ergonomic and high-quality design of the D\'Addario Accessories Pro-Winder makes string changes quicker and easier than ever before with its built-in clippers, bridge pin puller and peg winder all rolled into one tool.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> MUST HAVE FOR EVERY GUITAR CASE – Why fill up your case with three tools when you can have one that does it all? This indispensable tool has been designed to fit comfortably in your hand and for use on virtually all electric and acoustic guitars, basses, banjos and mandolins. Also available in a bass guitar version.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GUITAR WINDER - The guitar peg winder fits onto the guitar tuning peg and rotates to help wind the guitar strings making a quicker string change for your guitar.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> BUILT IN STRING CUTTER – With the hardened steel clippers on the Pro-Winder String Cutter you can cleanly cut through your old strings to remove them quicker and easier, and trim the excess off new strings after looping them through the tuning machines.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> INTEGRATED GUITAR PIN REMOVER - Designed with acoustic guitarists in mind, the Pro-Winder has a built-in bridge pin puller. This makes removing stubborn pins simple without risking damage caused by pliers and other tools.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    relatedProducts: ['fender-player-stratocaster-black-bundle'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3wtibXT',
+      },
+    ],
+    flair: ['prime', 'Best Winder'],
+    tags: [],
+    rank: {
+      price: 1,
+      quality: 5,
+      vibes: 5,
+      description:
+        "The truth when it comes to guitar winders/cutters. Don't waste your time with the rest, this is the best.",
+    },
+  },
+  {
+    slug: 'uniden-r8-radar-laser-detector',
+    title: 'UNIDEN R8 Radar Detector',
+    images: ['https://m.media-amazon.com/images/I/71PgNkqQR2L._AC_SX679_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e2a903fa-4b03-4937-a8ff-dc784b10bb70/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/517MSG9WZsL.SX522_.jpg',
+      },
+    ],
+    price: 612,
+    description:
+      "<!-- show up to 2 reviews by default -->                       <p> <span>The R8 is an all new platform with unsurpassed range and sensitivity. It's Dual Antenna allows the R8 to detect threats from all four directions, with voice alerts for the direction of the threat. It even shows the band and signal strength for each. Perfect just got better!</span>  </p>",
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> DUAL ANTENNA\'S WITH DIRECTIONAL ARROWS - The R8 is an all new platform with unsurpassed range and sensitivity. It\'s Dual Antenna allows the R8 to detect threats from all four directions, with voice alerts for the direction of the threat. It even shows the band and signal strength for each. Perfect just got better!.Operating temperature : -4° to +185° F (Radar/Laser), -20° to +85° C (Radar/Laser).  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GPS TECHNOLOGY w/ AUTO MUTE MEMORY - The R8 can remember and automatically mute false alerts (such as retail store doors) along your routes so you never have to listen to the same false alert twice.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> RED LIGHT AND SPEED CAMERA ALERTS - Preloaded Red Light and Speed Camera locations with Free Database and Firmware updates ensures your detector will never be out of date.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> LARGE MULTI-COLOR OLED DISPLAY - is easy-to-Read and allows for more useful information to be displayed at once. This improves your overall situational awareness.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> VOICE ALERTS - Voice alerts allow for hands-free operation and provide clear communication. Voice Alerts are programable to fit your style so you can keep your eyes on the road with no distractions.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> ADVANCED FALSE ALERT FILTERING - the R8 has the Best K/KA Band filtering with the Least Amount of False Alerts from blind spot monitoring &amp; Collison avoidance systems in other vehicles.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Package Includes: Radar Detector, Single and Double Window Mount Bracket, Zippered Carrying Case, Neoprene Carrying Case, Velcro Tape, Power Cord, Data Cable and Owner’s Manual.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['expensive'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/4bT7Wwj',
+      },
+    ],
+    tags: [],
+    flair: ['prime', 'Best Detector'],
+    rank: {
+      price: 0,
+      quality: 0,
+      vibes: 0,
+      description:
+        'The best radar detector, period. The R7 is just as good, but this is the best one.',
+    },
+  },
+  {
+    slug: 'hydro-flask-stainless-steel-wide-mouth-water-bottle',
+    title: 'Hydro Flask',
+    images: ['https://m.media-amazon.com/images/I/61Ur5t1fRCL._AC_SY741_.jpg'],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/58da2237-70f7-4977-8882-c14b1063df1d/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/61rxYy7Te6L.SX522_.jpg',
+      },
+    ],
+    price: 44.35,
+    description: '<!-- show up to 2 reviews by default -->',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> TempShield️ double-wall vacuum insulation keeps contents cold up to 24 hours  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Insulated Flex Straw Cap is leakproof when closed  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Made with 18/8 pro-grade stainless steel for durability, pure taste and no flavor transfer  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Wide Mouth opening is ice-cube friendly  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Color Last powder coat stays clean and colorful  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Bottle fits most backcountry water filters  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> BPA-Free  </span></li>  </ul>   <!-- Loading EDP related metadata -->                    <div class="a-row a-expander-container a-expander-inline-container"> <div aria-expanded="false" class="a-expander-content a-expander-extend-content" style="display:none">    <ul class="a-unordered-list a-vertical a-spacing-none">  <li class="a-spacing-mini"><span class="a-list-item">Dishwasher safe</span></li>  <li class="a-spacing-mini"><span class="a-list-item">Flex Straw Cap not intended for use with hot liquids</span></li>  <li class="a-spacing-mini"><span class="a-list-item">Not for use on a stove, in a microwave or freezer</span></li>  </ul>   </div> <a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-extend-header" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Show more&quot;, &quot;collapse_prompt&quot;:&quot;Show less&quot;}"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">Show more</span></a>  </div>',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3P09wCz',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 5,
+      description: 'The best bottle for hot or cold drinks. No S brand. No LEAD!',
+    },
+  },
 ]
-
-// Be here now Ram dass https://amzn.to/49obkgQ
-
-// Mad Men season 1 https://amzn.to/4bMQJEC
-// string winder https://amzn.to/3wtibXT
-// keyboard wrist rest
-// mouse wrist rest https://amzn.to/3Tata16
-// minecraft crocs https://amzn.to/49Kas67
-// ON Gold Standard Protein Powder https://amzn.to/48ocB6k
-// Hydroflask https://amzn.to/3P09wCz
-// Levi XX Chinos https://amzn.to/49Ne1IQ
-
-// magic trackpad https://amzn.to/42OKOL3
-// https://m.media-amazon.com/images/I/41KZtzhlK+L._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/51qMqmaeiOL._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/41nNdemE08L._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/51WD2FUXHOL._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/610zm3d008L._AC_SX679_.jpg
-// <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> WIRELESS, RECHARGEABLE CONVENIENCE — Magic Trackpad connects wirelessly to your device via Bluetooth. And the rechargeable internal battery means no loose batteries to replace.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> MAGIC TRACKING EXPERIENCE — Sensors underneath the trackpad surface detect subtle differences in the amount of pressure you apply, bringing more functionality to your fingertips and enabling a deeper connection to your content.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> WORKS WITH MAC OR IPAD — It’s ready to go right out of the box and pairs automatically with your Mac or iPad so you can get to work right away. Requires a Bluetooth-enabled Mac with OS X 10.11 or later or an iPad with iPadOS 13.4 or later.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SWIPE AND SCROLL MORE PRODUCTIVELY — It features a large edge-to-edge glass surface area, making scrolling and swiping more efficient and comfortable than ever.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GO WEEKS WITHOUT CHARGING — The incredibly long-lasting internal battery will power your Magic Trackpad for about a month or more between charges. Comes with a woven USB-C to Lightning Cable that lets you pair and charge by connecting to a USB-C port on your Mac or iPad.  </span></li>  </ul>
-// <table id="productDetails_techSpec_section_1" class="a-keyvalue prodDetTable" role="presentation">     <tbody><tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Product Dimensions </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;6.85 x 5.04 x 0.43 inches </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item Weight </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;8.1 ounces </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Manufacturer </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;Apple </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Language </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;English </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> ASIN </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;B09BRG3MZ2 </td>  </tr>      <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Country of Origin </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;China </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item model number </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;MK2D3AM/A </td>  </tr>    <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Batteries </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;1 Lithium Ion batteries required. (included) </td>  </tr>      <tr>  <th class="a-color-secondary a-size-base prodDetSectionEntry"> Date First Available </th>   <td class="a-size-base prodDetAttrValue">
-// &lrm;August 3, 2021 </td>  </tr>    </tbody></table>
-
-// magic keyboard https://amzn.to/49LFKta
-// https://m.media-amazon.com/images/I/71cboO+0CcL._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/51Q9w5igDML._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/517siQ0wvQL._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/61x06g-wN9L._AC_SX679_.jpg
-// https://m.media-amazon.com/images/I/51mqIKEAHWL._AC_SX679_.jpg
-// <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> WIRELESS, RECHARGEABLE CONVENIENCE — Magic Keyboard connects wirelessly to your Mac, iPad, or iPhone via Bluetooth. And the rechargeable internal battery means no loose batteries to replace.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> WORKS WITH MAC, IPAD, OR IPHONE — It pairs quickly with your device so you can get to work right away.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> ENHANCED TYPING EXPERIENCE — Magic Keyboard delivers a remarkably comfortable and precise typing experience.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GO WEEKS WITHOUT CHARGING — The incredibly long-lasting internal battery will power your keyboard for about a month or more between charges. (Battery life varies by use.) Comes with a woven USB-C to Lightning Cable that lets you pair and charge by connecting to a USB-C port on your Mac or iPad.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SYSTEM REQUIREMENTS — Requires a Mac with macOS 11.3 or later, an iPad with iPadOS 14.5 or later, or an iPhone or iPod touch with iOS 14.5 or later.  </span></li>  </ul>
-//
-
-// mechanical keyboard https://amzn.to/3SPBTVd
-// standard strat kit https://amzn.to/49sQFYX
-// coleman minibike https://amzn.to/3OR4jx2
-// litter robot https://amzn.to/3SQ0068
-// airpods max https://amzn.to/42M1S4x
-
-// Xbox Series X 1TB SSD Console
-//  https://amzn.to/3wrzbxE
-// 449
-// <table id="productDetails_detailBullets_sections1" class="a-keyvalue prodDetTable" role="presentation">          <tbody><tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> ASIN </th>  <td class="a-size-base prodDetAttrValue"> B08H75RTZ8 </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Release date </th>  <td class="a-size-base prodDetAttrValue"> November 10, 2020 </td> </tr>              <tr>   <th class="a-color-secondary a-size-base prodDetSectionEntry">Customer Reviews</th>  <td class="a-size-base">   <style type="text/css">
-//     /*
-//     * Fix for UDP-1061. Average customer reviews has a small extra line on hover
-//     * https://omni-grok.amazon.com/xref/src/appgroup/websiteTemplates/retail/SoftlinesDetailPageAssets/udp-intl-lock/src/legacy.css?indexName=WebsiteTemplates#40
-//     */
-//     .noUnderline a:hover {
-//         text-decoration: none;
-//     }
-
-//     .cm-cr-review-stars-spacing-big {
-//         margin-top: 1px;
-//     }
-// </style>
-
-//                    <div id="averageCustomerReviews" data-asin="B08H75RTZ8" data-ref="dpx_acr_pop_">
-//                                 <span class="a-declarative" data-action="acrStarsLink-click-metrics" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-acrStarsLink-click-metrics" data-acrstarslink-click-metrics="{}" data-csa-c-id="ylregl-i792n0-flgkqx-dvo5g9">     <span id="acrPopover" class="reviewCountTextLinkedHistogram noUnderline" title="4.8 out of 5 stars">
-//         <span class="a-declarative" data-action="a-popover" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-a-popover" data-a-popover="{&quot;max-width&quot;:&quot;700&quot;,&quot;closeButton&quot;:&quot;false&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;url&quot;:&quot;/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&amp;asin=B08H75RTZ8&quot;}" data-csa-c-id="ye35lq-yo4t49-g58fid-6apmlc"> <a href="javascript:void(0)" role="button" class="a-popover-trigger a-declarative">  <span class="a-size-base a-color-base"> 4.8 </span>   <i class="a-icon a-icon-star a-star-5 cm-cr-review-stars-spacing-big"><span class="a-icon-alt">4.8 out of 5 stars</span></i>   <i class="a-icon a-icon-popover"></i></a> </span> <span class="a-letter-space"></span> </span>
-
-//        </span> <span class="a-letter-space"></span>             <span class="a-declarative" data-action="acrLink-click-metrics" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-acrLink-click-metrics" data-acrlink-click-metrics="{}" data-csa-c-id="33jolr-wlxqs1-kp21lj-umaau4"> <a id="acrCustomerReviewLink" class="a-link-normal" href="#customerReviews"> <span id="acrCustomerReviewText" class="a-size-base">25,976 ratings</span> </a> </span> <script type="text/javascript">
-
-//                     var dpAcrHasRegisteredArcLinkClickAction;
-//                     P.when('A', 'ready').execute(function(A) {
-//                         if (dpAcrHasRegisteredArcLinkClickAction !== true) {
-//                             dpAcrHasRegisteredArcLinkClickAction = true;
-//                             A.declarative(
-//                                 'acrLink-click-metrics', 'click',
-//                                 { "allowLinkDefault": true },
-//                                 function (event) {
-//                                     if (window.ue) {
-//                                         ue.count("acrLinkClickCount", (ue.count("acrLinkClickCount") || 0) + 1);
-//                                     }
-//                                 }
-//                             );
-//                         }
-//                     });
-//                 </script>
-//                  <script type="text/javascript">
-//             P.when('A', 'cf').execute(function(A) {
-//                 A.declarative('acrStarsLink-click-metrics', 'click', { "allowLinkDefault" : true },  function(event){
-//                     if(window.ue) {
-//                         ue.count("acrStarsLinkWithPopoverClickCount", (ue.count("acrStarsLinkWithPopoverClickCount") || 0) + 1);
-//                     }
-//                 });
-//             });
-//         </script>
-
-//            </div>
-//       <br> 4.8 out of 5 stars </td> </tr>                <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Best Sellers Rank </th> <td> <span>  <span>#57 in Video Games (<a href="/gp/bestsellers/videogames/ref=pd_zg_ts_videogames">See Top 100 in Video Games</a>)</span> <br>  <span>#1 in <a href="/gp/bestsellers/videogames/20972813011/ref=pd_zg_hrsr_videogames">Xbox Series X &amp; S Consoles</a></span> <br>  <span>#2 in <a href="/gp/bestsellers/videogames/720022/ref=pd_zg_hrsr_videogames">Xbox Consoles</a></span> <br>  </span> </td> </tr>                                                                                         <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Product Dimensions </th>  <td class="a-size-base prodDetAttrValue"> 5.94 x 11.85 x 5.94 inches; 9.8 Pounds </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Type of item </th>  <td class="a-size-base prodDetAttrValue"> Video Game </td> </tr>                          <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item model number </th>  <td class="a-size-base prodDetAttrValue"> Internacional </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item Weight </th>  <td class="a-size-base prodDetAttrValue"> 9.8 pounds </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Department </th>  <td class="a-size-base prodDetAttrValue"> Unisex </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Manufacturer </th>  <td class="a-size-base prodDetAttrValue"> Microsoft </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Country of Origin </th>  <td class="a-size-base prodDetAttrValue"> China </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Batteries </th>  <td class="a-size-base prodDetAttrValue"> 2 A batteries required. (included) </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Date First Available </th>  <td class="a-size-base prodDetAttrValue"> September 22, 2020 </td> </tr>      </tbody></table>
-// https://m.media-amazon.com/images/I/51ojzJk77qL._SX522_.jpg
-// https://m.media-amazon.com/images/I/61c937dHIvL._SX522_.jpg
-// https://m.media-amazon.com/images/I/71ut3JnAiUL._SX522_.jpg
-// https://m.media-amazon.com/images/I/51b72fFNWRL._SX522_.jpg
-// https://m.media-amazon.com/images/S/aplus-media-library-service-media/d98148fa-ff4e-4807-aed9-6fdeb840a137.__CR0,0,1464,600_PT0_SX1464_V1___.jpg
-// https://m.media-amazon.com/images/S/aplus-media-library-service-media/1e80b47c-6597-461c-87b8-f838d840b75e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg
-// https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/4e508e43-40ec-4ba8-9499-5d8d5ee771c6/default.jobtemplate.mp4.480.mp4
-// Xbox Series X, the fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS—all powered by Xbox Velocity Architecture. Enjoy thousands of games from four generations of Xbox, with hundreds of optimized titles that look and play better than ever. And when you add Xbox Game Pass Ultimate (membership sold separately), you get online multiplayer to play with friends and an instant library of 100+ high-quality games, including day one releases from Xbox Game Studios.*
-// <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> XBOX SERIES X: The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming.*  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> FASTER LOAD TIMES: Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS – all powered by Xbox Velocity Architecture.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> IN THE BOX: Xbox Series X console, one Xbox Wireless Controller, an ultra high-speed HDMI cable, power cable, and 2 AA batteries.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SURROUND SOUND: Enhance gameplay with both full-spectrum visuals and immersive audio with Dolby Vision and Dolby Atmos  </span></li>  </ul>
-
-// nintendo switch OLED https://cooltoybro.com
-// akatsuke mousepad https://amzn.to/49uVhOy
-// liquidIV https://amzn.to/3uBzbuB
-// zum lavender https://amzn.to/3UTjMAm
-// R8 radar detector https://amzn.to/4bT7Wwj
-// northface full zip jacket https://amzn.to/3SRuS6f
-// osprey daylite https://amzn.to/4bOYzxu
-// Nectar 14" Cooling Matress https://amzn.to/3UN3Q2B
-// DOHM Sound Machine https://amzn.to/42OL8tn
-// Meta Quest 3 https://amzn.to/3uMpHfW
-//
-//
-// adobe affiliate program submitted
-// alibaba affiliate program submitted
-// rakuten affiliate program submitted - DENIED

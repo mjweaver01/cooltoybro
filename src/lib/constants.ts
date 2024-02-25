@@ -21,7 +21,11 @@ export const collections = [
     slug: 'best',
     title: 'Best',
     link: '/products/best',
-    products: products.filter((p) => p.collections.includes('best')),
+    products: products.filter(
+      (p) =>
+        p.collections.includes('best') ||
+        (p.flair && p.flair.toString().toLowerCase().includes('best')),
+    ),
   },
 ]
 
