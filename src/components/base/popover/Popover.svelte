@@ -16,6 +16,7 @@
 
   let open = false
   let popoverTrigger: HTMLElement
+  export let position = 'bottom'
   export async function closePopover() {
     if (open) {
       open = false
@@ -46,7 +47,7 @@
   }
 </script>
 
-<div class="relative">
+<div class="relative whitespace-nowrap">
   <!-- Slot for the trigger.  -->
   <slot name="trigger" {bindTrigger} />
 
@@ -56,7 +57,9 @@
       use:clickOutside={[closePopover, popoverTrigger]}
       use:keyDown={[open, closePopover, ['Escape']]}
       tabindex="-1"
-      class="absolute right-0 z-50 mt-2 w-56 rounded-md border border-gray-200 shadow-lg p-2 bg-white will-change-transform animate-slide-up-fade"
+      class={`absolute right-0 z-50 mt-2 w-56 rounded-md border border-gray-200 shadow-lg p-2 bg-white will-change-transform animate-slide-up-fade ${
+        position === 'top' ? 'bottom-0' : ''
+      }`}
       role="dialog"
       aria-labelledby="popoverTitle"
       aria-modal="true"

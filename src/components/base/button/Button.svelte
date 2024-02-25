@@ -9,8 +9,6 @@
   export let variant: ButtonVariant | any = 'default'
   variant = variant.toLowerCase().replace(/ /g, '_')
 
-  console.log(variant)
-
   const buttonVariants: any = {
     amazon:
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-orange-600 hover:bg-orange-500/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',

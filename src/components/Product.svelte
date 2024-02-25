@@ -11,7 +11,7 @@
   )
 </script>
 
-<div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16 mb-16 sm-mb-0">
+<div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
   <div class="grid sm:grid-cols-2 sm:gap-8">
     <div
       class="w-full rounded-xl shadow-lg bg-white max-h-[65vh] sm:max-h-[600px] overflow-scroll card"

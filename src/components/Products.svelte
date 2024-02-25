@@ -4,13 +4,12 @@
   import { Button } from '@/components/base/button'
   import { Popover } from '@/components/base/popover'
   import ProductFlair from '@/components/ProductFlair.svelte'
-  import { tick } from 'svelte'
 
   let pop: any
   let products: ProductRecord[]
   let filter: string = ''
   let sortText = 'Sort'
-  let sort: string = 'featured'
+  let sort: string = 'newest'
   let filteredProducts: ProductRecord[] = products
   let searchTerm = ''
   export let showHeaderSort = true
@@ -22,7 +21,6 @@
       })
       // @ts-ignore
       .sort((a: ProductRecord, b: ProductRecord) => {
-        console.log(b.title.localeCompare(a.title))
         if (sort === 'newest') {
           return -1
         } else if (sort === 'oldest') {
@@ -44,9 +42,10 @@
     sort = option.value
     pop.closePopover()
     searchProducts()
-    await tick()
-    console.log(filteredProducts)
   }
+
+  // one time for the one time
+  searchProducts()
 
   export { products, filter }
 </script>
