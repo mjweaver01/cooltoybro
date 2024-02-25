@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "scrape": "node scraper/scrape.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
@@ -19,6 +20,8 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "astro": "^4.0.7",
+    "minify": "^11.0.1",
+    "puppeteer": "^22.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "svelte": "^4.2.8",

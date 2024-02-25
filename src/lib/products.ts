@@ -1,27 +1,11 @@
-import { generateUTM } from '@/lib/helpers'
-
-export const emptyProduct = {
-  slug: '',
-  title: '',
-  images: [''],
-  collections: [''],
-  tags: [''],
-  description: '',
-  additionalInformation: '',
-  links: [{ title: '', link: '' }],
-  price: 0,
-  rank: {
-    price: 0,
-    quality: 0,
-    vibes: 0,
-    description: '',
-  },
-}
+import emptyProduct from './emptyProduct'
+import { generateUTM } from './helpers'
 
 export type ProductRecord = typeof emptyProduct & {
   salePrice?: number
   flair?: string[]
   relatedProducts?: string[]
+  videos?: { poster: string; link: string }[]
 }
 
 // @todo generate this somehow with a scraper? gpt?
@@ -487,6 +471,45 @@ export const products: ProductRecord[] = [
       quality: 5,
       vibes: 5,
       description: '',
+    },
+  },
+  {
+    slug: 'optimum-nutrition-gold-standard-100-whey-protein-powder-extreme-milk-chocolate-5-pound-',
+    title:
+      'Optimum Nutrition Gold Standard 100% Whey Protein Powder, Extreme Milk Chocolate, 5 Pound',
+    images: [
+      'https://m.media-amazon.com/images/I/71lttf6xi7L._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/813MSxTRhbL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81Ae1lQJkVL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81UsOFlXmWL._AC_SX450_.jpg',
+      'https://m.media-amazon.com/images/I/712uI1vkZbL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/81Yg2YQIEbL._AC_SY450_.jpg',
+    ],
+    videos: [
+      {
+        link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e62c6197-93b0-4d70-9eb0-431c6a2e838a/default.jobtemplate.mp4.480.mp4',
+        poster: 'https://m.media-amazon.com/images/I/51Ut3GHM59L.SX522_.jpg',
+      },
+    ],
+    price: 83.61,
+    description:
+      '<!-- show up to 2 reviews by default -->                       <p> </p><p><span>OPTIMUM NUTRITION\'S GOLD STANDARD 100% Whey uses pure Whey Protein Isolates as the primary ingredient. Combined with ultra-filtered whey protein concentrate, each serving provides 24 grams of all-whey protein and 5.5 grams of naturally occurring Branched Chain Amino Acids (BCAAs) which are prized by athletes for their muscle building qualities. With more than 20 tempting flavors to choose from, ON GOLD STANDARD 100% Whey gives you plenty of ways to keep workout recovery interesting. Search "ON Apparel TRUE STRENGTH" to see our new ON clothing line!</span></p>  <p></p>',
+    additionalInformation:
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Gold Standard 100% Whey Protein: 24 grams of blended protein consisting of whey protein isolate, whey protein concentrate, and whey peptides to support lean muscle mass - they don\'t call it the Gold Standard of quality for nothing  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 5.5 grams of naturally occurring branched chain amino acids (BCAAs) and 11 grams of naturally occurring essential amino acids (EAAs) per serving to support muscle recovery  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Anytime formula: great before or after exercise, between meals, with a meal, or any time of day when you need extra protein  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Banned substance tested and the highest quality control measures so you feel comfortable and confident consuming the product  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Optimum Nutrition is the World\'s #1 Sports Nutrition Brand*  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> *Source Euromonitor International Limited; Consumer Health 2023 Edition, Sports Nutrition category, % retail value shares, 2022 data  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/48ocB6k',
+      },
+    ],
+    tags: ['prime'],
+    flair: [],
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 5,
+      description: 'The best protein powder in the best flavor, period. All bros agree.',
     },
   },
 ]

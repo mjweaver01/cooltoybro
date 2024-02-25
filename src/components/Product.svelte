@@ -1,10 +1,13 @@
 <script lang="ts">
-  import { emptyProduct, type ProductRecord, products } from '@/lib/products'
+  import { emptyProduct } from '@/lib/emptyProduct'
+  import { type ProductRecord, products } from '@/lib/products'
   import { Button } from '@/components/base/button'
   import Products from '@/components/Products.svelte'
   import ProductFlair from '@/components/ProductFlair.svelte'
   export let product = emptyProduct as ProductRecord
   const isPdp = true
+
+  const totalImages = product.images.length + ((product.videos && product.videos?.length) || 0)
 
   const relatedProducts = products
     .filter((p) => product.relatedProducts?.find((rp) => JSON.stringify(p).includes(rp)))
@@ -30,11 +33,25 @@
                 loading={i > 0 ? 'lazy' : 'eager'}
               />
             </div>
-            <div class="absolute z-9 bottom-0 left-0 text-xs">
-              {i + 1} / {product.images.length}
+            <div class="absolute z-9 top-0 left-1 text-xs">
+              {i + 1} / {totalImages}
             </div>
           </div>
         {/each}
+        {#if product.videos && product.videos.length > 0}
+          {#each product.videos as video, i}
+            <div class="relative">
+              <div class="video-container">
+                <!-- svelte-ignore a11y-media-has-caption -->
+                <video class="w-full" controls preload="auto" poster={video.poster} src={video.link}
+                ></video>
+              </div>
+              <div class="absolute top-0 left-0 text-xs text-white z-10">
+                {i + 1 + product.images.length} / {totalImages}
+              </div>
+            </div>
+          {/each}
+        {/if}
       </div>
     </div>
     <div
