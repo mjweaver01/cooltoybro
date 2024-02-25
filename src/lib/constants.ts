@@ -50,11 +50,11 @@ export const survey = [
     title: "How ballin' is your bro?",
     options: [
       {
-        title: 'HOT 🔥',
+        title: 'HOT 🔥 (Expensive taste)',
         value: 'expensive',
       },
       {
-        title: 'NOT 📦',
+        title: 'NOT 📦 (Tight wad)',
         value: 'cheap',
       },
     ],
@@ -78,12 +78,12 @@ export const survey = [
     title: 'How smart is your bro?',
     options: [
       {
-        title: 'ROCK 🪨',
-        value: 'smart',
+        title: 'ROCK 🪨 (Easy use)',
+        value: 'easy',
       },
       {
-        title: 'ASTRONAUT 🚀',
-        value: 'dumb',
+        title: 'ASTRONAUT 🚀  (Hard mode)',
+        value: 'hard',
       },
     ],
   },

@@ -31,7 +31,7 @@ export const products: ProductRecord[] = [
     title: 'NVIDIA RTX 4090',
     images: ['https://m.media-amazon.com/images/I/51c1zFDNVmL._AC_SX679_.jpg'],
     collections: ['expensive', 'best'],
-    tags: ['nvidia', 'rtx', '4090', 'graphics', 'card'],
+    tags: ['nvidia', 'rtx', '4090', 'graphics', 'card', 'astronaut', 'hard'],
     flair: ['Best Graphics Card'],
     description:
       "The NVIDIA GeForce RTX 4090 is the ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics. Experience ultra-high performance gaming, incredibly detailed virtual worlds with ray tracing, unprecedented productivity, and new ways to create. It's powered by the NVIDIA Ada Lovelace architecture and comes with 24 GB of G6X memory to deliver the ultimate experience for gamers and creators.",
@@ -70,7 +70,7 @@ export const products: ProductRecord[] = [
       'https://www.wilson.com/sites/default/files/styles/quilt_2x1/public/24-0108_Airless_Basketball_ePDP_TechBlock3.png?',
     ],
     collections: ['expensive'],
-    tags: ['basketball', 'airless', '3d', 'print'],
+    tags: ['basketball', 'airless', '3d', 'print', 'sport', 'easy'],
     description: `<p class="product-description_content"><strong>WELCOME TO THE ERA OF AIRLESS</strong><br><br>After the 2023 unveiling of the Wilson Airless Prototype, the next step was clear: make it possible for the world to experience the future of sport for themselves. Enter Wilson Airless Gen1, an updated iteration of the original innovative concept.<br><br>Rather than being inflated, Airless Gen1 relies on a 3D-printed polymer lattice structure. The basketball nearly fits the performance specifications of a regulation basketball, including its weight, size and rebound (bounce). The form of the ball features 8 panel-like lobes and a familiar seam structure, with hexagonal holes across the surface allowing air to pass through freely. Each Airless Gen1 comes with a case, stand, and 3-letter customizable tag.</p><br/>`,
     additionalInformation:
       '<div class="panel-pane pane-fieldable-panels-pane pane-uuid-5c4f8b30-d0c7-4d9b-8691-a844b739c33e pane-bundle-wilson-youtube-slim-banner">            <div class="pane-content">    <div class="fieldable-panels-pane">      <div class="field-collection-container clearfix"><div class="banner-hero -mt-none -w-100">    <div class="video-container text-center">        <iframe id="youtube-player-147616" width="960" height="540?>" title="240209 Wilson MAIN FILM 16x9 FV 01" src="https://www.youtube.com/embed/UNsBUBgh9zA?wmode=opaque&amp;controls=1&amp;rel=0" frameborder="0" allowfullscreen="">          Video of 240209 Wilson MAIN FILM 16x9 FV 01        </iframe>    </div></div></div></div>  </div>    </div>',
@@ -100,7 +100,7 @@ export const products: ProductRecord[] = [
       'https://shop.flipperzero.one/cdn/shop/products/bottom-uwu.png?v=1671722807',
     ],
     collections: ['expensive'],
-    tags: ['flipper', 'zero', 'hacker', 'l33t'],
+    tags: ['flipper', 'zero', 'hacker', 'l33t', 'tech', 'hard'],
     description: `Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like.`,
     additionalInformation: '',
     links: [{ title: 'Flipper', link: generateUTM('https://shop.flipperzero.one/') }],
@@ -120,7 +120,7 @@ export const products: ProductRecord[] = [
       'https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp',
     ],
     collections: ['cheap', 'best'],
-    tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie'],
+    tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie', 'tech', 'hard'],
     flair: ['Best Mini PC', 'prime'],
     description: `At the heart of Raspberry Pi Zero 2 W is RP3A0, a custom-built system-in-package designed by Raspberry Pi in the UK. With a quad-core 64-bit ARM Cortex-A53 processor clocked at 1GHz and 512MB of SDRAM, Zero 2 is up to five times as fast as the original Raspberry Pi Zero. Wireless LAN is built in to a shielded enclosure with improved RF compliance, giving you more flexibility when designing with Raspberry Pi Zero 2 W. All in the same tiny 65mm × 30mm form factor.`,
     additionalInformation: `
@@ -168,7 +168,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/71n9YbPS5xL._AC_SX679_.jpg',
     ],
     collections: ['cheap', 'best'],
-    tags: ['3d printing', 'filament', 'pla'],
+    tags: ['3d printing', 'filament', 'pla', 'tech', 'easy', 'hard'],
     flair: ['Best Filament', 'prime'],
     description: `PolyMax™ PLA is an incredibly easy-to-print filament with improved mechanical properties, making it an excellent alternative to ABS and PLA+.`,
     additionalInformation: `
@@ -207,7 +207,7 @@ export const products: ProductRecord[] = [
       'https://cdn.shopify.com/s/files/1/0611/4036/9460/files/P1S-Studio.png?v=1689304919',
     ],
     collections: ['expensive', 'best'],
-    tags: ['3d printing', 'filament', 'pla'],
+    tags: ['3d printing', 'filament', 'pla', 'tech', 'easy', 'hard'],
     flair: ['Best 3D Printer'],
     description: `
     <div class="ProductMeta__Text">
@@ -312,7 +312,7 @@ export const products: ProductRecord[] = [
     ],
     collections: ['expensive'],
     flair: ['Best Desk Chair'],
-    tags: ['chair', 'deskchair', 'desk chair'],
+    tags: ['chair', 'deskchair', 'desk chair', 'easy', 'tech', 'hard'],
     relatedProducts: ['apple-macbook-pro-m3-2023'],
     description: '',
     additionalInformation: `
@@ -348,7 +348,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/G/01/apple/MacBook_Pro_M3_Product_Page_L__en-US_05._CB573757570_.jpg',
     ],
     collections: ['expensive'],
-    tags: ['mac', 'apple', 'macbook', 'laptop', 'm3'],
+    tags: ['mac', 'apple', 'macbook', 'laptop', 'm3', 'tech', 'easy', 'hard'],
     flair: ['Best Laptop', 'prime'],
     description: `
     <ul class="pl-4">
@@ -394,7 +394,7 @@ export const products: ProductRecord[] = [
       // https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/fb043d87-2a63-4e0d-a0a3-52c8b536ea0d/default.jobtemplate.mp4.480.mp4
     ],
     collections: ['expensive'],
-    tags: ['airpods', 'apple', 'headphones'],
+    tags: ['airpods', 'apple', 'headphones', 'tech', 'easy'],
     flair: ['prime'],
     description:
       '<p>Active Noise Cancellation performance measured as compared to AirPods Pro (1st generation). <br>Adaptive Audio and Conversation Awareness work with AirPods Pro (2nd generation) with USB-C with the latest firmware when paired with a compatible Apple device running the latest operating system software. <br>AirPods Pro (2nd generation) with USB-C are dust resistant and sweat and water resistant for non-water sports and exercise, and they are IP54 rated. Dust, sweat, and water resistance are not permanent conditions. <br>Compatible hardware and software required for Personalized Spatial Audio with dynamic head tracking. Works with compatible content in supported apps. Not all content available in Dolby Atmos. iPhone with TrueDepth camera required to create a personal profile for Spatial Audio, which will sync across Apple devices running the latest operating system software, including iOS, iPadOS, macOS, and tvOS. <br>Mute and unmute on calls available in compatible applications with the latest firmware. <br>Battery life depends on device settings, environment, usage, and many other factors. <br>MagSafe charging requires a compatible MagSafe charger. Wireless charging requires a Qi-certified wireless charger. AirPods Pro (2nd generation) with USB-C charging case also works with the Apple Watch charger or USB-C connector. <br>Just “Siri” available in English (Australia, Canada, United Kingdom, U.S.). This feature is not available on AirPods with the H1 headphone chip and Intel-based Mac computers. Devices must support and have the latest operating system. <br>One-tap setup, Automatic Switching, and Audio Sharing require a compatible Apple device running the latest operating system software. Device compatibility varies by feature. One-tap setup and Automatic Switching also require an iCloud account.</p>',
@@ -422,7 +422,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/81sMQyZSJGL._AC_SX679_.jpg',
     ],
     collections: ['cheap'],
-    tags: ['tech', 'deck', 'element', 'skateboard', 'fingerboard'],
+    tags: ['tech', 'deck', 'element', 'skateboard', 'fingerboard', 'easy'],
     flair: ['prime'],
     description:
       'Tech Deck brings you the real deal with authentic fingerboards from real skate companies! Each one features legit graphics from the biggest skate companies in the world, including Blind, Baker, Flip, Finesse, Santa Cruz, Plan B, Sk8mafia, Toy Machine, and more. This 4-Pack includes 4 boards you can build any way you want. Recreate your favorite lines and expand your trickionary by checking out online trick tips on techdeck.com. As you build your mini skateboard collection, compare it online with Tech Deck’s interactive collector’s tool. Ride and grind your new finger skateboards on the X-Connect series. Build out the Big Vert Wall or Flip N’ Grind ramp sets (each sold separately) for you to shred your skateboard decks. There are a ton of Decks, toy figures & playsets to collect! Ride, flip, and grind with Tech Deck fingerboards from real skate companies! Tech Deck mini skateboards for fingers and ramp sets make the perfect gift for girls toys age 6-8 who love small toys and cool toys or as an alternative to toy cars as a boys toys age 6-8 item. Start small, go big and collect them all!',
@@ -450,7 +450,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/71ZMyXWM9CS._AC_SL1500_.jpg',
     ],
     collections: ['cheap'],
-    tags: ['apple', 'air', 'tag', 'airtag'],
+    tags: ['apple', 'air', 'tag', 'airtag', 'tech', 'easy'],
     flair: ['prime'],
     description:
       '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Keep track of and find your items alongside friends and devices in the Find My app  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Simple one-tap setup instantly connects AirTag with your iPhone or iPad  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Play a sound on the built-in speaker to help find your things, or just ask Siri for help  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Precision Finding with Ultra Wideband technology leads you right to your nearby AirTag (on select iPhone models)  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Find items further away with the help of hundreds of millions of Apple devices in the Find My network  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Put AirTag into Lost Mode to be automatically notified when it’s detected in the Find My network  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> All communication with the Find My network is anonymous and encrypted for privacy, Location data and history are never stored on AirTag  </span></li>  </ul>',

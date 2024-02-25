@@ -15,20 +15,41 @@
     stepChoices[stepId] = stepOptionValue
   }
 
+  let rolled = 0
   const rollProduct = async () => {
-    const filteredProducts = products.filter((p) => {
-      return Object.keys(stepChoices).map((c) => JSON.stringify(p).includes(stepChoices[c]))
+    let filteredProducts = products.filter((p) => {
+      return (
+        Object.keys(stepChoices).filter((c) => JSON.stringify(p).includes(stepChoices[c])).length >
+        2
+      )
     })
+
+    if (filteredProducts.length <= 0)
+      filteredProducts = products.filter((p) => {
+        return (
+          Object.keys(stepChoices).filter((c) => JSON.stringify(p).includes(stepChoices[c]))
+            .length > 1
+        )
+      })
+
     const randomNumber = Math.max(
       0,
       Math.min(Math.round(Math.random() * filteredProducts.length), filteredProducts.length),
     )
+
+    let cachedProduct = filteredProducts[randomNumber]
+    if (!cachedProduct || (cachedProduct.slug === chosenProduct.slug && rolled <= 5)) {
+      rolled += 1
+      rollProduct()
+      return
+    }
 
     chosenProduct = filteredProducts[randomNumber]
     await tick()
     document.getElementById('product-wrapper')?.scrollIntoView({
       behavior: 'smooth',
     })
+    rolled = 0
   }
 </script>
 
@@ -38,14 +59,14 @@
     {#each survey as step}
       <div class="text-center card rounded-xl shadow-lg p-4">
         <h1 class="text-3xl font-bold mb-2">{step.title}</h1>
-        <div class="rounded-xl overflow-hidden bg-white">
+        <div class="rounded-xl bg-white">
           {#each step.options as stepOption}
             <div
               role="button"
               tabindex="0"
-              class={`rounded-xl text-center p-4 sm:p-8 ${
+              class={`rounded-xl text-center p-4 sm:p-8 hover:z-10 hover:shadow-md ${
                 stepChoices[step.id] === stepOption.value
-                  ? 'bg-black text-white'
+                  ? 'bg-black text-white shadow-2xl relative z-10'
                   : 'bg-white text-black hover:bg-gray-200'
               }`}
               on:click={() => {
