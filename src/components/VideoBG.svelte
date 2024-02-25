@@ -56,7 +56,15 @@
 </div>
 
 {#if selected !== 'none'}
-  <video src={`/videos/${selected}.mp4`} autoplay loop muted playsinline></video>
+  <video
+    src={`/videos/${selected}.mp4`}
+    data-wf-ignore="true"
+    data-object-fit="cover"
+    autoplay
+    loop
+    muted
+    playsinline
+  ></video>
 {/if}
 
 <style>
