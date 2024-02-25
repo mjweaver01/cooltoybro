@@ -64,7 +64,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    opacity: 0.55;
+    opacity: 0.3;
     height: 100%;
     width: 100%;
     object-fit: cover;

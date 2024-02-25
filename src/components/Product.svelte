@@ -64,7 +64,7 @@
   <div
     class={`${
       product.additionalInformation.length > 0 ? 'grid sm:grid-cols-2 sm:gap-8' : ''
-    } items-start`}
+    } items-stretch`}
   >
     <div
       class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white z-9999 card"
