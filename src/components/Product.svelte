@@ -15,7 +15,7 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
   <div class="grid sm:grid-cols-2 sm:gap-8">
     <div
-      class="w-full rounded-xl shadow-lg bg-white max-h-[65vh] sm:max-h-[600px] overflow-scroll card"
+      class="w-full rounded-xl shadow-lg bg-white max-h-[65vh] sm:max-h-[650px] overflow-scroll card"
     >
       <div class="p-4 bg-white">
         {#each product.images as image, i}

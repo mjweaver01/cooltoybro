@@ -401,7 +401,10 @@ export const products: ProductRecord[] = [
     additionalInformation:
       '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> RICHER AUDIO EXPERIENCE — The Apple-designed H2 chip helps to create more intelligent noise cancellation and deeply immersive sound. The low-distortion, custom-built driver delivers crisp, clear high notes and full, rich bass in stunning definition.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> NEXT-LEVEL ACTIVE NOISE CANCELLATION — Up to 2x more Active Noise Cancellation for dramatically less noise when you want to focus. Transparency mode lets you hear the world around you, and Adaptive Audio seamlessly blends Active Noise Cancellation and Transparency mode for the best listening experience in any environment.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> CUSTOMIZABLE FIT — Includes four pairs of silicone tips (XS, S, M, L) to fit a wide range of ears and provide all-day comfort. The tips create an acoustic seal to help keep out noise and secure AirPods Pro in place.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> DUST, SWEAT, AND WATER RESISTANT — Both AirPods Pro and the MagSafe Charging Case are IP54 dust, sweat, and water resistant, so you can listen comfortably in more conditions.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> PERSONALIZED SPATIAL AUDIO — With sound that suits your unique ear shape along with dynamic head tracking, AirPods Pro deliver an immersive listening experience that places sound all around you. You can also listen to select songs, shows, and movies in Dolby Atmos.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> A HIGHER LEVEL OF CONTROL — Manage playback functions from the stem with touch control. Swipe up or down to adjust volume, press to play and pause music or mute and unmute yourself on calls, and press twice to end calls. And hold the stem to switch between listening modes.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> LONG BATTERY LIFE — Get up to 6 hours of listening time with Active Noise Cancellation enabled. And get up to 30 hours of total listening time with Active Noise Cancellation enabled, using the case.  </span></li>  </ul>' +
       '<table class=a-bordered><tr><td style=width:120px><p><strong>Weight</strong><td><p>AirPods Pro (each): 0.19 ounce (5.3 g), MagSafe Charging Case: 1.79 ounces (50.8 g)<tr><td style=width:120px><p><strong>Dimensions</strong><td><p>AirPods (each): 0.94 by 0.86 by 1.22 inches (24.0 by 21.8 by 30.9 mm), MagSafe Charging Case: 1.78 by 0.85 by 2.39 inches (45.2 by 21.7 by 60.6 mm)<tr><td style=width:120px><p><strong>AirPods Sensors (each):</strong><td><p>Dual beamforming microphones, Inward-facing microphone, Skin-detect sensor, Motion-detecting accelerometer, Speech-detecting accelerometer, Touch control<tr><td style=width:120px><p><strong>Power and Battery</strong><td><p>Up to 6 hours of listening time on a single charge (up to 5.5 hours with Personalized Spatial Audio and Head Tracking enabled), Up to 4.5 hours of talk time with a single charge. AirPods Pro with MagSafe Charging Case: Up to 30 hours of listening time, Up to 24 hours of talk time, 5 minutes in the case provides around 1 hour of listening time or around 1 hour of talk time</table>',
-    links: [{ title: 'Amazon', link: 'https://amzn.to/48zXUgM' }],
+    links: [
+      { title: 'Amazon', link: 'https://amzn.to/48zXUgM' },
+      { title: 'Apple', link: generateUTM('https://www.apple.com/airpods/') },
+    ],
     price: 239,
     rank: {
       price: 3,
@@ -453,9 +456,13 @@ export const products: ProductRecord[] = [
     tags: ['apple', 'air', 'tag', 'airtag', 'tech', 'easy'],
     flair: ['prime'],
     description:
+      'AirTag is a supereasy way to keep track of your stuff. Attach one to your keys, slip another in your backpack. And just like that, they’re on your radar in the Find My app, where you can also track down your Apple devices and keep up with friends and family.',
+    additionalInformation:
       '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Keep track of and find your items alongside friends and devices in the Find My app  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Simple one-tap setup instantly connects AirTag with your iPhone or iPad  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Play a sound on the built-in speaker to help find your things, or just ask Siri for help  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Precision Finding with Ultra Wideband technology leads you right to your nearby AirTag (on select iPhone models)  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Find items further away with the help of hundreds of millions of Apple devices in the Find My network  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Put AirTag into Lost Mode to be automatically notified when it’s detected in the Find My network  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> All communication with the Find My network is anonymous and encrypted for privacy, Location data and history are never stored on AirTag  </span></li>  </ul>',
-    additionalInformation: '',
-    links: [{ title: 'Amazon', link: 'https://amzn.to/3SPDryp' }],
+    links: [
+      { title: 'Amazon', link: 'https://amzn.to/3SPDryp' },
+      { title: 'Apple', link: generateUTM('https://www.apple.com/airtag/') },
+    ],
     price: 78,
     rank: {
       price: 2,
@@ -467,7 +474,16 @@ export const products: ProductRecord[] = [
   },
 ]
 
-// airpods max https://amzn.to/42M1S4x
+// Be here now Ram dass https://amzn.to/49obkgQ
+// 12 Rules for life https://amzn.to/3OY2lei
+// Mad Men season 1 https://amzn.to/4bMQJEC
+// string winder https://amzn.to/3wtibXT
+// keyboard wrist rest
+// mouse wrist rest https://amzn.to/3Tata16
+// minecraft crocs https://amzn.to/49Kas67
+// ON Gold Standard Protein Powder https://amzn.to/48ocB6k
+// Hydroflask https://amzn.to/3P09wCz
+// Levi XX Chinos https://amzn.to/49Ne1IQ
 
 // magic trackpad https://amzn.to/42OKOL3
 // https://m.media-amazon.com/images/I/41KZtzhlK+L._AC_SX679_.jpg
@@ -497,29 +513,81 @@ export const products: ProductRecord[] = [
 //
 
 // mechanical keyboard https://amzn.to/3SPBTVd
-// string winder https://amzn.to/3wtibXT
 // standard strat kit https://amzn.to/49sQFYX
-// keyboard wrist rest
-// mouse wrist rest https://amzn.to/3Tata16
-// minecraft crocs https://amzn.to/49Kas67
 // coleman minibike https://amzn.to/3OR4jx2
 // litter robot https://amzn.to/3SQ0068
-// xbox series x 1tb https://amzn.to/3wrzbxE
+// airpods max https://amzn.to/42M1S4x
+
+// Xbox Series X 1TB SSD Console
+//  https://amzn.to/3wrzbxE
+// 449
+// <table id="productDetails_detailBullets_sections1" class="a-keyvalue prodDetTable" role="presentation">          <tbody><tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> ASIN </th>  <td class="a-size-base prodDetAttrValue"> B08H75RTZ8 </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Release date </th>  <td class="a-size-base prodDetAttrValue"> November 10, 2020 </td> </tr>              <tr>   <th class="a-color-secondary a-size-base prodDetSectionEntry">Customer Reviews</th>  <td class="a-size-base">   <style type="text/css">
+//     /*
+//     * Fix for UDP-1061. Average customer reviews has a small extra line on hover
+//     * https://omni-grok.amazon.com/xref/src/appgroup/websiteTemplates/retail/SoftlinesDetailPageAssets/udp-intl-lock/src/legacy.css?indexName=WebsiteTemplates#40
+//     */
+//     .noUnderline a:hover {
+//         text-decoration: none;
+//     }
+
+//     .cm-cr-review-stars-spacing-big {
+//         margin-top: 1px;
+//     }
+// </style>
+
+//                    <div id="averageCustomerReviews" data-asin="B08H75RTZ8" data-ref="dpx_acr_pop_">
+//                                 <span class="a-declarative" data-action="acrStarsLink-click-metrics" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-acrStarsLink-click-metrics" data-acrstarslink-click-metrics="{}" data-csa-c-id="ylregl-i792n0-flgkqx-dvo5g9">     <span id="acrPopover" class="reviewCountTextLinkedHistogram noUnderline" title="4.8 out of 5 stars">
+//         <span class="a-declarative" data-action="a-popover" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-a-popover" data-a-popover="{&quot;max-width&quot;:&quot;700&quot;,&quot;closeButton&quot;:&quot;false&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;url&quot;:&quot;/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&amp;asin=B08H75RTZ8&quot;}" data-csa-c-id="ye35lq-yo4t49-g58fid-6apmlc"> <a href="javascript:void(0)" role="button" class="a-popover-trigger a-declarative">  <span class="a-size-base a-color-base"> 4.8 </span>   <i class="a-icon a-icon-star a-star-5 cm-cr-review-stars-spacing-big"><span class="a-icon-alt">4.8 out of 5 stars</span></i>   <i class="a-icon a-icon-popover"></i></a> </span> <span class="a-letter-space"></span> </span>
+
+//        </span> <span class="a-letter-space"></span>             <span class="a-declarative" data-action="acrLink-click-metrics" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-acrLink-click-metrics" data-acrlink-click-metrics="{}" data-csa-c-id="33jolr-wlxqs1-kp21lj-umaau4"> <a id="acrCustomerReviewLink" class="a-link-normal" href="#customerReviews"> <span id="acrCustomerReviewText" class="a-size-base">25,976 ratings</span> </a> </span> <script type="text/javascript">
+
+//                     var dpAcrHasRegisteredArcLinkClickAction;
+//                     P.when('A', 'ready').execute(function(A) {
+//                         if (dpAcrHasRegisteredArcLinkClickAction !== true) {
+//                             dpAcrHasRegisteredArcLinkClickAction = true;
+//                             A.declarative(
+//                                 'acrLink-click-metrics', 'click',
+//                                 { "allowLinkDefault": true },
+//                                 function (event) {
+//                                     if (window.ue) {
+//                                         ue.count("acrLinkClickCount", (ue.count("acrLinkClickCount") || 0) + 1);
+//                                     }
+//                                 }
+//                             );
+//                         }
+//                     });
+//                 </script>
+//                  <script type="text/javascript">
+//             P.when('A', 'cf').execute(function(A) {
+//                 A.declarative('acrStarsLink-click-metrics', 'click', { "allowLinkDefault" : true },  function(event){
+//                     if(window.ue) {
+//                         ue.count("acrStarsLinkWithPopoverClickCount", (ue.count("acrStarsLinkWithPopoverClickCount") || 0) + 1);
+//                     }
+//                 });
+//             });
+//         </script>
+
+//            </div>
+//       <br> 4.8 out of 5 stars </td> </tr>                <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Best Sellers Rank </th> <td> <span>  <span>#57 in Video Games (<a href="/gp/bestsellers/videogames/ref=pd_zg_ts_videogames">See Top 100 in Video Games</a>)</span> <br>  <span>#1 in <a href="/gp/bestsellers/videogames/20972813011/ref=pd_zg_hrsr_videogames">Xbox Series X &amp; S Consoles</a></span> <br>  <span>#2 in <a href="/gp/bestsellers/videogames/720022/ref=pd_zg_hrsr_videogames">Xbox Consoles</a></span> <br>  </span> </td> </tr>                                                                                         <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Product Dimensions </th>  <td class="a-size-base prodDetAttrValue"> 5.94 x 11.85 x 5.94 inches; 9.8 Pounds </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Type of item </th>  <td class="a-size-base prodDetAttrValue"> Video Game </td> </tr>                          <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item model number </th>  <td class="a-size-base prodDetAttrValue"> Internacional </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Item Weight </th>  <td class="a-size-base prodDetAttrValue"> 9.8 pounds </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Department </th>  <td class="a-size-base prodDetAttrValue"> Unisex </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Manufacturer </th>  <td class="a-size-base prodDetAttrValue"> Microsoft </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Country of Origin </th>  <td class="a-size-base prodDetAttrValue"> China </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Batteries </th>  <td class="a-size-base prodDetAttrValue"> 2 A batteries required. (included) </td> </tr>            <tr> <th class="a-color-secondary a-size-base prodDetSectionEntry"> Date First Available </th>  <td class="a-size-base prodDetAttrValue"> September 22, 2020 </td> </tr>      </tbody></table>
+// https://m.media-amazon.com/images/I/51ojzJk77qL._SX522_.jpg
+// https://m.media-amazon.com/images/I/61c937dHIvL._SX522_.jpg
+// https://m.media-amazon.com/images/I/71ut3JnAiUL._SX522_.jpg
+// https://m.media-amazon.com/images/I/51b72fFNWRL._SX522_.jpg
+// https://m.media-amazon.com/images/S/aplus-media-library-service-media/d98148fa-ff4e-4807-aed9-6fdeb840a137.__CR0,0,1464,600_PT0_SX1464_V1___.jpg
+// https://m.media-amazon.com/images/S/aplus-media-library-service-media/1e80b47c-6597-461c-87b8-f838d840b75e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg
+// https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/4e508e43-40ec-4ba8-9499-5d8d5ee771c6/default.jobtemplate.mp4.480.mp4
+// Xbox Series X, the fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS—all powered by Xbox Velocity Architecture. Enjoy thousands of games from four generations of Xbox, with hundreds of optimized titles that look and play better than ever. And when you add Xbox Game Pass Ultimate (membership sold separately), you get online multiplayer to play with friends and an instant library of 100+ high-quality games, including day one releases from Xbox Game Studios.*
+// <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> XBOX SERIES X: The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming.*  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> FASTER LOAD TIMES: Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS – all powered by Xbox Velocity Architecture.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> IN THE BOX: Xbox Series X console, one Xbox Wireless Controller, an ultra high-speed HDMI cable, power cable, and 2 AA batteries.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> SURROUND SOUND: Enhance gameplay with both full-spectrum visuals and immersive audio with Dolby Vision and Dolby Atmos  </span></li>  </ul>
+
 // nintendo switch OLED https://cooltoybro.com
 // akatsuke mousepad https://amzn.to/49uVhOy
 // liquidIV https://amzn.to/3uBzbuB
 // zum lavender https://amzn.to/3UTjMAm
 // R8 radar detector https://amzn.to/4bT7Wwj
-// ON Gold Standard Protein Powder https://amzn.to/48ocB6k
-// Hydroflask https://amzn.to/3P09wCz
-// Levi XX Chinos https://amzn.to/49Ne1IQ
 // northface full zip jacket https://amzn.to/3SRuS6f
 // osprey daylite https://amzn.to/4bOYzxu
 // Nectar 14" Cooling Matress https://amzn.to/3UN3Q2B
 // DOHM Sound Machine https://amzn.to/42OL8tn
-// Be here now Ram dass https://amzn.to/49obkgQ
-// 12 Rules for life https://amzn.to/3OY2lei
-// Mad Men season 1 https://amzn.to/4bMQJEC
 // Meta Quest 3 https://amzn.to/3uMpHfW
 //
 //

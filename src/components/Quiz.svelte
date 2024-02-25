@@ -84,7 +84,7 @@
       </div>
     {/each}
   </div>
-  <div class="flex items-center justify-center mt-6 w-full">
+  <div class="flex items-center justify-center mt-6 w-full text-2xl">
     <Button disabled={!canRoll} on:click={rollProduct}
       >{canRoll && chosenProduct.title
         ? 'Roll for a new product!'

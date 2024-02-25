@@ -9,21 +9,23 @@
     {#each product.flair as flair}
       {#if flair.toLowerCase() === 'prime'}
         <img
-          class="bg-white w-[50px] sm:w-[63px] rounded-xl p-1"
+          class="bg-white w-[50px] sm:w-[63px] rounded-xl p-1 shadow-md"
           src="/prime.png"
           width="63"
           alt="Is Amazon Prime"
         />
       {:else}
         <div class="relative">
-          <div class="relative overflow-hidden text-white whitespace-nowrap text-md">
+          <div
+            class="relative overflow-hidden text-white whitespace-nowrap text-md shadow-md rounded-xl font-bold"
+          >
             <div
               class="holo"
               style={`--h: ${Math.max(0, Math.min(Math.round(product.title.length * 3.5), 100))}%`}
             />
             {flair}
           </div>
-          <div class="absolute top-0 left-0 text-white scale-[85%] sm:scale-90">{flair}</div>
+          <div class="absolute top-0 left-0 text-white scale-[80%] font-bold">{flair}</div>
         </div>
       {/if}
     {/each}

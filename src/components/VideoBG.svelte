@@ -5,6 +5,7 @@
   const isBrowser = typeof window !== 'undefined'
 
   const videos = [
+    'none',
     'church',
     'clouds',
     'dark',
@@ -54,7 +55,9 @@
   </Popover>
 </div>
 
-<video src={`/videos/${selected}.mp4`} autoplay loop muted></video>
+{#if selected !== 'none'}
+  <video src={`/videos/${selected}.mp4`} autoplay loop muted></video>
+{/if}
 
 <style>
   video {
@@ -64,7 +67,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    opacity: 0.35;
+    opacity: 0.3;
     height: 100%;
     width: 100%;
     object-fit: cover;
