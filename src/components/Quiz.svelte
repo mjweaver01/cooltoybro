@@ -13,6 +13,7 @@
 
   $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
+  $: rollClass = !canRoll ? 'default' : 'wilson'
 
   const setActiveStep = (stepId: string, stepOptionValue: string) => {
     stepChoices[stepId] = stepOptionValue
@@ -98,17 +99,17 @@
     {/each}
   </div>
   <div class="flex items-center justify-center mt-6 w-full text-2xl">
-    <Button
-      disabled={!canRoll}
-      on:click={rollProduct}
-      class="px-8 py-5"
-      variant={!canRoll ? 'default' : 'wilson'}
-      >{canRoll && chosenProduct.title
-        ? 'Roll for a new product!'
-        : canRoll
-          ? 'Roll for a product!'
-          : `Answer ${questionsLeft} questions, please`}</Button
-    >
+    {#if canRoll}
+      <Button href="" on:click={rollProduct} class="px-8 py-5" variant={'wilson'}
+        >{canRoll && chosenProduct.title
+          ? 'Roll for a new product!'
+          : 'Roll for a product!'}</Button
+      >
+    {:else}
+      <Button disabled={true} class="px-8 py-5"
+        >{`Answer ${questionsLeft} questions, please`}</Button
+      >
+    {/if}
   </div>
 </div>
 

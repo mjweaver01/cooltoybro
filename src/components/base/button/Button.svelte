@@ -1,13 +1,13 @@
 <script lang="ts">
   // Define a type for the variant keys
   type ButtonVariant = keyof typeof buttonVariants
-  let className: string | undefined | null = undefined
-  let href: string | undefined = undefined
-  export { className as class, href }
+  let className: string | undefined | null
+  export { className as class }
+  export let href: string | undefined = null
   export let type: 'button' | 'submit' | 'reset' = 'button'
   // Ensure that variant is of type ButtonVariant
   export let variant: ButtonVariant | any = 'default'
-  variant = variant.toLowerCase().replace(/' '/g, '_')
+  const computedVariant = variant.toLowerCase().replace(/' '/g, '_')
 
   const buttonVariants: any = {
     amazon:
@@ -32,7 +32,7 @@
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-black hover:bg-black/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
   }
 
-  const variantClass = buttonVariants[variant] || buttonVariants.default
+  const variantClass = buttonVariants[computedVariant] || buttonVariants.default
 
   // This function returns true if 'href' is a non-empty string
   const isLink = (): boolean => typeof href === 'string' && href.length > 0
