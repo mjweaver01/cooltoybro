@@ -1231,7 +1231,7 @@ export const products: ProductRecord[] = [
     collections: ['cheap'],
     links: [
       {
-        title: 'Amazon',
+        title: 'Westside Barbell',
         link: generateUTM(
           'https://www.westside-barbell.com/collections/apparel/products/original-nitro-gym-shirt',
         ),
