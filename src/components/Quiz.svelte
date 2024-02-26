@@ -58,6 +58,7 @@
     document.getElementById('product-wrapper')?.scrollIntoView({
       behavior: 'smooth',
     })
+    seen = []
     rolled = 0
   }
 </script>
