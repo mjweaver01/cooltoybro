@@ -6,24 +6,18 @@
   import Product from '@/components/Product.svelte'
   import { quiz } from '@/lib/constants'
 
-  let rolled = 0
   let seen: string[] = []
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
 
   $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
-  $: rollClass = !canRoll ? 'default' : 'wilson'
 
   const setActiveStep = (stepId: string, stepOptionValue: string) => {
     stepChoices[stepId] = stepOptionValue
   }
 
   const rollProduct = async () => {
-    if (seen.length >= 5 || rolled >= 5) {
-      return
-    }
-
     let filteredProducts = products.filter((p) => {
       return (
         Object.keys(stepChoices).filter((c) => JSON.stringify(p).includes(stepChoices[c])).length >
@@ -39,8 +33,6 @@
         )
       })
 
-    console.log(filteredProducts)
-
     const randomNumber = () =>
       Math.max(
         0,
@@ -51,10 +43,9 @@
 
     if (
       !cachedProduct ||
-      cachedProduct.slug === chosenProduct.slug ||
+      (cachedProduct && cachedProduct.slug === chosenProduct.slug) ||
       seen.includes(cachedProduct.slug)
     ) {
-      rolled += 1
       cachedProduct = filteredProducts[randomNumber()]
     }
 

@@ -104,7 +104,7 @@ export const products: ProductRecord[] = [
       'https://assets.raspberrypi.com/static/51035ec4c2f8f630b3d26c32e90c93f1/2b8d7/zero2-hero.webp',
     ],
     collections: ['cheap', 'best'],
-    tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie', 'tech', 'easy'],
+    tags: ['computer', 'mini pc', 'raspberry', 'pi', 'razberry', 'pie', 'tech', 'easy', 'hard'],
     flair: ['Best Mini PC', 'prime'],
     description: `At the heart of Raspberry Pi Zero 2 W is RP3A0, a custom-built system-in-package designed by Raspberry Pi in the UK. With a quad-core 64-bit ARM Cortex-A53 processor clocked at 1GHz and 512MB of SDRAM, Zero 2 is up to five times as fast as the original Raspberry Pi Zero. Wireless LAN is built in to a shielded enclosure with improved RF compliance, giving you more flexibility when designing with Raspberry Pi Zero 2 W. All in the same tiny 65mm × 30mm form factor.`,
     additionalInformation: `
@@ -660,7 +660,7 @@ export const products: ProductRecord[] = [
         link: 'https://amzn.to/49sQFYX',
       },
     ],
-    tags: ['other', 'easy'],
+    tags: ['lifestyle', 'easy'],
     flair: ['prime', 'Best Guitar'],
     rank: {
       price: 3,
@@ -927,7 +927,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['easy', 'hard', 'other'],
+    tags: ['easy', 'hard', 'lifestyle'],
     rank: {
       price: 1,
       quality: 5,
