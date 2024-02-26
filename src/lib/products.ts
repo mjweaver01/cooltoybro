@@ -1238,7 +1238,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['sports', 'easy'],
+    tags: ['sports', 'easy', 'lifestyle'],
     rank: {
       price: 1,
       quality: 5,
