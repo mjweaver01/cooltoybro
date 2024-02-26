@@ -2,7 +2,7 @@ import { products } from './products'
 
 export const siteName = 'Cool Toy, Bro!'
 export const siteDescription =
-  'Welcome to Cool Toy, Bro! where we find all the coolest toys for you, or your bro!'
+  'We finds all the best toys, gadgets and lifestyle products for bros – or the husband, boyfriend or significant (bro)ther in your life!'
 
 export const collections = [
   {
