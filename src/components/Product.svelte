@@ -18,13 +18,15 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
   <div class="grid sm:grid-cols-2 sm:gap-8">
     <div
-      class={`w-full rounded-xl shadow-lg bg-white max-h-[55vh] ${
+      class={`w-full rounded-xl shadow-lg !bg-white max-h-[55vh] ${
         product.images.length > 1 ? 'sm:max-h-[700px]' : 'sm:max-h-[592px]'
-      } overflow-scroll card`}
+      } overflow-hidden overflow-x-scroll sm:overflow-x-hidden sm:overflow-y-auto card`}
     >
-      <div class="p-4 bg-white">
+      <div
+        class="p-4 whitespace-nowrap flex items-center sm:flex-col sm:gap-4 flex-nowrap w-full h-full`"
+      >
         {#each product.images as image, i}
-          <div class="relative">
+          <div class="relative w-full h-full shrink-0 pr-4 sm:p-0">
             <div class="relative w-full h-0 pb-[100%]">
               <img
                 class="absolute w-full h-full object-contain"
@@ -40,8 +42,8 @@
         {/each}
         {#if product.videos && product.videos.length > 0}
           {#each product.videos as video, i}
-            <div class="relative">
-              <div class="video-container">
+            <div class="relative w-full shrink-0 pr-4 sm:p-0">
+              <div class="video-container w-full">
                 <!-- svelte-ignore a11y-media-has-caption -->
                 <video class="w-full" controls preload="auto" poster={video.poster} src={video.link}
                 ></video>
