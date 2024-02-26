@@ -468,7 +468,7 @@ export const products: ProductRecord[] = [
   },
   {
     slug: 'twelve-rules-for-life',
-    title: '12 Rules for Life: An Antidote to Chaos',
+    title: '12 Rules for Life: An Antidote to Chaos – Jordan Peterson',
     images: ['https://m.media-amazon.com/images/I/61BRxtp9qtL._SY522_.jpg'],
     collections: ['cheap'],
     tags: ['smart', 'dumb', 'easy'],
@@ -1208,13 +1208,42 @@ export const products: ProductRecord[] = [
         link: 'https://amzn.to/3P09wCz',
       },
     ],
-    flair: ['prime'],
     tags: ['lifestyle', 'easy'],
     rank: {
       price: 2,
       quality: 5,
       vibes: 5,
       description: 'The best bottle for hot or cold drinks. No S brand. No LEAD!',
+    },
+  },
+  {
+    slug: 'original-nitro-gym-shirt',
+    title: 'WSBB Mens Gym T-Shirt',
+    images: [
+      'https://www.westside-barbell.com/cdn/shop/products/blacknitrotfront_1080x.png?v=1666658877',
+      'https://www.westside-barbell.com/cdn/shop/products/blacknitrotback_1080x.png?v=1666659347',
+    ],
+    price: 30,
+    description:
+      'At one time this gym shirt was so exclusive that no one dared to wear one if you were not an official member and this was strictly enforced!',
+    additionalInformation:
+      'After receiving numerous requests from athletes, coaches, visitors, and fans who wanted to represent and spread the word of the conjugate system, Lou decided to make these to be the first-ever garment produced for the public to purchase. On the front, it has our original nitro logo of a pitbull with a barbell chain stacked with weight. On the back, it is an image of the dog from behind.',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: generateUTM(
+          'https://www.westside-barbell.com/collections/apparel/products/original-nitro-gym-shirt',
+        ),
+      },
+    ],
+    flair: ['prime'],
+    tags: ['sports', 'easy'],
+    rank: {
+      price: 1,
+      quality: 5,
+      vibes: 5,
+      description: 'The shirt speaks for itself. IYKYK.',
     },
   },
 ]

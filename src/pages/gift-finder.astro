@@ -1,13 +1,12 @@
 ---
-import { siteName } from '@/lib/constants'
+import { siteName, siteDescription } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Marquee from '@/components/Marquee.astro'
 import Navbar from '@/components/Navbar.astro'
 import Quiz from '@/components/Quiz.svelte'
 
 const title = `Gift Finder | ${siteName}`
-const description =
-  'Find the perfect gift for yourself or your fellow brother by answering a few simple questions.'
+const description = siteDescription
 ---
 
 <Layout title={title} description={description}>

@@ -1,5 +1,5 @@
 ---
-import { siteName } from '@/lib/constants'
+import { siteName, siteDescription } from '@/lib/constants'
 import { collections } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.astro'
@@ -20,7 +20,7 @@ const { id } = Astro.params
 const { products, collectionTitle } = Astro.props
 
 const title = `${collectionTitle} | ${siteName}`
-const description = 'We find all the coolest toys for you and your significan (bro)ther!'
+const description = siteDescription
 ---
 
 <Layout title={title} description={description}>
