@@ -908,7 +908,7 @@ export const products: ProductRecord[] = [
   },
   {
     slug: 'be-here-now',
-    title: 'Be Here Now - Ram Dass',
+    title: 'Be Here Now – Ram Dass',
     images: ['https://m.media-amazon.com/images/I/81xNWm7jhXL._SY342_.jpg'],
     videos: [
       {
@@ -938,7 +938,7 @@ export const products: ProductRecord[] = [
   },
   {
     slug: 'quest-3-128gb-',
-    title: 'Quest 3 128GB',
+    title: 'Quest 3 – 128GB',
     images: [
       'https://m.media-amazon.com/images/I/81whTB488bL._SX342_.jpg',
       'https://m.media-amazon.com/images/I/8135wwgyceL._SX342_.jpg',
@@ -1038,15 +1038,15 @@ export const products: ProductRecord[] = [
     },
   },
   {
-    slug: 'mechanical-keyboard-brown-switches',
-    title: 'RGB Mechanical Keyboard',
+    slug: 'tieti-24ghz-wireless-bluetooth-mechanical-gaming-keyboard',
+    title: 'Tieti Wireless Mechanical Keyboard',
     images: [
-      'https://m.media-amazon.com/images/I/61MJkcGKg0L._AC_SX522_.jpg',
-      'https://m.media-amazon.com/images/I/71URl23rwOL._AC_SX522_.jpg',
-      'https://m.media-amazon.com/images/I/71i+jXm0u3L._AC_SX522_.jpg',
-      'https://m.media-amazon.com/images/I/71LQ7vncebL._AC_SX522_.jpg',
-      'https://m.media-amazon.com/images/I/71r0PeP9P4L._AC_SX522_.jpg',
-      'https://m.media-amazon.com/images/I/71zTHhRdnrL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71uoLvPTtAL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/714Qz0HUktL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71bCQhdn30L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/719YyI-uk8L._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71a8J0xC+pL._AC_SX522_.jpg',
+      'https://m.media-amazon.com/images/I/71wNU41vauL._AC_SX522_.jpg',
     ],
     videos: [
       {
@@ -1054,30 +1054,30 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/51ICEucRa+L.SX522_.jpg',
       },
     ],
-    price: 55.99,
-    description: '',
+    price: 32.99,
+    description:
+      'This 65% keyboard supports 2.4GHz Wireless, Bluetooth, and corded modes. Being a Mechanical Gaming Keyboard, it has Hot Swappable Keyboard with RGB Backlght, Full Keys Programmable, 4200mAh Battery, and Cherry MX Switches of your choice',
     additionalInformation:
-      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> 65% Mechanical Keyboard: TIETI 67 keyboard compresses powerful features into 65% of the overall size. Easy to use even in the tightest of spaces, it is suitable for on-the-go use.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Hot-swappable Switches: Wired Gaming keyboard with hot-swappable switches, full keyboard pluggable, plug-and-play. Use Gateron Pro Switches to provide a linear feel with a smoother touch and no blocking sensation at all, giving your fingertips a different kind of fun.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 18 Million RGB Backlight: 22 different RGB lighting modes and effects, FN+＞/＜adjusts the lighting effects and the breathing speed to provide you with an immersive gaming experience. Each LED is precisely calibrated to display the perfect RGB backlighting. Create your own sense of ambiance with TIETI-Synapse software.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Extensive Compatibility: TIETI mechanical keyboard uses a USB interface, making it compatible with Windows / MAC / IOS / Android, plug-and-play, no drivers or software required. Comes with a clip for easy access when you want to change the switch.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Ergonomic keyboard: B-2 Spirit Mini keyboard is ergonomically designed to relax your wrists, bringing comfort and less strain for long-term typing or gaming. Choose thick dyed keycaps with clear legends and textures, durable keycaps won\'t oil up or fade in long term use.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+      '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> 65% Mechanical Keyboard: B-2 Spirit Mini 67 keyboard compresses powerful features into 65% of the overall size. Easy to use even in the tightest of spaces, it is suitable for on-the-go use.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Hot-swappable Switches:Gaming keyboard with hot-swappable switches, full keyboard pluggable, plug-and-play. Using German cherry MX switches, with a unique crackling sound and tactile sensation, giving your fingertips a different kind of fun.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 18 Million RGB Backlight: 22 different RGB lighting modes and effects, FN+＞/＜adjusts the lighting effects and the breathing speed to provide you with an immersive gaming experience. Each LED is precisely calibrated to display the perfect RGB backlighting. Create custom animations with TIETI-Synapse software.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 3 Modes of Connection: This keyboard includes 2.4G wireless connectivity, Bluetooth mode, and Type-C USB wired. The mechanical game keyboard can easily connect three devices at the same time through Bluetooth settings, and can flexibly switch the game and working mode without repeatedly plugging in.Compatible with Windows / MAC / IOS / Android.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Ergonomic keyboard: Wireless gaming keyboard is ergonomically designed to relax your wrists to bring comfort and reduce the burden for long-term typing or gaming. Choose thick dyed keycaps with clear legends and textures, durable keycaps will not oil or fade during long term using.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
     collections: ['cheap'],
     links: [
       {
         title: 'Amazon',
-        link: 'https://amzn.to/3SPBTVd',
+        link: 'https://amzn.to/3OYM8pc',
       },
     ],
     flair: ['prime'],
     tags: [],
     rank: {
-      price: 1,
-      quality: 4,
-      vibes: 4,
-      description:
-        '2.4ghz dongle, bluetooth, and hardwire. RGB, mechanical clickity clack goodness. All for a third of the price of the big brands.',
+      price: 0,
+      quality: 0,
+      vibes: 0,
+      description: '',
     },
   },
   {
     slug: 'osprey-daylite-plus-commuter-backpack',
-    title: 'Osprey Backpack',
+    title: 'Osprey Daylite Backpack',
     images: [
       'https://m.media-amazon.com/images/I/81VSFgVff1L._AC_SY450_.jpg',
       'https://m.media-amazon.com/images/I/81cIjxhsreL._AC_SY550_.jpg',
@@ -1126,7 +1126,7 @@ export const products: ProductRecord[] = [
     ],
     price: 10.99,
     description:
-      "<!-- show up to 2 reviews by default -->                       <p> </p><h4><span>Planet Waves Pro Winder String Winder and Cutter</span></h4><span> Planet Waves Pro-Winder </span><h5><span>Planet Waves Pro-Winder</span></h5><p><span>Most ordinary peg winders serve the single basic purpose of winding the tuning pegs of a guitar during string changes, but the Planet Waves Pro-Winder isn't any ordinary peg winder.</span></p><h5><span>One and Done</span></h5><p><span>The ergonomic design of the Pro-Winder makes string changes easier than ever before with it's built-in clippers, bridge pin puller, and peg winder all rolled into one product. The peg winder is also designed to fit on virtually all guitars, banjos, and mandolins, truly making it a must have for every instrument case.</span></p><h5><span>Covering All the Basses</span></h5><p><span>The patented Pro-Winder design is also available for bass guitar. With a handle designed for efficient and comfortable use and a peg winder that fits both vintage and modern basses, the Bass Pro-Winder has you covered. The hardened steel clippers are also tough enough to cut through bass strings with ease.</span></p><span> <br> Planet Waves Pro-Winder for Guitar </span><h5><span>Pro-Winder For Guitar</span></h5><p><span>Designed to work for a wide variety of fretted instruments, the Pro-Winder for guitar is a perfect all-in-one tool for every player to keep in their gig bag or case. The Pro-Winder is the Swiss Army knife of string changing.</span></p><span> Planet Waves Pro-Winder for Bass </span><h5><span>Pro-Winder For Bass</span></h5><p><span>The Bass Pro-Winder takes the user friendly and ergonomic elements of the original Pro-Winder and makes them applicable for both vintage and modern bass guitar tuning pegs.</span></p><span> The Pro-Winder String Cutter </span><h5><span>Cutting Through</span></h5><p><span>With the hardened steel clippers on the Pro-Winders string cutter you can cut through your old strings to make removing them quicker, and trim the excess off of new strings after looping them through the tuning machines.</span></p><span> The Bass Pro-Winder String Cutter </span><h5><span>Making The Cut</span></h5><p><span>When it comes to bass guitar you are dealing with some pretty heavy gauge strings. The good news is that the hardened steel clippers of the Bass Pro-Winders string cutter are specifically designed to easily cut through the thickest of strings.</span></p><span> The Pro-Winder Bridgepin Puller </span><h5><span>Pull The Pin</span></h5><p><span>Designed with acoustic guitarists in mind, the Pro-Winder also has a built in bridgepin puller. This makes removing stubborn pins simple without risking damage caused by pliers and other tools.</span></p><span> The Bass Pro-Winder In Use </span><h5><span>Wind Away</span></h5><p><span>The Bass Pro-Winder is designed to seat itself on a variety of peg winder sizes and shapes. The spinning head and comfortable handle make changing bass strings a much simpler and efficient process.</span></p>  <p></p>",
+      'Pro-Winder is a high-quality string winder with a built-in clipper and bridge pin puller. The Pro-Winder is designed to fit virtually all guitars, banjos, ukuleles, and mandolins. Ergonomically designed with durable hardened steel wire cutters, the Pro-Winder string winder is the ultimate all-in-one restringing tool.',
     additionalInformation:
       '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> ALL-IN-ONE GUITAR STRING WINDER TOOL - The ergonomic and high-quality design of the D\'Addario Accessories Pro-Winder makes string changes quicker and easier than ever before with its built-in clippers, bridge pin puller and peg winder all rolled into one tool.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> MUST HAVE FOR EVERY GUITAR CASE – Why fill up your case with three tools when you can have one that does it all? This indispensable tool has been designed to fit comfortably in your hand and for use on virtually all electric and acoustic guitars, basses, banjos and mandolins. Also available in a bass guitar version.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> GUITAR WINDER - The guitar peg winder fits onto the guitar tuning peg and rotates to help wind the guitar strings making a quicker string change for your guitar.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> BUILT IN STRING CUTTER – With the hardened steel clippers on the Pro-Winder String Cutter you can cleanly cut through your old strings to remove them quicker and easier, and trim the excess off new strings after looping them through the tuning machines.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> INTEGRATED GUITAR PIN REMOVER - Designed with acoustic guitarists in mind, the Pro-Winder has a built-in bridge pin puller. This makes removing stubborn pins simple without risking damage caused by pliers and other tools.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
     collections: ['cheap'],
@@ -1149,7 +1149,7 @@ export const products: ProductRecord[] = [
   },
   {
     slug: 'uniden-r8-radar-laser-detector',
-    title: 'UNIDEN R8 Radar Detector',
+    title: 'Uniden R8 Radar Detector',
     images: ['https://m.media-amazon.com/images/I/71PgNkqQR2L._AC_SX679_.jpg'],
     videos: [
       {
