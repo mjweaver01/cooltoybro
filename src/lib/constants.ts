@@ -75,6 +75,10 @@ export const quiz = [
         title: 'SPORTS ⚾🏀🏈',
         value: 'sport',
       },
+      {
+        title: 'OTHER 👨 (lifestyle)',
+        value: 'lifestyle',
+      },
     ],
   },
   {
@@ -86,7 +90,7 @@ export const quiz = [
         value: 'easy',
       },
       {
-        title: 'ASTRONAUT 🚀  (Hard mode)',
+        title: 'ROCKET MAN 🚀  (Hard mode)',
         value: 'hard',
       },
     ],

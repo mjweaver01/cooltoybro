@@ -10,8 +10,6 @@
   let seen: string[] = []
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
-  $: rolled = 0
-  seen = []
 
   $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
@@ -21,7 +19,9 @@
   }
 
   const rollProduct = async () => {
-    if (seen.length >= 5) return
+    if (seen.length >= 5 || rolled >= 5) {
+      return
+    }
 
     let filteredProducts = products.filter((p) => {
       return (
@@ -38,12 +38,15 @@
         )
       })
 
-    const randomNumber = Math.max(
-      0,
-      Math.min(Math.round(Math.random() * filteredProducts.length), filteredProducts.length),
-    )
+    console.log(filteredProducts)
 
-    let cachedProduct = filteredProducts[randomNumber]
+    const randomNumber = () =>
+      Math.max(
+        0,
+        Math.min(Math.round(Math.random() * filteredProducts.length), filteredProducts.length),
+      )
+
+    let cachedProduct = filteredProducts[randomNumber()]
 
     if (
       !cachedProduct ||
@@ -51,18 +54,15 @@
       seen.includes(cachedProduct.slug)
     ) {
       rolled += 1
-      rollProduct()
-      return
+      cachedProduct = filteredProducts[randomNumber()]
     }
 
     chosenProduct = cachedProduct
-    seen.push(chosenProduct.slug)
+    if (!seen.includes(chosenProduct.slug)) seen.push(chosenProduct.slug)
     await tick()
     document.getElementById('product-wrapper')?.scrollIntoView({
       behavior: 'smooth',
     })
-    seen = []
-    rolled = 0
   }
 </script>
 
@@ -98,7 +98,11 @@
     {/each}
   </div>
   <div class="flex items-center justify-center mt-6 w-full text-2xl">
-    <Button disabled={!canRoll} on:click={rollProduct}
+    <Button
+      disabled={!canRoll}
+      on:click={rollProduct}
+      class="px-8 py-6"
+      variant={!canRoll ? 'default' : 'wilson'}
       >{canRoll && chosenProduct.title
         ? 'Roll for a new product!'
         : canRoll

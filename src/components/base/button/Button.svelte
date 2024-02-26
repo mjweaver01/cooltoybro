@@ -6,10 +6,10 @@
   export { className as class, href }
   export let type: 'button' | 'submit' | 'reset' = 'button'
   // Ensure that variant is of type ButtonVariant
-  export let variant: ButtonVariant | any = 'default'
-  variant = variant.toLowerCase().replace(/ /g, '_')
+  let variant: ButtonVariant | any = 'default'
+  $: variant = variant.toLowerCase().replace(/ /g, '_')
 
-  const buttonVariants: any = {
+  export const buttonVariants: any = {
     amazon:
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-orange-600 hover:bg-orange-500/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
     flipper:
@@ -50,7 +50,7 @@
   <a
     {...$$restProps}
     {href}
-    class="text-center {variantClass} {className}"
+    class={`text-center ${variantClass} ${className}`}
     on:click
     {type}
     role="button"
@@ -59,7 +59,7 @@
     <slot />
   </a>
 {:else}
-  <button on:click {...$$restProps} {type} class="{variantClass} {className}">
+  <button on:click {...$$restProps} {type} class={`${variantClass} ${className}`}>
     <slot />
   </button>
 {/if}
