@@ -6,8 +6,13 @@
   import Product from '@/components/Product.svelte'
   import { quiz } from '@/lib/constants'
 
+  let rolled = 0
+  let seen: string[] = []
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
+  $: rolled = 0
+  seen = []
+
   $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
 
@@ -15,8 +20,6 @@
     stepChoices[stepId] = stepOptionValue
   }
 
-  let rolled = 0
-  let seen: string[] = []
   const rollProduct = async () => {
     if (seen.length >= 5) return
 
