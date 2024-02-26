@@ -1,6 +1,7 @@
 <script lang="ts">
   import { emptyProduct } from '@/lib/emptyProduct'
   import { type ProductRecord, products } from '@/lib/products'
+  import { trackConversion } from '@/lib/analytics'
   import { Button } from '@/components/base/button'
   import Products from '@/components/Products.svelte'
   import ProductFlair from '@/components/ProductFlair.svelte'
@@ -72,7 +73,7 @@
       </div>
       <div class="flex flex-col gap-2 w-full">
         {#each product.links as link}
-          <a target="_blank" href={link.link} class="w-full"
+          <a target="_blank" href={link.link} class="w-full" on:click={() => trackConversion()}
             ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
           >
         {/each}

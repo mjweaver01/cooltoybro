@@ -25,5 +25,5 @@ const description = product.description
 
 <Layout title={title} description={description} image={product.images[0]}>
   <Navbar active={`/product/${id}`} />
-  <Product product={product} />
+  <Product client:load product={product} />
 </Layout>

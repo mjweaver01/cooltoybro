@@ -1,6 +1,7 @@
 <script lang="ts">
   import { sortOptions } from '@/lib/constants'
   import { type ProductRecord } from '@/lib/products'
+  import { trackConversion } from '@/lib/analytics'
   import { Button } from '@/components/base/button'
   import { Popover } from '@/components/base/popover'
   import ProductFlair from '@/components/ProductFlair.svelte'
@@ -174,7 +175,11 @@
                 {/if}
                 <ProductFlair {product} />
               </a>
-              <a target="_blank" href={product.links[0].link} class="w-full"
+              <a
+                target="_blank"
+                href={product.links[0].link}
+                class="w-full"
+                on:click={() => trackConversion()}
                 ><Button class="w-full" variant={product.links[0].title}>Buy Now</Button></a
               >
             </div>
