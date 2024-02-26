@@ -101,7 +101,7 @@
     <Button
       disabled={!canRoll}
       on:click={rollProduct}
-      class="px-8 py-6"
+      class="px-8 py-5"
       variant={!canRoll ? 'default' : 'wilson'}
       >{canRoll && chosenProduct.title
         ? 'Roll for a new product!'
