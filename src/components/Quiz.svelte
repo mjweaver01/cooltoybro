@@ -9,9 +9,7 @@
   let seen: string[] = []
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
-  $: {
-    seen = []
-  }
+  $: stepChoices, (seen = [])
 
   $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
@@ -44,20 +42,22 @@
 
     // get new unique product!
     let cachedProduct = filteredProducts[randomNumber()]
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 5; i++) {
       if (
         !cachedProduct ||
         !chosenProduct ||
         (cachedProduct && chosenProduct && cachedProduct.slug === chosenProduct.slug) ||
-        seen.includes(cachedProduct?.slug)
+        seen.includes(cachedProduct.slug)
       ) {
         cachedProduct = filteredProducts[randomNumber()]
+        if (cachedProduct.slug) continue
       } else {
         continue
       }
     }
 
     chosenProduct = cachedProduct
+
     if (!seen.includes(chosenProduct.slug)) seen.push(chosenProduct.slug)
     await tick()
     document.getElementById('product-wrapper')?.scrollIntoView({
