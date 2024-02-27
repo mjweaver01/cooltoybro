@@ -9,6 +9,9 @@
   let seen: string[] = []
   let chosenProduct = {} as ProductRecord
   let stepChoices = {} as any
+  $: {
+    seen = []
+  }
 
   $: questionsLeft = quiz.length - Object.keys(stepChoices).length
   $: canRoll = questionsLeft === 0
@@ -39,14 +42,19 @@
         Math.min(Math.round(Math.random() * filteredProducts.length), filteredProducts.length),
       )
 
+    // get new unique product!
     let cachedProduct = filteredProducts[randomNumber()]
-
-    if (
-      !cachedProduct ||
-      (cachedProduct && cachedProduct.slug === chosenProduct.slug) ||
-      seen.includes(cachedProduct.slug)
-    ) {
-      cachedProduct = filteredProducts[randomNumber()]
+    for (let i = 0; i < 9; i++) {
+      if (
+        !cachedProduct ||
+        !chosenProduct ||
+        (cachedProduct && chosenProduct && cachedProduct.slug === chosenProduct.slug) ||
+        seen.includes(cachedProduct?.slug)
+      ) {
+        cachedProduct = filteredProducts[randomNumber()]
+      } else {
+        continue
+      }
     }
 
     chosenProduct = cachedProduct
