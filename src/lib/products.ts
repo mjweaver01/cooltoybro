@@ -909,7 +909,13 @@ export const products: ProductRecord[] = [
   {
     slug: 'be-here-now',
     title: 'Be Here Now – Ram Dass',
-    images: ['https://m.media-amazon.com/images/I/81xNWm7jhXL._SY342_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/81xNWm7jhXL._SY342_.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media/vc/24128703-f0ec-4b06-a050-5cda52baf78a.__CR0,0,300,300_PT0_SX300_V1___.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media/vc/12fb73a4-22ed-4524-8490-5ef15d4a76ba.__CR0,0,300,300_PT0_SX300_V1___.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media/vc/2b9c7745-4a62-4981-88d9-0cb43ed5fc11.__CR0,0,300,300_PT0_SX300_V1___.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media/vc/d2a654cb-fa2d-4901-88af-6c7bbd908433.__CR0,0,970,300_PT0_SX970_V1___.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/42dcbb8f-16f6-4590-b066-df32018a3e1c/default.jobtemplate.mp4.480.mp4',
@@ -917,8 +923,10 @@ export const products: ProductRecord[] = [
       },
     ],
     price: 8.99,
-    description: '',
-    additionalInformation: '',
+    description:
+      "Be Here Now, or Remember, Be Here Now, is a 1971 book on spirituality, yoga, and meditation by the American yogi and spiritual teacher Ram Dass. The core book was first printed in 1970 as From Bindu to Ojas and its current title comes from a statement his guide, Bhagavan Das, made during Ram Dass's journeys in India. ",
+    additionalInformation:
+      '<h2 class="text-3xl font-bold mb-2 mt-4" data-svelte-h="svelte-1hps2m5">About the book</h2><div aria-expanded="true" class="a-expander-content a-expander-partial-collapse-content a-expander-content-expanded" style="padding-bottom: 20px;"> <span class="a-text-bold">Beloved guru Ram Dass tells the story of his spiritual awakening and gives you the tools to take control of your life in this “counterculture bible” (</span><span class="a-text-bold a-text-italic">The New York Times</span><span class="a-text-bold">) featuring powerful guidance on yoga, meditation, and finding your true self.</span><span><br><br>When </span><span class="a-text-italic">Be Here Now </span><span>was first published in 1971, it filled a deep spiritual emptiness, launched the ongoing mindfulness revolution, and established Ram Dass as perhaps the preeminent seeker of the twentieth century.<br><br>Just ten years earlier, he was known as Professor Richard Alpert. He held appointments in four departments at Harvard University. He published books, drove a Mercedes and regularly vacationed in the Caribbean. By most societal standards, he had achieved great success. . . . And yet he couldn’t escape the feeling that something was missing.&nbsp;<br>&nbsp;<br>Psilocybin and LSD changed that. During a period of experimentation, Alpert peeled away each layer of his identity, disassociating from himself as a professor, a social cosmopolite, and lastly, as a physical being. Fear turned into exaltation upon the realization that at his truest, he was just his inner-self: a luminous being that he could trust indefinitely and love infinitely.<br><br>And thus, a spiritual journey commenced. Alpert headed to India where his guru renamed him Baba Ram Dass—“servant of God.” He was introduced to mindful breathing exercises, hatha yoga, and Eastern philosophy. If he found himself reminiscing or planning, he was reminded to&nbsp;“Be Here Now.”&nbsp;He started upon the path of enlightenment, and has been journeying along it ever since.<br><br></span><span class="a-text-italic">Be Here Now</span><span>&nbsp;is a vehicle for sharing the true message, and a guide to self-determination.</span>  </div>',
     collections: ['cheap'],
     links: [
       {
