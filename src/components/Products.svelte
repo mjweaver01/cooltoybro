@@ -20,7 +20,7 @@
   const searchProducts = () => {
     filteredProducts = products
       .filter((product) => {
-        return JSON.stringify(product).includes(searchTerm.toLowerCase())
+        return JSON.stringify(product).toLowerCase().includes(searchTerm.toLowerCase())
       })
       // @ts-ignore
       .sort((a: ProductRecord, b: ProductRecord) => {
