@@ -776,7 +776,11 @@ export const products: ProductRecord[] = [
   {
     slug: 'zum-goats-milk-soap-bar-3-pack',
     title: 'Zum Bar Soap (3 Pack)',
-    images: ['https://m.media-amazon.com/images/I/71sL39GiEEL._SY355_.jpg'],
+    images: [
+      'https://m.media-amazon.com/images/I/71sL39GiEEL._SY355_.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media-library-service-media/0a1e3e7b-3b14-4401-aee9-6cf7f04c6e40.__CR0,0,1455,450_PT0_SX970_V1___.jpg',
+      'https://m.media-amazon.com/images/S/aplus-media-library-service-media/1083ea62-ab89-424c-aa23-f8138d3152ae.__CR0,0,1455,450_PT0_SX970_V1___.jpg',
+    ],
     videos: [
       {
         link: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5143c1ae-1c64-43ad-8fcd-1b70fb9b1b29/default.jobtemplate.mp4.480.mp4',
@@ -784,7 +788,8 @@ export const products: ProductRecord[] = [
       },
     ],
     price: 17.55,
-    description: '',
+    description:
+      "Saponified 100% food grade olive, coconut, palm & castor oils, in a goat's milk base, with herbs, essential oils,mineral pigments, and aloe ferox. Enjoy! *Zum Bars contain natural mineral pigments that may stain when rubbed directly on fabrics, washcloths, or clothing.",
     additionalInformation:
       '<hr>                            <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Plant-Packed Formula: Crafted with natural, food-grade oils like olive, coconut, palm and castor oils, goat milk and essential oils  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Goat Milk Soap Benefits: Zum Bars are jam-packed with nutrients and created using a cold-processed method to maintain the integrity of the goat\'s milk and other ingredients  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Lavender Soap Bundle Scent Notes: Lavender Zum features classic floral lavender paired with woodsy frankincense, earthy rosemary and energizing mint  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Natural &amp; Cruelty-Free: We use ingredients from nature and don\'t test our products on animals, making our products vegetarian and cruelty-free  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> About Zum by Indigo Wild: Zum’s natural products for body and home are handcrafted in the U.S.A. with ingredients you can say, spell and love to smell  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
     collections: ['best', 'easy'],
