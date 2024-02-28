@@ -24,7 +24,7 @@
       } overflow-hidden overflow-x-scroll sm:overflow-x-hidden sm:overflow-y-auto card`}
     >
       <div
-        class="p-4 whitespace-nowrap flex items-center sm:flex-col sm:gap-4 flex-nowrap w-full h-full`"
+        class="p-4 whitespace-nowrap flex items-center sm:flex-col sm:gap-4 flex-nowrap w-full h-full"
       >
         {#each product.images as image, i}
           <div class="relative w-full h-full shrink-0 pr-4 sm:p-0">
@@ -120,9 +120,17 @@
       </div>
     {/if}
   </div>
-  {#if relatedProducts.length > 0}
-    <Products products={relatedProducts} showHeaderSort={false} />
-  {/if}
+  <Products
+    products={[
+      ...new Set(
+        [
+          ...products.filter((p) => p.collections.some((q) => product.collections.includes(q))),
+          ...relatedProducts,
+        ].filter((p) => p.slug !== product.slug),
+      ),
+    ]}
+    showHeaderSort={false}
+  />
   <!-- floating mobile buy buttons -->
   <!-- <div class="flex flex-wrap gap-2 fixed sm:hidden bottom-0 left-0 w-full p-4 sm:p-0 z-9">
     {#each product.links as link}
