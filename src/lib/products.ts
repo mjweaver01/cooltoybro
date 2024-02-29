@@ -1294,4 +1294,38 @@ export const products: ProductRecord[] = [
         'The best book is a book with pictures; and these pictures depict the most epic stories ever recorded. God bless!',
     },
   },
+  {
+    slug: 'liquid-iv-hydration-multiplier-strawberry-hydration-powder-packets-electrolyte-drink-mix-easy-open-single-serving-stick-non-gmo-48-sticks',
+    title: 'Liquid I.V. - Strawberry (48ct)',
+    images: [
+      'https://m.media-amazon.com/images/I/41glHTDByDL._SX300_SY300_QL70_FMwebp_.jpg',
+      'https://m.media-amazon.com/images/I/81Xzg9ImH1L._SX569_.jpg',
+      'https://m.media-amazon.com/images/I/81-gkgIrecL._SX569_.jpg',
+      'https://m.media-amazon.com/images/I/81OBbd3gAgL._SX569_.jpg',
+      'https://m.media-amazon.com/images/I/711gf++W+qL._SX569_.jpg',
+      'https://m.media-amazon.com/images/I/71N37JR+GfL._SX569_.jpg',
+    ],
+    videos: [],
+    price: 59.45,
+    description:
+      'Hydration Multiplier is a great-tasting, Non-GMO electrolyte drink mix powered by Cellular Transport Technology (CTT)®️ to hydrate faster and more efficiently than water alone. 1 stick contains 3x the electrolytes of traditional sports drinks with 5 essential vitamins.',
+    additionalInformation:
+      '<h1 class="a-size-base-plus a-text-bold" style="display: none;"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Liquid I.V. Hydration Multiplier – Hydrate 2x faster than water alone with Hydration Multiplier, a great-tasting electrolyte drink powder with five essential vitamins and 3x the electrolytes of traditional sports drinks. Whether you’re in need of hydration for exercise, travel, or long nights, Liquid I.V. Hydration Multiplier packets have you covered.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Great taste - Strawberry Hydration Multiplier is bursting with the freshly-picked taste of ripe, juicy strawberries topped with decadent notes of whipped cream.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Cellular Transport Technology – The science of Cellular Transport Technology (CTT), used in Liquid I.V. products, is based on an optimal ratio of ingredients designed to enhance rapid absorption of water and other key ingredients into your body. Thanks to this fast acting system, Hydration Multiplier helps provide faster, more efficient hydration.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Non-GMO and made with premium ingredients – Hydration Multiplier Electrolyte Powder Drink Mix is made with natural flavors and has no artificial colors or sweeteners. Every serving contains 5 essential vitamins: vitamins B3, B5, B6, B12 and vitamin C. It\'s also gluten-free, soy-free, and dairy-free.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> On-the-go hydration – Enjoy convenient, on-the-go hydration with Hydration Multiplier. These single-serving, travel-friendly stick packets are perfect for taking to the gym, sports games, and long flights. Pour one easy-to-open stick packet into 16oz of water, mix or shake, and hydrate.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Global impact – Liquid I.V. believes equitable access to clean and abundant water is the foundation of a healthier world. We prioritize partnerships with leading water, humanitarian, and community-based organizations to fund and foster innovative solutions to help communities protect both their water and their futures.  </span></li>  </ul>   <!-- Loading EDP related metadata -->               <span class="edp-feature-declaration" data-edp-feature-name="featurebullets" data-edp-asin="B08MVF7XFZ" data-data-hash="832084747" data-defects="[{&quot;id&quot;:&quot;defect-mismatch-info&quot;,&quot;value&quot;:&quot;Different from product&quot;},{&quot;id&quot;:&quot;defect-missing-information&quot;,&quot;value&quot;:&quot;Missing information&quot;},{&quot;id&quot;:&quot;defect-unessential-info&quot;,&quot;value&quot;:&quot;Unimportant information&quot;},{&quot;id&quot;:&quot;defect-other-productinfo-issue&quot;,&quot;value&quot;:&quot;Other&quot;}]" data-metadata="CATALOG" data-feature-container-id="" data-custom-event-handler="" data-display-name="Bullet Points" data-edit-data-state="featureBulletsEDPEditData" data-position="" data-resolver="CQResolver"></span>',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3UYz0UA',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 2,
+      quality: 5,
+      vibes: 5,
+      description:
+        'This is better for you than any drink - even water. Well, next to water. It tastes like a fairy squirted in your mouth, and gives you all your essential vitamins and minerals. Delicious.',
+    },
+  },
 ]

@@ -25,4 +25,5 @@ export const input = [
   // 'https://amzn.to/3uMpHfW',
   // 'https://amzn.to/3OYM8pc',
   // "https://amzn.to/3Ijuvww"
+  // "https://amzn.to/3UYz0UA"
 ]

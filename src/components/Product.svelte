@@ -23,9 +23,9 @@
         product.images.length > 1 ? 'sm:max-h-[700px]' : 'sm:max-h-[592px]'
       } overflow-hidden overflow-x-scroll card`}
     >
-      <div class="p-4 whitespace-nowrap flex items-center sm:gap-4 flex-nowrap w-full h-full">
+      <div class="p-4 whitespace-nowrap flex items-center flex-nowrap w-full h-full">
         {#each product.images as image, i}
-          <div class="relative w-full h-full shrink-0 pr-4 sm:p-0">
+          <div class="relative w-full h-full shrink-0 pr-4">
             <div class="relative w-full h-0 pb-[100%]">
               <img
                 class="absolute w-full h-full object-contain"
@@ -34,20 +34,20 @@
                 loading={i > 0 ? 'lazy' : 'eager'}
               />
             </div>
-            <div class="absolute z-9 top-0 left-1 text-xs">
+            <div class="absolute z-9 bottom-[-1.25em] left-1 text-xs">
               {i + 1} / {totalImages}
             </div>
           </div>
         {/each}
         {#if product.videos && product.videos.length > 0}
           {#each product.videos as video, i}
-            <div class="relative w-full shrink-0 pr-4 sm:p-0">
+            <div class="relative w-full shrink-0 pr-4">
               <div class="video-container w-full">
                 <!-- svelte-ignore a11y-media-has-caption -->
                 <video class="w-full" controls preload="auto" poster={video.poster} src={video.link}
                 ></video>
               </div>
-              <div class="absolute top-0 left-0 text-xs text-white z-10">
+              <div class="absolute left-0 text-xs bottom-[-1.25em] z-10">
                 {i + 1 + product.images.length} / {totalImages}
               </div>
             </div>
