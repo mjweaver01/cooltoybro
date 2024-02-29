@@ -21,11 +21,9 @@
     <div
       class={`w-full rounded-xl shadow-lg !bg-white max-h-[55vh] ${
         product.images.length > 1 ? 'sm:max-h-[700px]' : 'sm:max-h-[592px]'
-      } overflow-hidden overflow-x-scroll sm:overflow-x-hidden sm:overflow-y-auto card`}
+      } overflow-hidden overflow-x-scroll card`}
     >
-      <div
-        class="p-4 whitespace-nowrap flex items-center sm:flex-col sm:gap-4 flex-nowrap w-full h-full"
-      >
+      <div class="p-4 whitespace-nowrap flex items-center sm:gap-4 flex-nowrap w-full h-full">
         {#each product.images as image, i}
           <div class="relative w-full h-full shrink-0 pr-4 sm:p-0">
             <div class="relative w-full h-0 pb-[100%]">

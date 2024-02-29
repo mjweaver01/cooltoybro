@@ -133,11 +133,7 @@
         </Popover>
       </div>
     {/if}
-    <div
-      class={`${
-        !showHeaderSort ? 'flex flex-nowrap overflow-auto sm:grid' : 'grid '
-      } grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8`}
-    >
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8">
       {#if filteredProducts.length == 0}
         <h2 class="text-2xl font-500">
           No results for "{searchTerm}"
