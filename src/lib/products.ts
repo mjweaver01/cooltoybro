@@ -1261,7 +1261,7 @@ export const products: ProductRecord[] = [
   },
   {
     slug: 'holy-bible-king-james-english-version-gustave-dore-illustrated-leather-bound-gift-edition',
-    title: 'Leather Bound KJV Holy Bible - Gustave Dore Illustrated',
+    title: 'Leather Bound KJV Holy Bible – Gustave Dore Illustrated',
     images: [
       'https://m.media-amazon.com/images/I/71giaRXpqFL._AC_SY450_.jpg',
       'https://m.media-amazon.com/images/I/51q9EfCNu5L._AC_SX355_.jpg',
@@ -1296,7 +1296,7 @@ export const products: ProductRecord[] = [
   },
   {
     slug: 'liquid-iv-hydration-multiplier-strawberry-hydration-powder-packets-electrolyte-drink-mix-easy-open-single-serving-stick-non-gmo-48-sticks',
-    title: 'Liquid I.V. - Strawberry (48ct)',
+    title: 'Liquid I.V. – Strawberry (48ct)',
     images: [
       'https://m.media-amazon.com/images/I/41glHTDByDL._SX300_SY300_QL70_FMwebp_.jpg',
       'https://m.media-amazon.com/images/I/81Xzg9ImH1L._SX569_.jpg',
