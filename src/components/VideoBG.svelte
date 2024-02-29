@@ -41,7 +41,7 @@
       let:bindTrigger
       use:bindTrigger
     >
-      <span class="capitalize">Video: {selected}</span>
+      <span class="capitalize">Now Playing: {selected}</span>
     </button>
     <div slot="content">
       {#each videos as video}
