@@ -74,15 +74,15 @@
     } sm:gap-8 pb-0 max-w-screen-xl m-auto`}
   >
     {#if showHeaderSort}
-      <div class="w-full rounded-xl shadow-lg bg-white card overflow-hidden p-4 mb-4 sm:mb-8">
+      <div class="w-full rounded-xl shadow-lg bg-white card p-4 mb-4 sm:mb-8 relative z-10">
         <h1 class="text-3xl font-bold mb-4">
           {#if filter.length > 0}{filter}{/if}{#if filter.length <= 0}All{/if} toys
         </h1>
-        <div class="flex gap-4">
+        <div class="relative z-10 flex gap-4">
           <input
             type="text"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder={`Search ${filter || 'all'} toys`}
+            placeholder={`Search all ${filter.toLowerCase() || 'all'} toys`}
             bind:value={searchTerm}
             on:input={searchProducts}
           />

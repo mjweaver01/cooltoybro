@@ -58,7 +58,7 @@
       use:keyDown={[open, closePopover, ['Escape']]}
       tabindex="-1"
       class={`absolute right-0 z-50 mt-2 w-56 rounded-md border border-gray-200 shadow-lg p-2 bg-white will-change-transform animate-slide-up-fade ${
-        position === 'top' ? 'bottom-0' : ''
+        position === 'top' ? 'bottom-12' : ''
       }`}
       role="dialog"
       aria-labelledby="popoverTitle"
