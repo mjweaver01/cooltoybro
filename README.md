@@ -8,7 +8,7 @@ Technologies:
 
 1. [TypeScript](https://www.typescriptlang.org/)
 1. [Astro 4](https://astro.build/)
-1. [Svelte](https://svelte.dev/docs/introduction)
+1. [Svelte](https://svelte.dev/)
 1. [Tailwind](https://tailwindcss.com/)
 
 ## 🏁 Quickstart
