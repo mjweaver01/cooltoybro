@@ -58,7 +58,7 @@
 </script>
 
 {#if products.length <= 0}
-  <div class="mt-16 sm:gap-8 p-4 sm:p-8 pb-0 max-w-screen-xl m-auto">
+  <div class={`${showHeaderSort ? 'mt-16 p-4 sm:p-8' : ''} sm:gap-8 pb-0 max-w-screen-xl m-auto`}>
     <div class="w-full rounded-xl shadow-lg bg-white card overflow-hidden">
       <h1 class="text-3xl font-bold">
         No toys found {#if filter.length > 0}under "{filter}"{/if}
@@ -68,7 +68,11 @@
 {/if}
 
 {#if products.length > 0}
-  <div class="mt-16 sm:gap-8 p-4 sm:p-8 pb-0 max-w-screen-xl m-auto">
+  <div
+    class={`${
+      showHeaderSort ? 'mt-16 p-4 sm:p-8' : 'mt-4 sm:mt-8'
+    } sm:gap-8 pb-0 max-w-screen-xl m-auto`}
+  >
     {#if showHeaderSort}
       <div class="w-full rounded-xl shadow-lg bg-white card overflow-hidden p-4 mb-4 sm:mb-8">
         <h1 class="text-3xl font-bold mb-4">
