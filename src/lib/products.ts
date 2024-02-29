@@ -1259,4 +1259,39 @@ export const products: ProductRecord[] = [
       description: 'The shirt speaks for itself. IYKYK.',
     },
   },
+  {
+    slug: 'holy-bible-king-james-english-version-gustave-dore-illustrated-leather-bound-gift-edition',
+    title: 'Leather Bound KJV Holy Bible - Gustave Dore Illustrated',
+    images: [
+      'https://m.media-amazon.com/images/I/71giaRXpqFL._AC_SY450_.jpg',
+      'https://m.media-amazon.com/images/I/51q9EfCNu5L._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/41cUC2bAD0L._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/81LZKzHcZXL._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/71saj9EEuIL._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/81Odc08ovBL._AC_SX355_.jpg',
+      'https://m.media-amazon.com/images/I/71xsnu+yfML._AC_SX355_.jpg',
+    ],
+    videos: [],
+    price: 39.85,
+    description:
+      "<p> <span>When the King James translation of the Bible was first published in 1611, it was the first time that many people throughout the English-speaking world were able to read the Old and New Testaments in their native tongue. It proved so wildly popular, in fact, that it was the only book that many families owned. The majestic scope and poetry of the King James translation's language made an incomparable impact on Western religion, culture, and literature that still resonates today. <br>This gorgeous gift edition also contains over two hundred beautiful, rarely collected full-page illustrations by Gustave Dore (1832-1883).</span>  </p>",
+    additionalInformation:
+      ' <h1 class="a-size-base-plus a-text-bold"> About this item </h1>               <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> ISBN-13: 9781435125391  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Publication date: 2/16/2012  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Pages: 1360  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Product dimensions: 6.60 (w) x 9.36 (h) x 2.70 (d)  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Package Information: This book will be packaged in Brand New Box of size 10x8x3.  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
+    collections: ['cheap'],
+    links: [
+      {
+        title: 'Amazon',
+        link: 'https://amzn.to/3Ijuvww',
+      },
+    ],
+    flair: ['prime'],
+    tags: [],
+    rank: {
+      price: 1,
+      quality: 5,
+      vibes: 5,
+      description:
+        'The best book is a book with pictures; and these pictures depict the most epic stories ever recorded. God bless!',
+    },
+  },
 ]

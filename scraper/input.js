@@ -1,6 +1,6 @@
 export const input = [
   // 'https://amzn.to/49obkgQ',
-  // // 'https://amzn.to/4bMQJEC',
+  // 'https://amzn.to/4bMQJEC',
   // 'https://amzn.to/3wtibXT',
   // 'https://amzn.to/3Tata16',
   // 'https://amzn.to/49Kas67',
@@ -23,6 +23,6 @@ export const input = [
   // 'https://amzn.to/3UN3Q2B',
   // 'https://amzn.to/42OL8tn',
   // 'https://amzn.to/3uMpHfW',
-
-  'https://amzn.to/3OYM8pc'
+  // 'https://amzn.to/3OYM8pc',
+  // "https://amzn.to/3Ijuvww"
 ]

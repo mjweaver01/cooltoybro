@@ -8,7 +8,7 @@ import { input as sourceLinks } from './input.js'
   console.log('---SCRAPE ME DADDY---')
   console.log('---------------------')
 
-  console.log(`${sourceLinks.length} products for me to scrape`)
+  console.log(`${sourceLinks.length} products for me to scrape, senpai`)
 
   const browser = await puppeteer.launch({
     headless: false,
@@ -122,5 +122,9 @@ import { input as sourceLinks } from './input.js'
   }
 
 
-  Promise.allSettled(tasks).then(async() => { await browser.close() })
+  Promise.allSettled(tasks).then(async() => { await browser.close() }).then(() => {
+    console.log('---------------------')
+    console.log('--- FULLY SCRAPED ---')
+    console.log('---------------------')
+  })
 })()
