@@ -109,7 +109,7 @@ const log = console.log;
       const fileData = JSON.parse(fs.readFileSync('./scraper/output.json'))
       fileData.push(record)
 
-      await fs.writeFileSync('./scraper/output.json', JSON.stringify(fileData, null, 2));
+      fs.writeFileSync('./scraper/output.json', JSON.stringify(fileData, null, 2));
       log(chalk.blue('💦 saved ' + link))
     } catch (err) {
       log(chalk.error(err))
