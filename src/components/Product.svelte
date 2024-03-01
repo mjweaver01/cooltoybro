@@ -34,7 +34,7 @@
                 loading={i > 0 ? 'lazy' : 'eager'}
               />
             </div>
-            <div class="absolute z-9 bottom-[-1.25em] left-1 text-xs">
+            <div class="absolute z-9 bottom-[-1.25em] left-0 text-xs">
               {i + 1} / {totalImages}
             </div>
           </div>
@@ -47,7 +47,7 @@
                 <video class="w-full" controls preload="auto" poster={video.poster} src={video.link}
                 ></video>
               </div>
-              <div class="absolute left-0 text-xs bottom-[-1.25em] z-10">
+              <div class="absolute text-xs bottom-[-1.25em] left-0 z-10">
                 {i + 1 + product.images.length} / {totalImages}
               </div>
             </div>
