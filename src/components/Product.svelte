@@ -88,7 +88,7 @@
     <div
       class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white z-9999 card"
     >
-      <h2 class="text-3xl font-bold">CQV Score</h2>
+      <h2 class="text-3xl font-bold mx-2">CQV Score</h2>
       <div class="my-4">
         <p
           class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
