@@ -2,7 +2,7 @@ import { products } from './products'
 
 export const siteName = 'Cool Toy, Bro!'
 export const siteDescription =
-  'We find all the best toys, gadgets and lifestyle products for bros – or the husband, boyfriend or significant (br)other in your life!'
+  'Find all the best toys, gadgets and lifestyle products the husband, boyfriend or significant (br)other in your life!'
 
 export const collections = [
   {
@@ -31,16 +31,16 @@ export const collections = [
 
 export const navItems = [
   {
+    slug: 'gift-finder',
+    title: 'Gift Finder',
+    link: '/gift-finder',
+  },
+  {
     slug: 'all',
     title: 'All',
     link: '/',
   },
   ...collections.map(({ title, link, slug }) => ({ title, link, slug })),
-  {
-    slug: 'gift-finder',
-    title: 'Gift Finder',
-    link: '/gift-finder',
-  },
   {
     slug: 'bro',
     title: 'Bro?',

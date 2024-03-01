@@ -99,3 +99,12 @@ nav {
   margin-right: 0.5rem;
   font-weight: 700;
 }
+
+.dot {
+  background: white;
+  border: 1px solid black;
+}
+
+.dot.active {
+  background: black;
+}
