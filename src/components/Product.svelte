@@ -39,7 +39,7 @@
               dots.item(index).classList.add('active')
             }
           })
-        }, 100),
+        }, 10),
       )
 
       dots.forEach(function (dot, index) {
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="absolute left-0 bottom-0 w-full flex items-center justify-center">
-        <div class="absolute left-[1px] bottom-[1px] image-count text-xs">
+        <div class="absolute right-[5px] bottom-[1px] image-count text-xs">
           <span id="current-image">1</span> /
           <span class="total-images">
             {totalImages}
