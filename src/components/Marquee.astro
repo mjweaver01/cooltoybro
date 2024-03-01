@@ -1,15 +1,29 @@
-<div class={`overflow-hidden uppercase py-1 mt-16 -mb-16 whitespace-nowrap backdrop-blur-xl`}>
+<style is:global>
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+  #marquee {
+    overflow: hidden;
+    display: flex;
+  }
+
+  .marquee-inner {
+    position: relative;
+    white-space: nowrap;
+    animation: marquee 18s linear infinite;
+  }
+</style>
+
+<div class="overflow-hidden uppercase py-1 mt-16 -mb-16 whitespace-nowrap card shadow-lg">
   <div id="marquee">
-    <slot />
+    <div class="marquee-inner">
+      <slot />
+    </div>
   </div>
 </div>
-
-<script is:inline type="module">
-  import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js'
-  new marquee(document.getElementById('marquee'), {
-    duplicated: true,
-    loop: 'infinite',
-    delayBeforeStart: 0,
-    speed: 100,
-  })
-</script>
