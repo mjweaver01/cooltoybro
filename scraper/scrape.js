@@ -1,14 +1,17 @@
 import fs from 'fs'
+import chalk from 'chalk'
 import puppeteer from 'puppeteer'
 import emptyProduct from '../src/lib/emptyProduct.js'
 import { input as sourceLinks } from './input.js'
 
-(async () => {
-  console.log('---------------------')
-  console.log('---SCRAPE ME DADDY---')
-  console.log('---------------------')
+const log = console.log;
 
-  console.log(`${sourceLinks.length} products for me to scrape, senpai`)
+(async () => {
+  log(chalk.blue('-----------------------'))
+  log(chalk.blue('--- SCRAPE ME DADDY ---'))
+  log(chalk.blue('-----------------------'))
+
+  log(chalk.red(`🫦 ${sourceLinks.length} products for me to scrape`))
 
   const browser = await puppeteer.launch({
     headless: false,
@@ -16,7 +19,7 @@ import { input as sourceLinks } from './input.js'
   })
 
   const scrapePage = async(link) => {
-    console.log(`scraping ${link}`)
+    log(chalk.yellow(`✊ scraping ${link}`))
     const page = await browser.newPage()
 
     try {
@@ -28,6 +31,7 @@ import { input as sourceLinks } from './input.js'
       if(thumbs.length > 0) {
         for (let image of thumbs) {
           await image.hover()
+          await sleep(200)
         }
       }
 
@@ -39,7 +43,6 @@ import { input as sourceLinks } from './input.js'
       }
 
       const isPrime = await page.$$('.a-icon-prime')
-
       await page.waitForSelector('.celwidget .a-row video')
 
       const data = await page.evaluate(() => {
@@ -54,7 +57,6 @@ import { input as sourceLinks } from './input.js'
             .replace(/\s+/g, '-') 
             .replace(/-+/g, '-');
         }
-
         
         const titleEl = document.getElementById('productTitle')
         const title = (titleEl ? titleEl.innerHTML : '').trim()
@@ -103,14 +105,14 @@ import { input as sourceLinks } from './input.js'
         rank: emptyProduct.rank,
       }
       
-      console.log('got data')
+      log(chalk.orange('🥵 got data'))
       const fileData = JSON.parse(fs.readFileSync('./scraper/output.json'))
       fileData.push(record)
 
       await fs.writeFileSync('./scraper/output.json', JSON.stringify(fileData, null, 2));
-      console.log('saved ' + link)
+      log(chalk.blue('💦 saved ' + link))
     } catch (err) {
-      console.error(err)
+      log(chalk.error(err))
     } finally {
       await page.close()
     }
@@ -121,10 +123,9 @@ import { input as sourceLinks } from './input.js'
     tasks.push(scrapePage(sourceLinks[i]))
   }
 
-
   Promise.allSettled(tasks).then(async() => { await browser.close() }).then(() => {
-    console.log('---------------------')
-    console.log('--- FULLY SCRAPED ---')
-    console.log('---------------------')
+    log(chalk.blue('-----------------------'))
+    log(chalk.blue('---- FULLY SCRAPED ----'))
+    log(chalk.blue('-----------------------'))
   })
 })()
