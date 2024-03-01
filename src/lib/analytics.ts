@@ -1,4 +1,6 @@
-export const trackConversion = () => {
+import { type ProductRecord } from '@/lib/products'
+
+export const trackConversion = (product: ProductRecord) => {
   // @ts-ignore
-  window.dataLayer.push({ event: 'conversion', send_to: 'AW-984507713/Sr2wCNjgipUZEMHKudUD' })
+  window.dataLayer.push({ event: 'conversion', value: product.price, currency: 'USD' })
 }

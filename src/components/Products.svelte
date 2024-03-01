@@ -177,7 +177,7 @@
                 target="_blank"
                 href={product.links[0].link}
                 class="w-full"
-                on:click={() => trackConversion()}
+                on:click={() => trackConversion(product)}
                 ><Button class="w-full" variant={product.links[0].title}>Buy Now</Button></a
               >
             </div>

@@ -72,7 +72,11 @@
       </div>
       <div class="flex flex-col gap-2 w-full">
         {#each product.links as link}
-          <a target="_blank" href={link.link} class="w-full" on:click={() => trackConversion()}
+          <a
+            target="_blank"
+            href={link.link}
+            class="w-full"
+            on:click={() => trackConversion(product)}
             ><Button class="w-full" variant={link.title}>Buy from {link.title}</Button></a
           >
         {/each}
