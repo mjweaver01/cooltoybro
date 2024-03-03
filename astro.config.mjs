@@ -2,8 +2,8 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import svelte from "@astrojs/svelte";
 import partytown from '@astrojs/partytown'
-import netlify from "@astrojs/netlify";
 import sitemap from '@astrojs/sitemap';
+import compressor from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,7 +16,9 @@ export default defineConfig({
 			config: {
 			  forward: ["dataLayer.push"],
 			},
-		}),],
+		}),
+    compressor(),
+  ],
   output: "server",
   server: {
     port: 3000
@@ -24,7 +26,6 @@ export default defineConfig({
   preview: {
     port: 3000
   },
-  adapter: netlify(),
   redirects: {
     '/home': '/',
     '/survey': '/gift-finder',

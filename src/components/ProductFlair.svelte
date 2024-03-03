@@ -13,6 +13,7 @@
           class="bg-white w-[66px] rounded-xl p-1 px-2 shadow-md"
           src="/prime.png"
           width="66"
+          height="22"
           alt="Is Amazon Prime"
         />
       {:else}
