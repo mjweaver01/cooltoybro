@@ -50,6 +50,7 @@ const { active } = Astro.props
   // https://docs.astro.build/en/guides/view-transitions/#astropage-load
   document.addEventListener('astro:page-load', () => {
     document.getElementById('hamburger')?.addEventListener('click', () => {
+      const links = document.getElementById('links')
       links?.classList.remove('hidden')
       document.body.classList.add('no-scroll')
     })
