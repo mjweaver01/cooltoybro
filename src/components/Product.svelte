@@ -57,61 +57,66 @@
 
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
   <div class="grid sm:grid-cols-2 sm:gap-8">
-    <div
-      class={`w-full card rounded-xl shadow-lg !bg-white max-h-[55vh] ${
-        product.images.length > 1 ? 'sm:max-h-[700px]' : 'sm:max-h-[592px]'
-      } relative`}
-    >
-      <div id="product-images" class="w-full h-full overflow-hidden overflow-x-scroll no-scrollbar">
-        <div class="p-4 whitespace-nowrap flex items-center flex-nowrap w-full h-full">
-          {#each product.images as image, i}
-            <div
-              class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0 pr-4"
-            >
-              <div class="relative w-full h-0 pb-[100%]">
-                <img
-                  class="absolute w-full h-full object-contain"
-                  src={image}
-                  alt={`${product.title} image ${i}`}
-                  loading={i > 0 ? 'lazy' : 'eager'}
-                />
-              </div>
-            </div>
-          {/each}
-          {#if product.videos && product.videos.length > 0}
-            {#each product.videos as video, i}
+    <div class="card rounded-xl shadow-lg !bg-white">
+      <div
+        class={`w-full max-h-[55vh] ${
+          product.images.length > 1 ? 'sm:max-h-[700px]' : 'sm:max-h-[592px]'
+        } relative`}
+      >
+        <div
+          id="product-images"
+          class="w-full h-full overflow-hidden overflow-x-scroll no-scrollbar"
+        >
+          <div class="p-4 whitespace-nowrap flex items-center flex-nowrap w-full h-full">
+            {#each product.images as image, i}
               <div
                 class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0 pr-4"
               >
-                <div class="video-container w-full">
-                  <!-- svelte-ignore a11y-media-has-caption -->
-                  <video
-                    class="w-full"
-                    controls
-                    preload="auto"
-                    poster={video.poster}
-                    src={video.link}
-                  ></video>
+                <div class="relative w-full h-0 pb-[100%]">
+                  <img
+                    class="absolute w-full h-full object-contain"
+                    src={image}
+                    alt={`${product.title} image ${i}`}
+                    loading={i > 0 ? 'lazy' : 'eager'}
+                  />
                 </div>
               </div>
             {/each}
-          {/if}
+            {#if product.videos && product.videos.length > 0}
+              {#each product.videos as video, i}
+                <div
+                  class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0 pr-4"
+                >
+                  <div class="video-container w-full">
+                    <!-- svelte-ignore a11y-media-has-caption -->
+                    <video
+                      class="w-full"
+                      controls
+                      preload="auto"
+                      poster={video.poster}
+                      src={video.link}
+                    ></video>
+                  </div>
+                </div>
+              {/each}
+            {/if}
+          </div>
         </div>
-      </div>
-      <div class="absolute left-0 bottom-0 w-full flex items-center justify-center">
-        <div class="absolute right-[5px] bottom-[1px] image-count text-xs">
-          <span id="current-image">1</span> /
-          <span class="total-images">
-            {totalImages}
-          </span>
-        </div>
+        <div class="p-4 pt-0 w-full flex items-center justify-center">
+          <div class="flex image-count text-xs">
+            <span id="current-image">1</span> /
+            <span class="total-images">
+              {totalImages}
+            </span>
+          </div>
 
-        <div id="dots" class="w-full flex items-center justify-center gap-2 p-1">
-          {#each Array(totalImages) as image, i}
-            <div
-              class={`dot text-center w-[9px] h-[9px] rounded-full ${i == 0 ? 'active' : ''} z-9`}
-            />
-          {/each}
+          <div id="dots" class="w-full flex items-center justify-center gap-2 p-1">
+            {#each Array(totalImages) as image, i}
+              <div
+                class={`dot text-center w-[9px] h-[9px] rounded-full ${i == 0 ? 'active' : ''} z-9`}
+              />
+            {/each}
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,103 @@
+//------------------
+// HAMBURGER
+//------------------
+.hamburger {
+  position: relative;
+  display: flex;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
+
+  .lines {
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    top: 9px;
+    position: absolute;
+    transition: 0.25s all;
+
+    &:before {
+      content: " ";
+      width: 100%;
+      background-color: black;
+      height: 2px;
+      position: absolute;
+      top: -8px;
+      right: 0;
+      transition: 0.25s all;
+    }
+
+    &:after {
+      content: " ";
+      width: 100%;
+      background-color: black;
+      height: 2px;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      transition: 0.25s all;
+    }
+  }
+
+  &.invert .lines {
+    background-color: white;
+
+    &:before {
+      background-color: white;
+    }
+
+    &:after {
+      background-color: white;
+    }
+  }
+
+  &.open {
+    .lines {
+      background-color: transparent;
+
+      &:before, &:after {
+        top: 0;
+      }
+
+      &:after {
+        transform: rotateZ(-45deg);
+      }
+
+      &:before {
+        transform: rotateZ(45deg);
+      }
+    }
+  }
+
+  &.loading {
+    position: relative;
+    cursor: default;
+    color: transparent !important;
+    user-select: none;
+    pointer-events: none;
+
+    .lines {
+      display: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      margin-top: -7px;
+      margin-left: -6px;
+      transform: translate(-50%, -50%) rotate(0deg);
+      animation: spinner .6s infinite linear;
+      will-change: transform;
+      border: 2px solid rgba(white, 0.25);
+      border-top: 2px solid black;
+      border-radius: 50%;
+      stroke: black;
+    }
+  }
+}
