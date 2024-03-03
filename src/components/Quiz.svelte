@@ -73,7 +73,7 @@
       Just answer {quiz.length} simple questions, and we'll generate an amazing gift for you, or your
       bro!
     </p>
-    <div class="flex items-center justify-center mt-6 w-full text-2xl">
+    <div class="flex items-center justify-center mt-6 w-full text-xl">
       {#if canRoll}
         <Button href="" on:click={rollProduct} class="px-8 py-5" variant={'wilson'}
           >{canRoll && chosenProduct.title
@@ -82,7 +82,7 @@
         >
       {:else}
         <Button disabled={true} class="px-8 py-5"
-          >{`Answer ${questionsLeft} questions, please`}</Button
+          >{`Answer ${questionsLeft} more question${questionsLeft !== 1 ? 's' : ''}`}</Button
         >
       {/if}
     </div>
@@ -98,7 +98,7 @@
             <div
               role="button"
               tabindex="0"
-              class={`rounded-xl text-center p-4 sm:p-8 sm:text-xl font-semibold hover:z-10 hover:shadow-md ${
+              class={`rounded-xl text-center p-8 text-xl font-semibold hover:z-10 hover:shadow-md ${
                 stepChoices[step.id] === stepOption.value
                   ? 'bg-black text-white shadow-2xl relative z-10 hover:shadow-2xl'
                   : 'bg-white text-black hover:bg-gray-200'

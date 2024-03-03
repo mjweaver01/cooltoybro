@@ -10,9 +10,9 @@
     {#each product.flair as flair}
       {#if flair.toLowerCase() === 'prime'}
         <img
-          class="bg-white w-[63px] rounded-xl p-1 shadow-md"
+          class="bg-white w-[66px] rounded-xl p-1 px-2 shadow-md"
           src="/prime.png"
-          width="63"
+          width="66"
           alt="Is Amazon Prime"
         />
       {:else}
