@@ -34,7 +34,7 @@ export const products: ProductRecord[] = [
       </ul>
     `,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3T6Kmoc' }],
-    price: 2359.99,
+    price: 260,
     rank: {
       price: 5,
       quality: 5,
@@ -132,7 +132,7 @@ export const products: ProductRecord[] = [
         link: generateUTM('https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/'),
       },
     ],
-    price: 25.99,
+    price: 26,
     rank: {
       price: 1,
       quality: 5,
@@ -169,7 +169,7 @@ export const products: ProductRecord[] = [
     `,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3wtzmIU' }],
     relatedProducts: ['bambu-lab-x1-carbon'],
-    price: 29.99,
+    price: 30,
     rank: {
       price: 1,
       quality: 5,
@@ -276,7 +276,7 @@ export const products: ProductRecord[] = [
       },
     ],
     relatedProducts: ['polymaker-polymax-pla'],
-    price: 1199.0,
+    price: 1200.0,
     rank: {
       price: 4,
       quality: 5,
@@ -362,7 +362,7 @@ export const products: ProductRecord[] = [
     <table class=a-bordered><tr><td style=width:120px><p><strong>Display</strong><td><p>14.2-inch (diagonal) mini-LED backlit Liquid Retina XDR display, 3024 by 1964 pixels with ProMotion technology for adaptive refresh rates up to 120Hz, and up to 1000 nits sustained (full-screen) brightness, 1600 nits peak brightness, True Tone technology, ProMotion technology for adaptive refresh rates up to 120Hz<tr><td style=width:120px><p><strong>Processor</strong><td><p>Apple M3 chip, 8-core CPU with 4 performance cores and 4 efficiency cores, 10-core GPU, Hardware-accelerated ray tracing, 16-core Neural Engine, 100GB/s memory bandwidth<tr><td style=width:120px><p><strong>Graphics and Video Support</strong><td><p>Apple 10-core GPU<tr><td style=width:120px><p><strong>Charging and Expansion</strong><td><p>SDXC card slot, HDMI port, 3.5 mm headphone jack, MagSafe 3 port, Three Thunderbolt 4 (USB-C) ports with support for: Charging, DisplayPort, Thunderbolt 4 (up to 40Gb/s), USB 4 (up to 40Gb/s)<tr><td style=width:120px><p><strong>Wireless</strong><td><p>Wi-Fi 6E (802.11ax), Bluetooth 5.3<tr><td style=width:120px><p><strong>In the Box</strong><td><p>14-inch MacBook Pro, 70W USB-C Power Adapter, USB-C to MagSafe 3 Cable (2m)</table>
     `,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3T8OgwZ' }],
-    price: 1599.99,
+    price: 1600,
     rank: {
       price: 3,
       quality: 5,
@@ -426,7 +426,7 @@ export const products: ProductRecord[] = [
     additionalInformation:
       '<ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> REAL SKATEBOARD GRAPHICS: The Tech Deck Ultra DLX Pack includes 4 fingerboard decks with authentic graphics from the biggest brands in skateboarding.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> CUSTOMIZE: Receive 4 boards with authentic skate graphics to build and customize. Collect the whole series!  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> OFFICIAL: These decks are the real deal! Ride, flip, and grind with an official finger board from real skate companies! From grip tape to bushings, these decks have been recreated down to the smallest detail.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> BECOME A TECH DECK PRO: Grind your new boards on Tech Deck fingerboard obstacles and playsets like the expansive X-Connect World. Shred and ollie on the X-Connect Shredline and Sk8 Garage Skatepark (each sold separately) for new ways to play and progress.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> COLLECT THEM ALL: Great toys for boys or toys for girls and gifts for kids that love collectibles, toy figures &amp; playsets, or mini skateboards. Great Christmas gift, or birthday gifts ages 6 and up!  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Includes: 1 Assembled Board, 3 Boards with Grip Tape, 2 Sticker Sheets, 12 Wheels, 1 Skate Tool, 6 Skateboard Trucks, 24 Screws, 18 Nuts  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Covered by the Spin Master Care Commitment. See below for full details  </span></li>  </ul>',
     links: [{ title: 'Amazon', link: 'https://amzn.to/3uHV0sl' }],
-    price: 26.98,
+    price: 27,
     rank: {
       price: 1,
       quality: 4,
@@ -476,7 +476,7 @@ export const products: ProductRecord[] = [
     description: `<span class="a-text-bold">#1 NATIONAL BESTSELLER&nbsp;<br></span><span class="a-text-bold"><br>#1 INTERNATIONAL BESTSELLER<br><br>What does everyone in the modern world need to know? <br><br>Renowned psychologist Jordan B. Peterson's answer to this most difficult of questions uniquely combines the hard-won truths of ancient tradition with the stunning revelations of cutting-edge scientific research.</span><span><br><br>Humorous, surprising and informative, Dr. Peterson tells us why skateboarding boys and girls must be left alone, what terrible fate awaits those who criticize too easily, and why you should always pet a cat when you meet one on the street.<br><br>What does the nervous system of the lowly lobster have to tell us about standing up straight (with our shoulders back) and about success in life? Why did ancient Egyptians worship the capacity to pay careful attention as the highest of gods? What dreadful paths do people tread when they become resentful, arrogant and vengeful? <br><br>Dr. Peterson journeys broadly, discussing discipline, freedom, adventure and responsibility, distilling the world's wisdom into 12 practical and profound rules for life. </span><span class="a-text-italic">12 Rules for Life</span><span>&nbsp;shatters the modern commonplaces of science, faith and human nature, while transforming and ennobling the mind and spirit of its readers.</span>`,
     additionalInformation: `<div class="a-section bucket detail-bullets-wrapper feature"data-cel-widget=detailBulletsWrapper_feature_div data-feature-name=detailBullets data-template-name=detailBullets id=detailBulletsWrapper_feature_div><hr aria-hidden=true class="a-divider-normal bucketDivider"><h2>Product details</h2><div id=detailBullets_feature_div><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Publisher ‏ : ‎ </span><span>Random House Canada; Later prt. edition (January 23, 2018)</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Language ‏ : ‎ </span><span>English</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Hardcover ‏ : ‎ </span><span>409 pages</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>ISBN-10 ‏ : ‎ </span><span>0345816021</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>ISBN-13 ‏ : ‎ </span><span>978-0345816023</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Item Weight ‏ : ‎ </span><span>1.45 pounds</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Dimensions ‏ : ‎ </span><span>6.6 x 1.4 x 9.3 inches</span></span></ul></div><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Best Sellers Rank: </span>#240 in Books (<a href="/gp/bestsellers/books/ref=pd_zg_ts_books">See Top 100 in Books</a>)<ul class="a-nostyle a-unordered-list a-vertical zg_hrsr"><li class="list-disc"><span class=a-list-item>#1 in <a href="/gp/bestsellers/books/11130/ref=pd_zg_hrsr_books">Popular Applied Psychology</a></span><li class="list-disc"><span class=a-list-item>#17 in <a href="/gp/bestsellers/books/4745/ref=pd_zg_hrsr_books">Personal Transformation Self-Help</a></span><li class="list-disc"><span class=a-list-item>#18 in <a href="/gp/bestsellers/books/4749/ref=pd_zg_hrsr_books">Success Self-Help</a></span></ul></span></ul><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Customer Reviews:</span><style>.noUnderline a:hover{text-decoration:none}.cm-cr-review-stars-spacing-big{margin-top:1px}</style><div id=detailBullets_averageCustomerReviews data-asin=0345816021 data-ref=dpx_acr_pop_><span class=a-declarative data-action=acrStarsLink-click-metrics data-csa-c-func-deps=aui-da-acrStarsLink-click-metrics data-csa-c-id=fppeus-mb7tws-d4cygg-8zeatf data-csa-c-type=widget data-acrstarslink-click-metrics={}><span class="noUnderline reviewCountTextLinkedHistogram"id=acrPopover title="4.7 out of 5 stars"><span class=a-declarative data-action=a-popover data-csa-c-func-deps=aui-da-a-popover data-csa-c-id=dxzvk4-dqbyyj-9qu48-9rxhi2 data-csa-c-type=widget data-a-popover='{"max-width":"700","closeButton":"false","position":"triggerBottom","url":"/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&asin=0345816021"}'><a href=javascript:void(0) class="a-declarative a-popover-trigger"role=button><span class="a-size-base a-color-base">4.7 </span><i class="a-icon a-icon-star a-star-4-5 cm-cr-review-stars-spacing-big"><span class=a-icon-alt>4.7 out of 5 stars</span></i> <i class="a-icon a-icon-popover"></i></a> </span><span class=a-letter-space></span> </span></span><span class=a-letter-space></span> <span class=a-declarative data-action=acrLink-click-metrics data-csa-c-func-deps=aui-da-acrLink-click-metrics data-csa-c-id=quqrnp-1rcjgt-ha3zo0-gm7dhj data-csa-c-type=widget data-acrlink-click-metrics={}><a href=#customerReviews class=a-link-normal id=acrCustomerReviewLink><span class=a-size-base id=acrCustomerReviewText>60,151 ratings</span></a></span><script>var dpAcrHasRegisteredArcLinkClickAction;P.when("A","ready").execute(function(c){!0!==dpAcrHasRegisteredArcLinkClickAction&&(dpAcrHasRegisteredArcLinkClickAction=!0,c.declarative("acrLink-click-metrics","click",{allowLinkDefault:!0},function(c){window.ue&&ue.count("acrLinkClickCount",(ue.count("acrLinkClickCount")||0)+1)}))})</script><script>P.when("A","cf").execute(function(c){c.declarative("acrStarsLink-click-metrics","click",{allowLinkDefault:!0},function(c){window.ue&&ue.count("acrStarsLinkWithPopoverClickCount",(ue.count("acrStarsLinkWithPopoverClickCount")||0)+1)})})</script></div></span></ul><div class=a-row></div><div class=a-row></div></div>`,
     links: [{ title: 'Amazon', link: 'https://amzn.to/3OY2lei' }],
-    price: 15.99,
+    price: 15,
     rank: {
       price: 1,
       quality: 5,
@@ -501,7 +501,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/51Ut3GHM59L.SX522_.jpg',
       },
     ],
-    price: 83.61,
+    price: 84,
     description:
       '<!-- show up to 2 reviews by default --><p> </p><p><span>OPTIMUM NUTRITION\'S GOLD STANDARD 100% Whey uses pure Whey Protein Isolates as the primary ingredient. Combined with ultra-filtered whey protein concentrate, each serving provides 24 grams of all-whey protein and 5.5 grams of naturally occurring Branched Chain Amino Acids (BCAAs) which are prized by athletes for their muscle building qualities. With more than 20 tempting flavors to choose from, ON GOLD STANDARD 100% Whey gives you plenty of ways to keep workout recovery interesting. Search "ON Apparel TRUE STRENGTH" to see our new ON clothing line!</span></p>  <p></p>',
     additionalInformation:
@@ -647,7 +647,7 @@ export const products: ProductRecord[] = [
           'https://d1f0esyb34c1g2.cloudfront.net/transcode/storyTeller/A1HCW54TXS7F4T/1667508622697/e9571956-26a7-4c9d-9e4e-04c8f512a0a7/1667509652500.0000000.jpg',
       },
     ],
-    price: 849.99,
+    price: 850,
     description:
       "<!-- show up to 2 reviews by default --><p> <span>The inspiring sound of a Stratocaster is one of the foundations of Fender. Featuring this classic sound - bell-like high end, punchy mids and robust low end, combined with crystal-clear articulation - the Player Stratocaster is packed with authentic Fender feel and style. It's ready to serve your musical vision, it's versatile enough to handle any style of music and it's the perfect platform for creating your own sound. Respecting our heritage while maintaining our innovative spirit, the power trio of Player Series single-coil pickups are crisp and articulate - it's authentic Fender tone with a modern edge. The \"Modern C\"-shaped maple neck's comfortable contours and smooth finish are ideal for almost any playing style. By adding a 22nd medium jumbo fret to the contemporary 9.5\"-radius fingerboard we've made it easier to express yourself musically. The updated 2-point tremolo design has smoother travel for enhanced playing feel while simultaneously giving you rock-solid tuning stability since there's less friction against the posts. Other features include master volume and tone controls, a 5-way pickup switch, 3-ply pickguard, synthetic bone nut, dual-wing string tree, sealed tuning machines and four-bolt \"F\"-stamped neck plate that marks this instrument as the real deal - as Fender as it gets. Own your tone and create something new with the Player Stratocaster.FINGERBOARD RADIUS: 9.5' (241 mm)NUMBER OF FRETS: 22TRUSS ROD: StandardTRUSS ROD NUT: 3/16' Hex AdjustmentSTRING NUT: Synthetic BoneNUT WIDTH: 1.650' (42 mm)NUT MATERIAL: Synthetic BoneBRIDGE: 2-Point Synchronized Tremolo with Bent Steel SaddlesBODY FINISH: Gloss PolyesterBRIDGE PICKUP: Player Series Alnico 5 Strat Single-CoilPICKUP CONFIGURATION: SSSAdding value to your purchase, Austin Bazaar bundles your instrument with quality accessories, saving you time and money. Transport and store your guitar in style with the included Fender premium w</span>  </p>",
     additionalInformation:
@@ -787,7 +787,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/61BDg+lqCUL.SX522_.jpg',
       },
     ],
-    price: 17.55,
+    price: 18,
     description:
       "Saponified 100% food grade olive, coconut, palm & castor oils, in a goat's milk base, with herbs, essential oils,mineral pigments, and aloe ferox. Enjoy! *Zum Bars contain natural mineral pigments that may stain when rubbed directly on fabrics, washcloths, or clothing.",
     additionalInformation:
@@ -851,7 +851,7 @@ export const products: ProductRecord[] = [
     slug: 'akatsuke-mousepad',
     title: 'Akatuske Mousepad',
     images: ['https://m.media-amazon.com/images/I/41AuOAwvyAL._AC_SY355_.jpg'],
-    price: 21.99,
+    price: 22,
     description:
       '<!-- show up to 2 reviews by default --><p> <span>Extended Mouse Pad:31.5x11.8x0.16 Inch provides perfect movement space. High-quality Material:100%Polyester cloth, and 4mm thickness Rubber pad. Package Includes:1 x Extended Gaming Mousepad with Stitched Edges (4mm thickness). Non-Slip Rubber Base:The soft and dense non-skid nature rubber base keeps the pad firmly in surface. Durable Design:The durable stitched edges and the high-density premium texture ensure long-term use. Ultra Smooth Surface:Smooth surface and accurate mouse movement improve gaming and working experience.</span>  </p>',
     additionalInformation:
@@ -889,7 +889,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/51LrECeHzRL.SX522_.jpg',
       },
     ],
-    price: 36.99,
+    price: 37,
     description:
       '<!-- show up to 2 reviews by default --><p> <span>Beloved by generations since 1962, the Dohm is the original white noise machine. The Uno model features our fan based natural white noise producing our signature sound – the soothing ambient sounds of rushing air, without the disturbance of actual moving air or other irritations. With a single speed option and adjustable tone and volume, the Dohm Uno makes it simple to create a personalized sound environment, excellently masking background sounds and allowing for better sleep, office privacy, effective soothing for kids and babies, and calming for sound-sensitive dogs. Powered by a 6-foot 120V AC plug (for domestic use only), just plug in the Dohm Uno, flip the switch, then rotate the cap and collar to find the best sound for you. Let the noise-masking magic happen for a natural sleep aid, office privacy, baby soothing, tinnitus relief, respite from noisy snorers and unfamiliar hotel rooms, and a relaxing calming balm for barking dogs. The Dohm Uno features a simple and compact design that fits anywhere and blends unobtrusively into surroundings.</span>  </p>',
     additionalInformation:
@@ -927,7 +927,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/61QvQ29TIrL.SX522_.jpg',
       },
     ],
-    price: 8.99,
+    price: 9,
     description:
       "Be Here Now, or Remember, Be Here Now, is a 1971 book on spirituality, yoga, and meditation by the American yogi and spiritual teacher Ram Dass. The core book was first printed in 1970 as From Bindu to Ojas and its current title comes from a statement his guide, Bhagavan Das, made during Ram Dass's journeys in India. ",
     additionalInformation:
@@ -1028,7 +1028,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/61J-S8X04cL.SX522_.jpg',
       },
     ],
-    price: 846.76,
+    price: 850,
     description:
       '<!-- show up to 2 reviews by default --><p> <span>The Coleman Trail200U (CT200U) is a nostalgic, reliable, affordable off-road trail mini bike that will take an adult back to their childhood. The Coleman mini bike will provide years of fun on the trail for the entire family. It comes with easy pull start operation, 196cc engine, low pressure tires for a soft and stable ride, rugged and proven clutch, jackshaft, and chain drive along with rear drum - handle operated braking system.</span>  </p>',
     additionalInformation:
@@ -1067,7 +1067,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/51ICEucRa+L.SX522_.jpg',
       },
     ],
-    price: 32.99,
+    price: 33,
     description:
       'This 65% keyboard supports 2.4GHz Wireless, Bluetooth, and corded modes. Being a Mechanical Gaming Keyboard, it has Hot Swappable Keyboard with RGB Backlght, Full Keys Programmable, 4200mAh Battery, and Cherry MX Switches of your choice',
     additionalInformation:
@@ -1137,7 +1137,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/81qzEXkbuOL.SX522_.jpg',
       },
     ],
-    price: 10.99,
+    price: 11,
     description:
       'Pro-Winder is a high-quality string winder with a built-in clipper and bridge pin puller. The Pro-Winder is designed to fit virtually all guitars, banjos, ukuleles, and mandolins. Ergonomically designed with durable hardened steel wire cutters, the Pro-Winder string winder is the ultimate all-in-one restringing tool.',
     additionalInformation:
@@ -1209,7 +1209,7 @@ export const products: ProductRecord[] = [
         poster: 'https://m.media-amazon.com/images/I/61rxYy7Te6L.SX522_.jpg',
       },
     ],
-    price: 44.35,
+    price: 45,
     description:
       'A 40 oz Wide Mouth water bottle with our leakproof Flex Straw Cap—easy to fill, easy to drink. Open it up, add your ice, and flip to sip. The insulated stainless steel keeps it cold for up to 24 hours.',
     additionalInformation:
@@ -1272,7 +1272,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/71xsnu+yfML._AC_SX355_.jpg',
     ],
     videos: [],
-    price: 39.85,
+    price: 40,
     description:
       "<p> <span>When the King James translation of the Bible was first published in 1611, it was the first time that many people throughout the English-speaking world were able to read the Old and New Testaments in their native tongue. It proved so wildly popular, in fact, that it was the only book that many families owned. The majestic scope and poetry of the King James translation's language made an incomparable impact on Western religion, culture, and literature that still resonates today. <br>This gorgeous gift edition also contains over two hundred beautiful, rarely collected full-page illustrations by Gustave Dore (1832-1883).</span>  </p>",
     additionalInformation:
@@ -1306,7 +1306,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/71N37JR+GfL._SX569_.jpg',
     ],
     videos: [],
-    price: 59.45,
+    price: 60,
     description:
       'Hydration Multiplier is a great-tasting, Non-GMO electrolyte drink mix powered by Cellular Transport Technology (CTT)®️ to hydrate faster and more efficiently than water alone. 1 stick contains 3x the electrolytes of traditional sports drinks with 5 essential vitamins.',
     additionalInformation:
