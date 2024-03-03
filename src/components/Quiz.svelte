@@ -82,7 +82,7 @@
         >
       {:else}
         <Button disabled={true} class="px-8 py-5"
-          >{`Answer ${questionsLeft} more question${questionsLeft !== 1 ? 's' : ''}`}</Button
+          >{`Answer ${questionsLeft} question${questionsLeft !== 1 ? 's' : ''}`}</Button
         >
       {/if}
     </div>

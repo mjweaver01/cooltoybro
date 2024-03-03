@@ -32,7 +32,7 @@ const { active } = Astro.props
               href={item.link}
               class={`${
                 item.link === active ? 'underline' : ''
-              } text-shadow text-[11vw] sm:text-[1em]`}
+              } text-shadow text-[11vw] font-bold sm:text-[1em] sm:font-normal`}
             >
               {item.title}
             </a>
@@ -40,8 +40,8 @@ const { active } = Astro.props
         }
       </div>
     </div>
-    <div class="mobile-nav sm:hidden p-4">
-      <div id="hamburger" class="hamburger-wrapper">
+    <div class="mobile-nav sm:hidden cursor-pointer">
+      <div id="hamburger" class="hamburger-wrapper p-4">
         <div class="hamburger"><div class="lines"></div></div>
       </div>
     </div>
