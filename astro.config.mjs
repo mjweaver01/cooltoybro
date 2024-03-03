@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import svelte from "@astrojs/svelte";
 import partytown from '@astrojs/partytown'
+import netlify from "@astrojs/netlify";
 import sitemap from '@astrojs/sitemap';
 import compressor from "astro-compressor";
 
@@ -26,6 +27,7 @@ export default defineConfig({
   preview: {
     port: 3000
   },
+  adapter: netlify(),
   redirects: {
     '/home': '/',
     '/survey': '/gift-finder',
