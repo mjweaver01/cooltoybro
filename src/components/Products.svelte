@@ -96,7 +96,7 @@
               {sortText}
               <xml version="1.0" encoding="iso-8859-1">
                 <svg
-                  fill="#000000"
+                  fill="currentColor"
                   height="18"
                   width="18"
                   version="1.1"
