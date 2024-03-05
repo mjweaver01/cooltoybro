@@ -67,10 +67,10 @@
           id="product-images"
           class="w-full h-full overflow-hidden overflow-x-scroll no-scrollbar"
         >
-          <div class="p-4 whitespace-nowrap flex items-center flex-nowrap w-full h-full">
+          <div class="p-4 whitespace-nowrap flex items-center gap-4 flex-nowrap w-full h-full pb-2">
             {#each product.images as image, i}
               <div
-                class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0 pr-4"
+                class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0"
               >
                 <div class="relative w-full h-0 pb-[100%]">
                   <img
@@ -85,7 +85,7 @@
             {#if product.videos && product.videos.length > 0}
               {#each product.videos as video, i}
                 <div
-                  class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0 pr-4"
+                  class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0"
                 >
                   <div class="video-container w-full">
                     <!-- svelte-ignore a11y-media-has-caption -->
@@ -100,9 +100,11 @@
                 </div>
               {/each}
             {/if}
+            <!-- PADDING HACK -->
+            <div class="w-0 p-[0.1px] h-full"></div>
           </div>
         </div>
-        <div class="p-4 pt-0 w-full flex items-center justify-center">
+        <div class="px-4 pb-2 w-full flex items-center justify-center">
           <div class="flex image-count text-xs">
             <span id="current-image">1</span> /
             <span class="total-images">
