@@ -1,8 +1,12 @@
 import fs from 'fs'
 import chalk from 'chalk'
-import puppeteer from 'puppeteer'
+import UserAgent from 'user-agents'
+import puppeteer from 'puppeteer-extra'
+import StealthPlugin from 'puppeteer-extra-plugin-stealth'
 import emptyProduct from '../src/lib/emptyProduct.js'
 import { input as sourceLinks } from './input.js'
+
+puppeteer.use(StealthPlugin())
 
 const log = console.log;
 
@@ -15,12 +19,14 @@ const log = console.log;
 
   const browser = await puppeteer.launch({
     headless: false,
+    args: ['--no-sandbox'],
     setDefaultNavigationTimeout: 100000
   })
 
   const scrapePage = async(link) => {
     log(chalk.yellow(`✊ scraping ${link}`))
     const page = await browser.newPage()
+    await page.setUserAgent(userAgent.random().toString())
 
     try {
       await page.goto(link)
