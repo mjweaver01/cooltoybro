@@ -46,6 +46,11 @@ export const navItems = [
     title: 'Bro?',
     link: '/about',
   },
+  {
+    slug: 'khaled',
+    title: 'Khaled',
+    link: '/khaled',
+  },
 ]
 
 export const quiz = [

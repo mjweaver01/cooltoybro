@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+const { lp } = Astro.props
 ---
 
 <script is:inline src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -72,7 +73,6 @@ import { Image } from 'astro:assets'
   }
 
   .key {
-    margin: 0.5em auto 0;
     font-size: 2.5em;
     padding: 0.5em;
     border-radius: 10px;
@@ -98,10 +98,15 @@ import { Image } from 'astro:assets'
   }
 </style>
 
-<div class="key-wrapper p-4">
-  <div class="text-center w-full mb-8"><div class="anotherOne">🔑 Get Blessed</div></div>
+<div class="key-wrapper p-4 text-left">
+  <div class="text-center w-full"><div class="anotherOne">🔑 Get Blessed</div></div>
   <div id="typed-strings"></div>
-  <div class="key text-3xl pt-4 pb-8 w-full leading-tight !rounded-3xl"></div>
+  <div
+    class={`${
+      lp ? 'hidden mt-8' : 'mt-4'
+    } key text-3xl pt-4 pb-8 w-full leading-tight !rounded-3xl`}
+  >
+  </div>
   <Image
     id="khaled-face"
     class="hidden"
@@ -122,10 +127,15 @@ import { Image } from 'astro:assets'
       'Always have faith. Always have hope.',
       'The key is to make it.',
       'Another one.',
-      'Key to more success is clean heart and clean face.',
+      'The key to more success is a clean heart and a clean face.',
       'Smh they get mad when u have joy.',
       'Baby, you smart. I want you to film me taking a shower.',
-      'You smart! You loyal! You’re a genius!',
+      'You smart!',
+      'You loyal!',
+      'You’re a genius!',
+      'I appreciate you!',
+      'You smart, you loyal, you grateful. I appreciate that. Go buy your mama house.',
+      'We go hard.',
       'We go hard. In everything we do we’re going to accomplish our victory and our goal. If it takes a day, a year, or 20 years, we’re going to win. I haven’t taken a loss because everything I’ve done has been a working process to win. From being a kid on them turntables to becoming where I am is not a loss. It’s a blessing.',
       'Before I went into the studio with Jay Z, Jigga, Hov, I wanted to go to the Marcy Projects in Brooklyn and touch the people and touch the culture.',
       'Give thanks to the most high.',
@@ -141,6 +151,7 @@ import { Image } from 'astro:assets'
       'There will be road blocks but we will overcome it.',
       'They don’t want you to jet ski.',
       'Them doors that was always closed, I ripped the doors off, took the hinges off. And when I took the hinges off, I put the hinges on the f*ckboys’ hands.',
+      'Put the hinges on the f*ckboys’ hands.',
       'Congratulations, you played yourself.',
       'You want my advice? Don’t play yourself.',
       'When I made ‘Hold You Down,’ I was thinking Barry Gordy, Quincy Jones. I was saying to myself, ‘If they was in the studio, what was they thinking.’ So I started thinking DJ Khaled, but inspired by the greats.',
@@ -172,9 +183,10 @@ import { Image } from 'astro:assets'
       'We gonna win more. We gonna live more. We the best.',
       'God did!!!',
       'Drake did!!!',
+      'Life is beautiful!',
       'I call her chandelier!',
       'Gatorade!',
-      'I call this, cappucino!!',
+      'I call this, cappucino!',
       'Tell em to bring out the whole ocean!',
       'Have you ever played rugby?',
     ],
@@ -196,7 +208,10 @@ import { Image } from 'astro:assets'
       self.random = random
 
       //clear key, re-add span, and re-run typed
-      if (key) key.innerHTML = '<span><br></span>'
+      if (key) {
+        key.classList.remove('hidden')
+        key.innerHTML = '<span><br></span>'
+      }
 
       // @ts-ignore
       new Typed('.key span', {

@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets'
+import { siteName, siteDescription } from '@/lib/constants'
+import Layout from '@/layouts/Layout.astro'
+import Navbar from '@/components/Navbar.astro'
+import Khaled from '../components/khaled.astro'
+const title = `About ${siteName}`
+const description = siteDescription
+---
+
+<Layout title={title} description={description}>
+  <Navbar active={'/khaled'} />
+  <div class="p-4 sm:p-8 max-w-screen-sm m-auto">
+    <div class="w-full text-center rounded-xl shadow-lg p-5 mt-16 card">
+      <h1 class="text-5xl font-bold mb-2">The Keys of Khaled</h1>
+      <p class="mt-4 mb-2">
+        Enjoy more life, more success, more blessings, and more keys to success.
+      </p>
+      <Khaled lp={true} client:load />
+    </div>
+  </div>
+</Layout>
