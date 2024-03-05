@@ -1,9 +1,8 @@
 ---
-import { Image } from 'astro:assets'
 import { siteName, siteDescription } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.astro'
-import Khaled from '../components/khaled.astro'
+import KhaledComponent from '@/components/Khaled.astro'
 const title = `About ${siteName}`
 const description = siteDescription
 ---
@@ -16,7 +15,7 @@ const description = siteDescription
       <p class="mt-4 mb-2">
         Enjoy more life, more success, more blessings, and more keys to success.
       </p>
-      <Khaled lp={true} client:load />
+      <KhaledComponent lp={true} />
     </div>
   </div>
 </Layout>

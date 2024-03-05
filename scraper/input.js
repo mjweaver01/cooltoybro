@@ -26,13 +26,13 @@ export const input = [
   // 'https://amzn.to/3OYM8pc',
   // "https://amzn.to/3Ijuvww",
   // "https://amzn.to/3UYz0UA",
-  'https://amzn.to/3wGTUOh',
-  'https://amzn.to/3T2aBLy',
-  'https://amzn.to/3T4IpaT',
-  'https://amzn.to/3V4AL2T',
-  'https://amzn.to/3ToLenp',
-  'https://amzn.to/3v5cAXd',
-  'https://amzn.to/3uZSv4K',
+  // 'https://amzn.to/3wGTUOh',
+  // 'https://amzn.to/3T2aBLy',
+  // 'https://amzn.to/3T4IpaT',
+  // 'https://amzn.to/3V4AL2T',
+  // 'https://amzn.to/3ToLenp',
+  // 'https://amzn.to/3v5cAXd',
+  // 'https://amzn.to/3uZSv4K',
   'https://amzn.to/3Ir5UFW'
 
 ]

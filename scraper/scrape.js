@@ -1,13 +1,12 @@
 import fs from 'fs'
 import chalk from 'chalk'
-import UserAgent from 'user-agents'
 import puppeteer from 'puppeteer-extra'
+import { createWorker } from 'tesseract.js'
 import StealthPlugin from 'puppeteer-extra-plugin-stealth'
 import emptyProduct from '../src/lib/emptyProduct.js'
 import { input as sourceLinks } from './input.js'
 
 puppeteer.use(StealthPlugin())
-
 const log = console.log;
 
 (async () => {
@@ -25,12 +24,30 @@ const log = console.log;
 
   const scrapePage = async(link) => {
     log(chalk.yellow(`✊ scraping ${link}`))
-    const page = await browser.newPage()
-    await page.setUserAgent(userAgent.random().toString())
 
     try {
-      await page.goto(link)
+      const page = await browser.newPage()
       await page.setViewport({ width: 1080, height: 1024 })
+      await page.goto(link, {
+        waitUntil: 'networkidle2'
+      })
+
+      const captcha = await page.$$('form[action*="/errors/validateCaptcha"]')
+      if(captcha.length > 0) {
+        console.log('solving captcha')
+        await sleep(1000)
+        const captchaSrc = await page.$eval('form img', img => img.src);
+        const inputSelector = await page.$$("#captchacharacters")
+        const worker = await createWorker("eng")
+        await worker.setParameters({
+            tessedit_char_whitelist: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        })
+        const { data: { text } } = await worker.recognize(captchaSrc)
+        await page.type(inputSelector, text.toUpperCase().replace(" ", ""))
+        await page.keyboard.press('Enter')
+        await worker.terminate()
+      }
+
       await page.waitForSelector('#productTitle')
 
       const thumbs = await page.$$('.imageThumbnail')

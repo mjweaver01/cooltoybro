@@ -225,9 +225,12 @@ const { lp } = Astro.props
     },
   }
 
-  //click function to generate
-  document.querySelector('.anotherOne')?.addEventListener('click', function () {
-    // @ts-ignore
-    window.khaled.blessUp()
+  // https://docs.astro.build/en/guides/view-transitions/#astropage-load
+  document.addEventListener('astro:page-load', () => {
+    //click function to generate
+    document.querySelector('.anotherOne')?.addEventListener('click', function () {
+      // @ts-ignore
+      window.khaled.blessUp()
+    })
   })
 </script>
