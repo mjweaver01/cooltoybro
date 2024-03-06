@@ -58,11 +58,7 @@
 <div class="p-4 sm:p-8 max-w-screen-xl m-auto mt-16">
   <div class="grid sm:grid-cols-2 sm:gap-8">
     <div class="card rounded-xl shadow-lg !bg-white">
-      <div
-        class={`w-full max-h-[55vh] ${
-          product.images.length > 1 ? 'sm:max-h-[700px]' : 'sm:max-h-[592px]'
-        } relative`}
-      >
+      <div class="w-full relative sm:sticky sm:top-[64px]">
         <div
           id="product-images"
           class="w-full h-full overflow-hidden overflow-x-scroll no-scrollbar"

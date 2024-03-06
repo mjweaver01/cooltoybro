@@ -3,7 +3,7 @@
   type ButtonVariant = keyof typeof buttonVariants
   let className: string | undefined | null
   export { className as class }
-  export let href: string | undefined
+  export let href: string | undefined | null
   export let type: 'button' | 'submit' | 'reset' = 'button'
   // Ensure that variant is of type ButtonVariant
   export let variant: ButtonVariant | any = 'default'
