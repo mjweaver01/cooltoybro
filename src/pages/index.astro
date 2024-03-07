@@ -1,15 +1,133 @@
 ---
+import { Image } from 'astro:assets'
 import { siteName, siteDescription } from '@/lib/constants'
-import { products } from '@/lib/products'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.astro'
-import Products from '@/components/Products.svelte'
-
-const title = `${siteName}`
+import KhaledComponent from '@/components/KhaledComponent.astro'
+const title = `About ${siteName}`
 const description = siteDescription
 ---
 
+<style>
+  .getStarted {
+    display: inline-block;
+    font-size: 2.5em;
+    letter-spacing: 0.5pt;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 350px;
+    border: solid 1px;
+    text-align: center;
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-right-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 1px rgb(0, 0, 0);
+    transition: 0.1s linear;
+    color: #ffffff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+    background-image: radial-gradient(
+      311px at 38% -1%,
+      rgb(87 121 79) 0%,
+      rgb(99 143 74) 5%,
+      rgb(48 96 31) 48%,
+      rgb(12 41 10) 67%,
+      rgb(55 55 55) 83%,
+      rgb(54 136 50) 92%,
+      rgb(24 199 54) 98%,
+      rgb(94 203 46) 99%,
+      rgb(69 255 0) 100%
+    );
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .getStarted:hover {
+    background-image: radial-gradient(
+      311px at 38% -1%,
+      rgb(126 174 115) 0%,
+      rgb(123, 175, 93) 5%,
+      rgb(62, 123, 42) 48%,
+      rgb(28, 123, 19) 67%,
+      rgb(85, 123, 58) 83%,
+      rgb(84, 154, 80) 92%,
+      rgb(95, 177, 109) 98%,
+      rgb(123, 181, 97) 99%,
+      rgb(123, 185, 100) 100%
+    );
+  }
+
+  .getStarted:active {
+    background-image: radial-gradient(
+      311px at 38% -1%,
+      rgb(87 121 79) 0%,
+      rgb(99 143 74) 5%,
+      rgb(48 96 31) 48%,
+      rgb(12 41 10) 67%,
+      rgb(55 55 55) 83%,
+      rgb(54 136 50) 92%,
+      rgb(24 199 54) 98%,
+      rgb(94 203 46) 99%,
+      rgb(69 255 0) 100%
+    );
+    cursor: pointer;
+    box-shadow: 0 1px 1px 1px rgb(0, 0, 0);
+  }
+</style>
+
 <Layout title={title} description={description}>
-  <Navbar active={'/'} />
-  <Products client:load products={products} />
+  <Navbar active={'/about'} />
+  <div class="p-4 sm:p-8 max-w-screen-xl m-auto">
+    <div class="grid sm:grid-cols-2 gap-4 sm:gap-8">
+      <div class="w-full rounded-xl shadow-lg p-5 mt-16 card">
+        <h1 class="text-5xl font-bold mb-2">Et Tu, Bro?</h1>
+        <p class="mt-4">
+          Like most bros, we struggled finding <strong>high quality, affordable products.</strong>
+        </p>
+        <p class="mt-4">
+          Lost in a daze of mass-produced garbage and overpriced caske re-defining opulence, we knew
+          there had to be a better way.
+        </p>
+        <p class="mt-4">
+          Have you ever just wanted to find the best overall product in a genre, without wading
+          through over-opinionated troll-spew?
+        </p>
+        <p class="mt-4">Do you struggle finding good gifts for your significant (br)other?</p>
+        <p class="mt-4">Look no further..</p>
+        <p class="mt-4">Good stuff, for good bros.</p>
+        <p class="mt-4">Welcome to <strong>Cool Toy, Bro! 😎</strong></p>
+        <div class="p-4 mt-4 text-center">
+          <a class="no-underline" href="/products">
+            <div class="getStarted">🟢 Get Started</div>
+          </a>
+        </div>
+      </div>
+      <div class="w-full rounded-xl shadow-lg p-5 sm:mt-16 card">
+        <h2 class="text-5xl font-bold">How does it work?</h2>
+        <p class="mt-4">
+          For some links, we will recieve a small reward, should you decide to purchase a product.
+          For others, we simply track whether or not you showed interest from us; nothing more. If
+          you do decide to click one of the buy buttons on this site, seriously, bless up 🙏🙌
+        </p>
+        <p class="mt-4">
+          I'm just a bro trying to break out of the matrix, and every one of your clicks gets me
+          closer to that goal.
+        </p>
+        <p class="mt-4">
+          In reward, we offer you this DJ Khaled random quote generator, which is actively
+          maintained. Enjoy more life, more success, more blessings, and more keys to success.
+        </p>
+        <!-- <p class="mt-4">
+          You can also <a href="/donate" class="underline">donate to the cause</a> if you feel compelled.
+        </p> -->
+        <p class="mt-4">
+          For everything else, email <span class="underline">support@cooltoybro.com</span>
+          and I'll get back to you as soon as possible.
+        </p>
+        <br />
+        <KhaledComponent />
+      </div>
+    </div>
+  </div>
 </Layout>

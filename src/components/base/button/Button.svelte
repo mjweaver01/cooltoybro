@@ -3,7 +3,7 @@
   type ButtonVariant = keyof typeof buttonVariants
   let className: string | undefined | null
   export { className as class }
-  export let href: string | undefined | null
+  export let href: string | undefined | null | undefined
   export let type: 'button' | 'submit' | 'reset' = 'button'
   // Ensure that variant is of type ButtonVariant
   export let variant: ButtonVariant | any = 'default'
@@ -28,6 +28,8 @@
       'py-2 px-4 rounded-md border border-green-300 text-green-700 bg-green-200 sm:hover:bg-green-100 transition duration-200 ease-in-out',
     wilson:
       'py-2 px-4 rounded-md border border-red-300 text-white bg-red-600 sm:hover:bg-red-200 sm:hover:text-red-600 transition duration-200 ease-in-out',
+    featured:
+      'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-red-600 sm:hover:bg-red-500/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
     default:
       'flex justify-center items-center disabled:opacity-30 disabled:pointer-events-none py-2 px-4 rounded-md text-white bg-black sm:hover:bg-black/80 focus:outline-none focus:ring-2 transition duration-200 ease-in-out',
   }

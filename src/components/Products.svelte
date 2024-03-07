@@ -178,7 +178,7 @@
                 href={product.links[0].link}
                 class="w-full"
                 on:click={() => trackConversion(product)}
-                ><Button class="w-full" variant={product.links[0].title}>Buy Now</Button></a
+                ><Button class="w-full" variant="featured">Buy Now</Button></a
               >
             </div>
           </div>

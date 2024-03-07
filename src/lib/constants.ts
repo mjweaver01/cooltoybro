@@ -31,25 +31,15 @@ export const collections = [
 
 export const navItems = [
   {
-    slug: 'gift-finder',
-    title: 'Gift Finder',
-    link: '/gift-finder',
-  },
-  {
     slug: 'all',
     title: 'All',
-    link: '/',
+    link: '/products',
   },
   ...collections.map(({ title, link, slug }) => ({ title, link, slug })),
   {
-    slug: 'bro',
-    title: 'Bro?',
-    link: '/about',
-  },
-  {
-    slug: 'khaled',
-    title: 'Khaled',
-    link: '/khaled',
+    slug: 'gift-finder',
+    title: 'Gift Finder',
+    link: '/gift-finder',
   },
 ]
 
