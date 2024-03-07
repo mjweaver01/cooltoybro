@@ -63,7 +63,7 @@
           id="product-images"
           class="w-full h-full overflow-hidden overflow-x-scroll no-scrollbar"
         >
-          <div class="p-4 whitespace-nowrap flex items-center gap-4 flex-nowrap w-full h-full pb-2">
+          <div class="p-4 whitespace-nowrap flex items-center gap-4 flex-nowrap w-full h-full">
             {#each product.images as image, i}
               <div
                 class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0"
@@ -100,7 +100,7 @@
             <div class="w-0 p-[0.1px] h-full"></div>
           </div>
         </div>
-        <div class="px-4 pb-2 w-full flex items-center justify-center">
+        <div class="px-4 pb-4 w-full flex items-center justify-center">
           <div class="flex image-count text-xs">
             <span id="current-image">1</span> /
             <span class="total-images">
@@ -151,31 +151,36 @@
       product.additionalInformation.length > 0 ? 'grid sm:grid-cols-2 sm:gap-8' : ''
     } items-stretch`}
   >
-    <div
-      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-8 bg-white z-9999 card"
-    >
-      <h2 class="text-3xl font-bold mx-2">CQV Score</h2>
-      <div class="my-4">
-        <p
-          class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
-        >
-          <span>(C)OST</span>
-          {'💰'.repeat(product.rank.price)}
-        </p>
-        <p
-          class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
-        >
-          <span>(Q)UALITY</span>
-          {'⭐'.repeat(product.rank.quality)}
-        </p>
-        <p
-          class="flex justify-between sm:mb-2 lg:mb-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
-        >
-          <span>(V)IBES</span>
-          {'😎'.repeat(product.rank.vibes)}
-        </p>
+    <div class="flex flex-col justify-center w-full">
+      <div class="w-full rounded-xl shadow-lg p-8 mt-4 sm:mt-8 bg-white card">
+        <h2 class="text-5xl font-bold">CQV Score</h2>
+        <div class="my-4">
+          <p
+            class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+          >
+            <span>(C)OST</span>
+            {'💰'.repeat(product.rank.price)}
+          </p>
+          <p
+            class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+          >
+            <span>(Q)UALITY</span>
+            {'⭐'.repeat(product.rank.quality)}
+          </p>
+          <p
+            class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+          >
+            <span>(V)IBES</span>
+            {'😎'.repeat(product.rank.vibes)}
+          </p>
+        </div>
       </div>
-      <p>{@html product.rank.description}</p>
+      <div class="w-full rounded-xl shadow-lg p-8 mt-4 sm:mt-8 bg-white card">
+        <p class="text-4xl leading-tight font-black italic uppercase mb-4">
+          "{@html product.rank.description}"
+        </p>
+        <p class="text-2xl leading-relaxed">- Bro</p>
+      </div>
     </div>
     {#if product.additionalInformation.length > 0}
       <div
