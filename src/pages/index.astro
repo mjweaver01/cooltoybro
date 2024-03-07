@@ -134,7 +134,11 @@ const description = siteDescription
   // https://docs.astro.build/en/guides/view-transitions/#astropage-load
   document.addEventListener('astro:page-load', () => {
     document.getElementById('getStarted')?.addEventListener('click', () => {
-      document.getElementById('hamburger')?.click()
+      if (window.innerWidth >= 768) {
+        window.location.pathname = '/all'
+      } else {
+        document.querySelector('#hamburger.')?.click()
+      }
     })
   })
 </script>

@@ -18,6 +18,30 @@ export const collections = [
     products: products.filter((p) => p.collections.includes('expensive')),
   },
   {
+    slug: 'lifestyle',
+    title: 'Lifestyle',
+    link: '/products/lifestyle',
+    products: products.filter((p) => p.tags.includes('lifestyle')),
+  },
+  {
+    slug: 'tech',
+    title: 'Tech',
+    link: '/products/tech',
+    products: products.filter((p) => p.tags.includes('tech')),
+  },
+  {
+    slug: 'toys',
+    title: 'Toys',
+    link: '/products/toys',
+    products: products.filter((p) => p.tags.includes('toy')),
+  },
+  {
+    slug: 'sports',
+    title: 'Sports',
+    link: '/products/sports',
+    products: products.filter((p) => p.tags.includes('sports')),
+  },
+  {
     slug: 'best',
     title: 'Best',
     link: '/products/best',
@@ -35,7 +59,24 @@ export const navItems = [
     title: 'All',
     link: '/products',
   },
-  ...collections.map(({ title, link, slug }) => ({ title, link, slug })),
+  {
+    slug: 'Lifestyle',
+    title: 'Lifestyle',
+    link: '/products/lifestyle',
+    products: products.filter((p) => p.collections.includes('lifestyle')),
+  },
+  {
+    slug: 'tech',
+    title: 'Tech',
+    link: '/products/tech',
+    products: products.filter((p) => p.collections.includes('tech')),
+  },
+  {
+    slug: 'toys',
+    title: 'Toys',
+    link: '/products/toys',
+    products: products.filter((p) => p.collections.includes('toy')),
+  },
   {
     slug: 'gift-finder',
     title: 'Gift Finder',

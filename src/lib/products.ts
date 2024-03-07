@@ -54,7 +54,7 @@ export const products: ProductRecord[] = [
       'https://www.wilson.com/sites/default/files/styles/quilt_2x1/public/24-0108_Airless_Basketball_ePDP_TechBlock3.png?',
     ],
     collections: ['expensive'],
-    tags: ['basketball', 'airless', '3d', 'print', 'sports', 'easy'],
+    tags: ['basketball', 'airless', '3d', 'print', 'sports', 'easy', 'toy'],
     description: `<p class="product-description_content"><strong>WELCOME TO THE ERA OF AIRLESS</strong><br><br>After the 2023 unveiling of the Wilson Airless Prototype, the next step was clear: make it possible for the world to experience the future of sport for themselves. Enter Wilson Airless Gen1, an updated iteration of the original innovative concept.<br><br>Rather than being inflated, Airless Gen1 relies on a 3D-printed polymer lattice structure. The basketball nearly fits the performance specifications of a regulation basketball, including its weight, size and rebound (bounce). The form of the ball features 8 panel-like lobes and a familiar seam structure, with hexagonal holes across the surface allowing air to pass through freely. Each Airless Gen1 comes with a case, stand, and 3-letter customizable tag.</p><br/>`,
     additionalInformation:
       '<div class="panel-pane pane-fieldable-panels-pane pane-uuid-5c4f8b30-d0c7-4d9b-8691-a844b739c33e pane-bundle-wilson-youtube-slim-banner">   <div class="pane-content">    <div class="fieldable-panels-pane">      <div class="field-collection-container clearfix"><div class="banner-hero -mt-none -w-100">    <div class="video-container text-center">        <iframe id="youtube-player-147616" width="960" height="540?>" title="240209 Wilson MAIN FILM 16x9 FV 01" src="https://www.youtube.com/embed/UNsBUBgh9zA?wmode=opaque&amp;controls=1&amp;rel=0" frameborder="0" allowfullscreen=""> Video of 240209 Wilson MAIN FILM 16x9 FV 01        </iframe>    </div></div></div></div>  </div>    </div>',
@@ -84,7 +84,7 @@ export const products: ProductRecord[] = [
       'https://shop.flipperzero.one/cdn/shop/products/bottom-uwu.png?v=1671722807',
     ],
     collections: ['expensive'],
-    tags: ['flipper', 'zero', 'hacker', 'l33t', 'tech', 'hard'],
+    tags: ['flipper', 'zero', 'hacker', 'l33t', 'tech', 'hard', 'toy'],
     description: `Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like.`,
     additionalInformation: '',
     links: [{ title: 'Flipper', link: generateUTM('https://shop.flipperzero.one/') }],
@@ -296,7 +296,7 @@ export const products: ProductRecord[] = [
     ],
     collections: ['expensive'],
     flair: ['Best Desk Chair'],
-    tags: ['chair', 'deskchair', 'desk chair', 'easy', 'tech'],
+    tags: ['chair', 'deskchair', 'desk chair', 'easy', 'lifestyle'],
     relatedProducts: [
       'apple-macbook-pro-m3-2023',
       'apple-airpods-max',
@@ -419,7 +419,7 @@ export const products: ProductRecord[] = [
       'https://m.media-amazon.com/images/I/81sMQyZSJGL._AC_SX679_.jpg',
     ],
     collections: ['cheap'],
-    tags: ['deck', 'element', 'skateboard', 'fingerboard', 'easy', 'tech'],
+    tags: ['deck', 'element', 'skateboard', 'fingerboard', 'easy', 'toy'],
     flair: ['prime'],
     description:
       'Tech Deck brings you the real deal with authentic fingerboards from real skate companies! Each one features legit graphics from the biggest skate companies in the world, including Blind, Baker, Flip, Finesse, Santa Cruz, Plan B, Sk8mafia, Toy Machine, and more. This 4-Pack includes 4 boards you can build any way you want. Recreate your favorite lines and expand your trickionary by checking out online trick tips on techdeck.com. As you build your mini skateboard collection, compare it online with Tech Deck’s interactive collector’s tool. Ride and grind your new finger skateboards on the X-Connect series. Build out the Big Vert Wall or Flip N’ Grind ramp sets (each sold separately) for you to shred your skateboard decks. There are a ton of Decks, toy figures & playsets to collect! Ride, flip, and grind with Tech Deck fingerboards from real skate companies! Tech Deck mini skateboards for fingers and ramp sets make the perfect gift for girls toys age 6-8 who love small toys and cool toys or as an alternative to toy cars as a boys toys age 6-8 item. Start small, go big and collect them all!',
@@ -471,7 +471,7 @@ export const products: ProductRecord[] = [
     title: '12 Rules for Life: An Antidote to Chaos – Jordan Peterson',
     images: ['https://m.media-amazon.com/images/I/61BRxtp9qtL._SY522_.jpg'],
     collections: ['cheap'],
-    tags: ['smart', 'dumb', 'easy'],
+    tags: ['smart', 'dumb', 'easy', 'lifestyle'],
     flair: ['prime'],
     description: `<span class="a-text-bold">#1 NATIONAL BESTSELLER&nbsp;<br></span><span class="a-text-bold"><br>#1 INTERNATIONAL BESTSELLER<br><br>What does everyone in the modern world need to know? <br><br>Renowned psychologist Jordan B. Peterson's answer to this most difficult of questions uniquely combines the hard-won truths of ancient tradition with the stunning revelations of cutting-edge scientific research.</span><span><br><br>Humorous, surprising and informative, Dr. Peterson tells us why skateboarding boys and girls must be left alone, what terrible fate awaits those who criticize too easily, and why you should always pet a cat when you meet one on the street.<br><br>What does the nervous system of the lowly lobster have to tell us about standing up straight (with our shoulders back) and about success in life? Why did ancient Egyptians worship the capacity to pay careful attention as the highest of gods? What dreadful paths do people tread when they become resentful, arrogant and vengeful? <br><br>Dr. Peterson journeys broadly, discussing discipline, freedom, adventure and responsibility, distilling the world's wisdom into 12 practical and profound rules for life. </span><span class="a-text-italic">12 Rules for Life</span><span>&nbsp;shatters the modern commonplaces of science, faith and human nature, while transforming and ennobling the mind and spirit of its readers.</span>`,
     additionalInformation: `<div class="a-section bucket detail-bullets-wrapper feature"data-cel-widget=detailBulletsWrapper_feature_div data-feature-name=detailBullets data-template-name=detailBullets id=detailBulletsWrapper_feature_div><hr aria-hidden=true class="a-divider-normal bucketDivider"><h2>Product details</h2><div id=detailBullets_feature_div><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Publisher ‏ : ‎ </span><span>Random House Canada; Later prt. edition (January 23, 2018)</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Language ‏ : ‎ </span><span>English</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Hardcover ‏ : ‎ </span><span>409 pages</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>ISBN-10 ‏ : ‎ </span><span>0345816021</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>ISBN-13 ‏ : ‎ </span><span>978-0345816023</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Item Weight ‏ : ‎ </span><span>1.45 pounds</span></span><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Dimensions ‏ : ‎ </span><span>6.6 x 1.4 x 9.3 inches</span></span></ul></div><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Best Sellers Rank: </span>#240 in Books (<a href="/gp/bestsellers/books/ref=pd_zg_ts_books">See Top 100 in Books</a>)<ul class="a-nostyle a-unordered-list a-vertical zg_hrsr"><li class="list-disc"><span class=a-list-item>#1 in <a href="/gp/bestsellers/books/11130/ref=pd_zg_hrsr_books">Popular Applied Psychology</a></span><li class="list-disc"><span class=a-list-item>#17 in <a href="/gp/bestsellers/books/4745/ref=pd_zg_hrsr_books">Personal Transformation Self-Help</a></span><li class="list-disc"><span class=a-list-item>#18 in <a href="/gp/bestsellers/books/4749/ref=pd_zg_hrsr_books">Success Self-Help</a></span></ul></span></ul><ul class="a-nostyle a-unordered-list a-vertical a-spacing-none detail-bullet-list"><li class="list-disc"><span class=a-list-item><span class=a-text-bold>Customer Reviews:</span><style>.noUnderline a:hover{text-decoration:none}.cm-cr-review-stars-spacing-big{margin-top:1px}</style><div id=detailBullets_averageCustomerReviews data-asin=0345816021 data-ref=dpx_acr_pop_><span class=a-declarative data-action=acrStarsLink-click-metrics data-csa-c-func-deps=aui-da-acrStarsLink-click-metrics data-csa-c-id=fppeus-mb7tws-d4cygg-8zeatf data-csa-c-type=widget data-acrstarslink-click-metrics={}><span class="noUnderline reviewCountTextLinkedHistogram"id=acrPopover title="4.7 out of 5 stars"><span class=a-declarative data-action=a-popover data-csa-c-func-deps=aui-da-a-popover data-csa-c-id=dxzvk4-dqbyyj-9qu48-9rxhi2 data-csa-c-type=widget data-a-popover='{"max-width":"700","closeButton":"false","position":"triggerBottom","url":"/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&asin=0345816021"}'><a href=javascript:void(0) class="a-declarative a-popover-trigger"role=button><span class="a-size-base a-color-base">4.7 </span><i class="a-icon a-icon-star a-star-4-5 cm-cr-review-stars-spacing-big"><span class=a-icon-alt>4.7 out of 5 stars</span></i> <i class="a-icon a-icon-popover"></i></a> </span><span class=a-letter-space></span> </span></span><span class=a-letter-space></span> <span class=a-declarative data-action=acrLink-click-metrics data-csa-c-func-deps=aui-da-acrLink-click-metrics data-csa-c-id=quqrnp-1rcjgt-ha3zo0-gm7dhj data-csa-c-type=widget data-acrlink-click-metrics={}><a href=#customerReviews class=a-link-normal id=acrCustomerReviewLink><span class=a-size-base id=acrCustomerReviewText>60,151 ratings</span></a></span><script>var dpAcrHasRegisteredArcLinkClickAction;P.when("A","ready").execute(function(c){!0!==dpAcrHasRegisteredArcLinkClickAction&&(dpAcrHasRegisteredArcLinkClickAction=!0,c.declarative("acrLink-click-metrics","click",{allowLinkDefault:!0},function(c){window.ue&&ue.count("acrLinkClickCount",(ue.count("acrLinkClickCount")||0)+1)}))})</script><script>P.when("A","cf").execute(function(c){c.declarative("acrStarsLink-click-metrics","click",{allowLinkDefault:!0},function(c){window.ue&&ue.count("acrStarsLinkWithPopoverClickCount",(ue.count("acrStarsLinkWithPopoverClickCount")||0)+1)})})</script></div></span></ul><div class=a-row></div><div class=a-row></div></div>`,
@@ -506,7 +506,7 @@ export const products: ProductRecord[] = [
       '<!-- show up to 2 reviews by default --><p> </p><p><span>OPTIMUM NUTRITION\'S GOLD STANDARD 100% Whey uses pure Whey Protein Isolates as the primary ingredient. Combined with ultra-filtered whey protein concentrate, each serving provides 24 grams of all-whey protein and 5.5 grams of naturally occurring Branched Chain Amino Acids (BCAAs) which are prized by athletes for their muscle building qualities. With more than 20 tempting flavors to choose from, ON GOLD STANDARD 100% Whey gives you plenty of ways to keep workout recovery interesting. Search "ON Apparel TRUE STRENGTH" to see our new ON clothing line!</span></p>  <p></p>',
     additionalInformation:
       '<h1 class="a-size-base-plus a-text-bold"> About this item </h1> <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Gold Standard 100% Whey Protein: 24 grams of blended protein consisting of whey protein isolate, whey protein concentrate, and whey peptides to support lean muscle mass - they don\'t call it the Gold Standard of quality for nothing  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 5.5 grams of naturally occurring branched chain amino acids (BCAAs) and 11 grams of naturally occurring essential amino acids (EAAs) per serving to support muscle recovery  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Anytime formula: great before or after exercise, between meals, with a meal, or any time of day when you need extra protein  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Banned substance tested and the highest quality control measures so you feel comfortable and confident consuming the product  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Optimum Nutrition is the World\'s #1 Sports Nutrition Brand*  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> *Source Euromonitor International Limited; Consumer Health 2023 Edition, Sports Nutrition category, % retail value shares, 2022 data  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
-    collections: ['cheap', 'dumb'],
+    collections: ['cheap', 'dumb', 'lifestyle'],
     links: [
       {
         title: 'Amazon',
@@ -723,7 +723,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['tech', 'easy'],
+    tags: ['tech', 'easy', 'toy'],
     rank: {
       price: 3,
       quality: 5,
@@ -764,7 +764,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['tech', 'easy'],
+    tags: ['tech', 'easy', 'lifestyle'],
     rank: {
       price: 4,
       quality: 5,
@@ -792,7 +792,7 @@ export const products: ProductRecord[] = [
       "Saponified 100% food grade olive, coconut, palm & castor oils, in a goat's milk base, with herbs, essential oils,mineral pigments, and aloe ferox. Enjoy! *Zum Bars contain natural mineral pigments that may stain when rubbed directly on fabrics, washcloths, or clothing.",
     additionalInformation:
       '<h1 class="a-size-base-plus a-text-bold"> About this item </h1> <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> Plant-Packed Formula: Crafted with natural, food-grade oils like olive, coconut, palm and castor oils, goat milk and essential oils  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Goat Milk Soap Benefits: Zum Bars are jam-packed with nutrients and created using a cold-processed method to maintain the integrity of the goat\'s milk and other ingredients  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Lavender Soap Bundle Scent Notes: Lavender Zum features classic floral lavender paired with woodsy frankincense, earthy rosemary and energizing mint  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> Natural &amp; Cruelty-Free: We use ingredients from nature and don\'t test our products on animals, making our products vegetarian and cruelty-free  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> About Zum by Indigo Wild: Zum’s natural products for body and home are handcrafted in the U.S.A. with ingredients you can say, spell and love to smell  </span></li>  </ul>   <!-- Loading EDP related metadata -->',
-    collections: ['best', 'easy'],
+    collections: ['best', 'easy', 'lifestyle'],
     tags: [],
     links: [
       {
@@ -864,7 +864,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['easy', 'tech'],
+    tags: ['easy', 'lifestyle'],
     rank: {
       price: 1,
       quality: 4,
@@ -1041,7 +1041,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['sports', 'easy'],
+    tags: ['sports', 'easy', 'toy'],
     rank: {
       price: 4,
       quality: 4,
@@ -1118,7 +1118,7 @@ export const products: ProductRecord[] = [
       },
     ],
     flair: ['prime'],
-    tags: ['tech', 'lifestyle', 'easy'],
+    tags: ['lifestyle', 'easy'],
     rank: {
       price: 2,
       quality: 5,
