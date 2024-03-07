@@ -98,9 +98,7 @@ const description = siteDescription
         <p class="mt-4">Good stuff, for good bros.</p>
         <p class="mt-4">Welcome to <strong>Cool Toy, Bro! 😎</strong></p>
         <div class="p-4 mt-4 text-center">
-          <a class="no-underline" href="/products">
-            <div class="getStarted">🟢 Get Started</div>
-          </a>
+          <div id="getStarted" class="getStarted">🟢 Get Started</div>
         </div>
       </div>
       <div class="w-full rounded-xl shadow-lg p-5 sm:mt-16 card">
@@ -131,3 +129,12 @@ const description = siteDescription
     </div>
   </div>
 </Layout>
+
+<script>
+  // https://docs.astro.build/en/guides/view-transitions/#astropage-load
+  document.addEventListener('astro:page-load', () => {
+    document.getElementById('getStarted')?.addEventListener('click', () => {
+      document.getElementById('hamburger')?.click()
+    })
+  })
+</script>
