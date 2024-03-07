@@ -175,7 +175,9 @@
     {#if product.rank.description.length > 0}
       <div class="w-full rounded-xl shadow-lg p-4 sm:p-8 mt-4 sm:mt-8 bg-white card">
         <p class="text-4xl leading-tight font-black italic uppercase mb-4">
-          "{@html product.rank.description}"
+          <span class="text-5xl">“</span>
+          {@html product.rank.description}
+          <span class="text-5xl">”</span>
         </p>
         <p class="text-2xl leading-relaxed">- Big Bro</p>
       </div>
