@@ -1,7 +1,7 @@
 import fs from 'fs'
 import chalk from 'chalk'
 import puppeteer from 'puppeteer-extra'
-import { createWorker } from 'tesseract.js'
+// import { createWorker } from 'tesseract.js'
 import StealthPlugin from 'puppeteer-extra-plugin-stealth'
 import emptyProduct from '../src/lib/emptyProduct.js'
 import { input as sourceLinks } from './input.js'

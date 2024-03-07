@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets'
 import { siteName, siteDescription } from '@/lib/constants'
 import Layout from '@/layouts/Layout.astro'
 import Navbar from '@/components/Navbar.astro'
@@ -137,6 +136,7 @@ const description = siteDescription
       if (window.innerWidth >= 768) {
         window.location.pathname = '/all'
       } else {
+        // @ts-ignore
         document.querySelector('#hamburger')?.click()
       }
     })
