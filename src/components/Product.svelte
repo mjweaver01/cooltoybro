@@ -63,7 +63,9 @@
           id="product-images"
           class="w-full h-full overflow-hidden overflow-x-scroll no-scrollbar"
         >
-          <div class="p-4 whitespace-nowrap flex items-center gap-4 flex-nowrap w-full h-full">
+          <div
+            class="p-4 sm:p-8 whitespace-nowrap flex items-center gap-4 sm:gap-8 flex-nowrap w-full h-full"
+          >
             {#each product.images as image, i}
               <div
                 class="product-image relative flex items-center flex-nowrap w-full h-full shrink-0"
@@ -100,7 +102,7 @@
             <div class="w-0 p-[0.1px] h-full"></div>
           </div>
         </div>
-        <div class="px-4 pb-4 w-full flex items-center justify-center">
+        <div class="px-4 pb-4 sm:px-8 sm:pb-8 w-full flex items-center justify-center">
           <div class="flex image-count text-xs">
             <span id="current-image">1</span> /
             <span class="total-images">
@@ -119,7 +121,7 @@
       </div>
     </div>
     <div
-      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 mt-4 sm:mt-0 bg-white card"
+      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-5 sm:p-8 mt-4 sm:mt-0 bg-white card"
     >
       <h1 class="text-4xl sm:text-6xl font-bold mb-2">{product.title}</h1>
       <div class="flex items-center justify-between w-full">
@@ -146,50 +148,46 @@
       <p class="mt-4">{@html product.description}</p>
     </div>
   </div>
-  <div
-    class={`${
-      product.additionalInformation.length > 0 ? 'grid sm:grid-cols-2 sm:gap-8' : ''
-    } items-stretch`}
-  >
-    <div class="flex flex-col justify-center w-full">
-      <div class="w-full rounded-xl shadow-lg p-8 mt-4 sm:mt-8 bg-white card">
-        <h2 class="text-5xl font-bold">CQV Score</h2>
-        <div class="my-4">
-          <p
-            class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
-          >
-            <span>(C)OST</span>
-            {'💰'.repeat(product.rank.price)}
-          </p>
-          <p
-            class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
-          >
-            <span>(Q)UALITY</span>
-            {'⭐'.repeat(product.rank.quality)}
-          </p>
-          <p
-            class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
-          >
-            <span>(V)IBES</span>
-            {'😎'.repeat(product.rank.vibes)}
-          </p>
-        </div>
+  <div class="grid sm:grid-cols-2 sm:gap-8 items-stretch">
+    <div class="w-full rounded-xl shadow-lg p-4 sm:p-8 mt-4 sm:mt-8 bg-white card">
+      <h2 class="text-3xl sm:text-5xl font-bold">CQV Score</h2>
+      <div class="my-4">
+        <p
+          class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+        >
+          <span>(C)OST</span>
+          {'💰'.repeat(product.rank.price)}
+        </p>
+        <p
+          class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+        >
+          <span>(Q)UALITY</span>
+          {'⭐'.repeat(product.rank.quality)}
+        </p>
+        <p
+          class="flex justify-between sm:mb-4 lg:mb-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
+        >
+          <span>(V)IBES</span>
+          {'😎'.repeat(product.rank.vibes)}
+        </p>
       </div>
-      <div class="w-full rounded-xl shadow-lg p-8 mt-4 sm:mt-8 bg-white card">
+    </div>
+    {#if product.rank.description.length > 0}
+      <div class="w-full rounded-xl shadow-lg p-4 sm:p-8 mt-4 sm:mt-8 bg-white card">
         <p class="text-4xl leading-tight font-black italic uppercase mb-4">
           "{@html product.rank.description}"
         </p>
-        <p class="text-2xl leading-relaxed">- Bro</p>
-      </div>
-    </div>
-    {#if product.additionalInformation.length > 0}
-      <div
-        class="flex flex-col justify-center w-full rounded-xl shadow-lg p-4 mt-4 sm:mt-8 bg-white card"
-      >
-        {@html product.additionalInformation}
+        <p class="text-2xl leading-relaxed">- Big Bro</p>
       </div>
     {/if}
   </div>
+  {#if product.additionalInformation.length > 0}
+    <div
+      class="flex flex-col justify-center w-full rounded-xl shadow-lg p-4 sm:p-8 mt-4 sm:mt-8 bg-white card"
+    >
+      {@html product.additionalInformation}
+    </div>
+  {/if}
   <Products
     products={[
       ...new Set(

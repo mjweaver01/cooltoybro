@@ -67,7 +67,7 @@
 </script>
 
 <div class="p-4 sm:p-6 max-w-screen-xl m-auto text-center w-full mt-20">
-  <div class="card rounded-xl shadow-lg p-4 sm:p-6">
+  <div class="card rounded-xl shadow-lg p-4 sm:p-8">
     <h1 class="text-6xl font-bold">Gift Finder</h1>
     <p class="text-xl mt-4">
       Just answer {quiz.length} simple questions, and we'll generate an amazing gift for you, or your
@@ -88,10 +88,10 @@
     </div>
   </div>
   <div
-    class="flex flex-col md:flex-row wrap gap-4 sm:gap-6 m-auto text-center w-full justify-center mt-4 sm:mt-6"
+    class="flex flex-col md:flex-row wrap gap-4 sm:gap-8 m-auto text-center w-full justify-center mt-4 sm:mt-8"
   >
     {#each quiz as step}
-      <div class="text-center card rounded-xl shadow-lg p-4 sm:p-6 flex-grow">
+      <div class="text-center card rounded-xl shadow-lg p-4 sm:p-8 flex-grow">
         <h1 class="text-3xl font-bold mb-2 sm:mb-4">{step.title}</h1>
         <div class="flex flex-col rounded-xl bg-white">
           {#each step.options as stepOption}
@@ -116,7 +116,7 @@
     {/each}
   </div>
   {#if canRoll}
-    <div class="card rounded-xl shadow-lg p-4 sm:p-6 mt-4 sm:mt-6">
+    <div class="card rounded-xl shadow-lg p-4 sm:p-8 mt-4 sm:mt-8">
       <div class="flex items-center justify-center w-full text-2xl">
         <Button href="" on:click={rollProduct} class="px-8 py-5" variant={'wilson'}
           >{canRoll && chosenProduct.title
