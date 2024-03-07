@@ -78,6 +78,16 @@ export const navItems = [
     products: products.filter((p) => p.collections.includes('toy')),
   },
   {
+    slug: 'best',
+    title: 'Best',
+    link: '/products/best',
+    products: products.filter(
+      (p) =>
+        p.collections.includes('best') ||
+        (p.flair && p.flair.toString().toLowerCase().includes('best')),
+    ),
+  },
+  {
     slug: 'gift-finder',
     title: 'Gift Finder',
     link: '/gift-finder',
