@@ -13,31 +13,34 @@
   .lines {
     width: 100%;
     background-color: black;
-    height: 2px;
+    height: 3px;
     top: 9px;
     position: absolute;
     transition: 0.25s all;
+    border-radius: 3px;
 
     &:before {
       content: " ";
       width: 100%;
       background-color: black;
-      height: 2px;
+      height: 3px;
       position: absolute;
-      top: -8px;
+      top: -9px;
       right: 0;
       transition: 0.25s all;
+      border-radius: 3px;
     }
 
     &:after {
       content: " ";
       width: 100%;
       background-color: black;
-      height: 2px;
+      height: 3px;
       position: absolute;
-      top: 8px;
+      top: 9px;
       right: 0;
       transition: 0.25s all;
+      border-radius: 3px;
     }
   }
 
