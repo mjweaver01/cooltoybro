@@ -74,7 +74,7 @@
     } sm:gap-8 pb-0 max-w-screen-xl m-auto`}
   >
     {#if showHeaderSort}
-      <div class="w-full rounded-xl shadow-lg bg-white card p-4 mb-4 sm:mb-8 relative z-10">
+      <div class="w-full rounded-xl shadow-lg bg-white card p-4 sm:p-8 mb-4 sm:mb-8 relative z-10">
         <h1 class="text-3xl font-bold mb-4">
           {#if filter.length > 0}{filter}{/if}{#if filter.length <= 0}All{/if}
         </h1>
