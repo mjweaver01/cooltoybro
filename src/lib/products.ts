@@ -950,7 +950,7 @@ export const products: ProductRecord[] = [
     },
   },
   {
-    slug: 'quest-3-128gb-',
+    slug: 'quest-3-128gb',
     title: 'Quest 3 – 128GB',
     images: [
       'https://m.media-amazon.com/images/I/81whTB488bL._SX342_.jpg',
