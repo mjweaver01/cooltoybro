@@ -103,7 +103,7 @@
           </div>
         </div>
         <div class="px-4 pb-4 sm:px-8 sm:pb-8 w-full flex items-center justify-center">
-          <div class="flex image-count text-xs">
+          <div class="flex image-count text-xs absolute left-4">
             <span id="current-image">1</span> /
             <span class="total-images">
               {totalImages}
